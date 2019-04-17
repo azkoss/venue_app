@@ -1,0 +1,64 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_places_dialog (0.0.1):
+    - Flutter
+    - GoogleMaps
+    - GooglePlacePicker
+    - GooglePlaces
+  - google_places_picker (0.0.3):
+    - Flutter
+    - GoogleMaps
+    - GooglePlaces
+  - GoogleMaps (3.0.3):
+    - GoogleMaps/Maps (= 3.0.3)
+  - GoogleMaps/Base (3.0.3)
+  - GoogleMaps/Maps (3.0.3):
+    - GoogleMaps/Base
+  - GooglePlacePicker (3.0.3):
+    - GoogleMaps (= 3.0.3)
+    - GooglePlaces (= 3.0.3)
+  - GooglePlaces (3.0.3):
+    - GoogleMaps/Base (= 3.0.3)
+  - image_picker (0.0.1):
+    - Flutter
+  - shared_preferences (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `.symlinks/flutter/ios`)
+  - flutter_places_dialog (from `.symlinks/plugins/flutter_places_dialog/ios`)
+  - google_places_picker (from `.symlinks/plugins/google_places_picker/ios`)
+  - image_picker (from `.symlinks/plugins/image_picker/ios`)
+  - shared_preferences (from `.symlinks/plugins/shared_preferences/ios`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - GoogleMaps
+    - GooglePlacePicker
+    - GooglePlaces
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: ".symlinks/flutter/ios"
+  flutter_places_dialog:
+    :path: ".symlinks/plugins/flutter_places_dialog/ios"
+  google_places_picker:
+    :path: ".symlinks/plugins/google_places_picker/ios"
+  image_picker:
+    :path: ".symlinks/plugins/image_picker/ios"
+  shared_preferences:
+    :path: ".symlinks/plugins/shared_preferences/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 9d0fac939486c9aba2809b7982dfdbb47a7b0296
+  flutter_places_dialog: 6bc19126e320f024658867944888fe983595ba96
+  google_places_picker: 7e860ca47fb342ef7be52fd715a5d97a882ee9a6
+  GoogleMaps: fd5c9fa58871781b9fb94d4936f19c69fe60ce32
+  GooglePlacePicker: 0c90898945f02ef36cce86fc9a107e1c5d3d26b1
+  GooglePlaces: f09e76993c9c3ee4af8f4f7f535bb94d6aa3b649
+  image_picker: ee00aab0487cedc80a304085219503cc6d0f2e22
+  shared_preferences: 5a1d487c427ee18fcd3ea1f2a131569481834b53
+
+PODFILE CHECKSUM: aff02bfeed411c636180d6812254b2daeea14d09
+
+COCOAPODS: 1.5.3
