@@ -1,18 +1,21 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:redux/redux.dart';
 import 'package:venue_app/redux/states/app_state.dart';
 
 import '../../models/Venue.dart';
-import '../../redux/actions/venueRegistration_actions.dart';
 
-class VenueTimeAndPriceScene extends StatelessWidget {
+class VenueTimeAndPriceScene extends StatefulWidget {
   final Store<AppState> store;
+  Sport currentSelectedSport;
 
   VenueTimeAndPriceScene(this.store);
 
+  @override
+  _VenueTimeAndPriceSceneState createState() => _VenueTimeAndPriceSceneState();
+}
+
+class _VenueTimeAndPriceSceneState extends State<VenueTimeAndPriceScene> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,6 +28,7 @@ class VenueTimeAndPriceScene extends StatelessWidget {
                     buildTitle(),
                     buildDescription(),
                     buildSubTitle1(),
+                    buildSportsList(context, viewModel),
                     buildSubTitle2(),
                     buildSubTitle3(),
                   ],
@@ -77,6 +81,69 @@ class VenueTimeAndPriceScene extends StatelessWidget {
             fontFamily: "GoogleSans",
             fontStyle: FontStyle.normal,
             fontSize: 24.0),
+      ),
+    );
+  }
+
+  Widget buildSportsList(BuildContext context, _ViewModel viewModel) {
+    if (widget.currentSelectedSport == null) {
+      widget.currentSelectedSport = viewModel.availableSports[0];
+    }
+
+    return Padding(
+      padding: const EdgeInsets.only(left: 20.0, right: 20.0),
+      child: Container(
+        height: 70.0,
+        child: ListView.builder(
+          scrollDirection: Axis.horizontal,
+          itemCount: viewModel.availableSports.length,
+          itemBuilder: (context, index) {
+            var sport = viewModel.availableSports[index];
+
+            return Padding(
+              padding: const EdgeInsets.only(right: 10.0),
+              child: GestureDetector(
+                child: Row(
+                  children: <Widget>[
+                    Padding(
+                      padding: const EdgeInsets.only(right: 5.0),
+                      child: Opacity(
+                        opacity: widget.currentSelectedSport == sport ? 1.0 : 0.3,
+                        child: sport.displayIcon(),
+                      ),
+                    ),
+                    Stack(
+                      children: <Widget>[
+                        Text(
+                          sport.displayName(),
+                          style: TextStyle(
+                              color: widget.currentSelectedSport == sport ? Colors.black : Color(0xffe8e8e8),
+                              fontWeight: FontWeight.w700,
+                              fontFamily: "GoogleSans",
+                              fontStyle: FontStyle.normal,
+                              fontSize: 20.5),
+                        ),
+                        Positioned(
+                          left: 2.0,
+                          bottom: 0.0,
+                          child: Container(
+                            height: 2.0,
+                            width: 30.0,
+                            color: widget.currentSelectedSport == sport ? Colors.green : Colors.transparent,
+                          ),
+                        )
+                      ],
+                    ),
+                  ],
+                ),
+                onTap: () {
+                  widget.currentSelectedSport = viewModel.availableSports[index];
+                  setState(() {});
+                },
+              ),
+            );
+          },
+        ),
       ),
     );
   }
@@ -146,43 +213,41 @@ class VenueTimeAndPriceScene extends StatelessWidget {
 }
 
 class _ViewModel {
-  List photos;
-  final Function(File, int) insertPhoto;
+  List<Sport> availableSports;
 
   VenueFieldValidations fieldValidations;
   bool canProceedToNextScene;
   final Function proceedToNextScene;
 
   _ViewModel({
-    this.photos,
-    this.insertPhoto,
+    this.availableSports,
     this.fieldValidations,
     this.canProceedToNextScene,
     this.proceedToNextScene,
   });
 
   factory _ViewModel.create(Store<AppState> store) {
-    _insertPhoto(File file, int index) {
-      Venue venue = store.state.venueRegistrationState.venue;
-      if (venue.photos.length == 0 || index > venue.photos.length - 1) {
-        venue.photos.add(file);
-      } else {
-        venue.photos[index] = file;
-      }
-
-      store.dispatch(UpdateVenueAction(venue));
-      store.dispatch(ValidateVenuePhotosAction());
-    }
+//    _availableGroundForSport(Sports sport) {
+//      Venue venue = store.state.venueRegistrationState.venue;
+//      if (venue.photos.length == 0 || index > venue.photos.length - 1) {
+//        venue.photos.add(file);
+//      } else {
+//        venue.photos[index] = file;
+//      }
+//
+//      store.dispatch(UpdateVenueAction(venue));
+//      store.dispatch(ValidateVenuePhotosAction());
+//    }
 
     _proceedToNextScene() {
-      store.dispatch(ProceedToVenueAmenitiesSceneAction());
+      print("Proceed");
+//      store.dispatch(ProceedToVenueAmenitiesSceneAction());
     }
 
     return _ViewModel(
-      photos: store.state.venueRegistrationState.venue.photos,
-      insertPhoto: _insertPhoto,
+      availableSports: store.state.venueRegistrationState.venue.sports,
       fieldValidations: store.state.venueRegistrationState.fieldValidations,
-      canProceedToNextScene: store.state.venueRegistrationState.sceneValidations.isValidVenuePhotosScene,
+      canProceedToNextScene: store.state.venueRegistrationState.sceneValidations.isValidVenueTimeSlotAndPriceScene,
       proceedToNextScene: _proceedToNextScene,
     );
   }

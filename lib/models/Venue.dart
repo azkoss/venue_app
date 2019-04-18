@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:flutter/material.dart';
 import 'package:flutter_places_dialog/flutter_places_dialog.dart';
 
 enum Amenities {
@@ -33,6 +34,64 @@ class Sport {
   @override
   // TODO: implement hashCode
   int get hashCode => super.hashCode;
+
+  String displayName() {
+    String text;
+    switch (name) {
+      case Sports.footBall:
+        text = "Football";
+        break;
+      case Sports.badminton:
+        text = "Badminton";
+        break;
+      case Sports.cricket:
+        text = "Cricket";
+        break;
+      case Sports.swimming:
+        text = "Swimming";
+        break;
+      case Sports.boxing:
+        text = "Boxing";
+        break;
+      case Sports.tableTennis:
+        text = "Table Tennis";
+        break;
+      case Sports.basketBall:
+        text = "Basket Ball";
+        break;
+    }
+
+    return text;
+  }
+
+  Widget displayIcon() {
+    Widget icon;
+    switch (name) {
+      case Sports.footBall:
+        icon = Icon(Icons.folder_open);
+        break;
+      case Sports.badminton:
+        icon = Icon(Icons.battery_std);
+        break;
+      case Sports.cricket:
+        icon = Icon(Icons.chevron_right);
+        break;
+      case Sports.swimming:
+        icon = Image.asset("assets/swimming.png");
+        break;
+      case Sports.boxing:
+        icon = Image.asset("assets/boxing.png");
+        break;
+      case Sports.tableTennis:
+        icon = Image.asset("assets/tableTennis.png");
+        break;
+      case Sports.basketBall:
+        icon = Image.asset("assets/basketBall.png");
+        break;
+    }
+
+    return icon;
+  }
 }
 
 class Venue {
@@ -87,15 +146,16 @@ class VenueSceneValidations {
   bool isValidVenuePhotosScene;
   bool isValidVenueAmenitiesScene;
   bool isValidVenueSportsScene;
+  bool isValidVenueTimeSlotAndPriceScene;
 
-  VenueSceneValidations({
-    this.isValidVenueLocationScene = false,
-    this.isValidVenueAddressScene = false,
-    this.isValidVenueDetailsScene = false,
-    this.isValidVenuePhotosScene = false,
-    this.isValidVenueAmenitiesScene = false,
-    this.isValidVenueSportsScene = false,
-  });
+  VenueSceneValidations(
+      {this.isValidVenueLocationScene = false,
+      this.isValidVenueAddressScene = false,
+      this.isValidVenueDetailsScene = false,
+      this.isValidVenuePhotosScene = false,
+      this.isValidVenueAmenitiesScene = false,
+      this.isValidVenueSportsScene = false,
+      this.isValidVenueTimeSlotAndPriceScene = false});
 
   updateWith({
     bool isValidVenueLocationScene,
@@ -104,6 +164,7 @@ class VenueSceneValidations {
     bool isValidVenuePhotosScene,
     bool isValidVenueAmenitiesScene,
     bool isValidVenueSportsScene,
+    bool isValidVenueTimeSlotAndPriceScene,
   }) {
     this.isValidVenueLocationScene = isValidVenueLocationScene ?? this.isValidVenueLocationScene;
     this.isValidVenueAddressScene = isValidVenueAddressScene ?? this.isValidVenueAddressScene;
@@ -111,5 +172,7 @@ class VenueSceneValidations {
     this.isValidVenuePhotosScene = isValidVenuePhotosScene ?? this.isValidVenuePhotosScene;
     this.isValidVenueAmenitiesScene = isValidVenueAmenitiesScene ?? this.isValidVenueAmenitiesScene;
     this.isValidVenueSportsScene = isValidVenueSportsScene ?? this.isValidVenueSportsScene;
+    this.isValidVenueTimeSlotAndPriceScene =
+        isValidVenueTimeSlotAndPriceScene ?? this.isValidVenueTimeSlotAndPriceScene;
   }
 }

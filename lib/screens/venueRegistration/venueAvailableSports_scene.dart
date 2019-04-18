@@ -95,10 +95,10 @@ class _VenueAvailableSportsSceneState extends State<VenueAvailableSportsScene> {
           ),
           Padding(
             padding: EdgeInsets.only(right: 5.0),
-            child: _iconForSports(sport),
+            child: sportModel.displayIcon(),
           ),
           Text(
-            _textForSports(sport),
+            sportModel.displayName(),
             style: const TextStyle(
                 color: const Color(0xff000000),
                 fontWeight: FontWeight.w400,
@@ -240,64 +240,6 @@ class _VenueAvailableSportsSceneState extends State<VenueAvailableSportsScene> {
         ),
       ),
     );
-  }
-
-  String _textForSports(Sports sport) {
-    String text;
-    switch (sport) {
-      case Sports.footBall:
-        text = "Football";
-        break;
-      case Sports.badminton:
-        text = "Badminton";
-        break;
-      case Sports.cricket:
-        text = "Cricket";
-        break;
-      case Sports.swimming:
-        text = "Swimming";
-        break;
-      case Sports.boxing:
-        text = "Boxing";
-        break;
-      case Sports.tableTennis:
-        text = "Table Tennis";
-        break;
-      case Sports.basketBall:
-        text = "Basket Ball";
-        break;
-    }
-
-    return text;
-  }
-
-  Widget _iconForSports(Sports sport) {
-    Widget icon;
-    switch (sport) {
-      case Sports.footBall:
-        icon = Icon(Icons.folder_open);
-        break;
-      case Sports.badminton:
-        icon = Icon(Icons.battery_std);
-        break;
-      case Sports.cricket:
-        icon = Icon(Icons.chevron_right);
-        break;
-      case Sports.swimming:
-        icon = Image.asset("assets/swimming.png");
-        break;
-      case Sports.boxing:
-        icon = Image.asset("assets/boxing.png");
-        break;
-      case Sports.tableTennis:
-        icon = Image.asset("assets/tableTennis.png");
-        break;
-      case Sports.basketBall:
-        icon = Image.asset("assets/basketBall.png");
-        break;
-    }
-
-    return icon;
   }
 
   Widget buildNextButton(BuildContext context, _ViewModel viewModel) {

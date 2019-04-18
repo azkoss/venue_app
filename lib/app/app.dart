@@ -4,7 +4,6 @@ import 'package:redux/redux.dart';
 import 'package:venue_app/redux/middlewares/appState_middleware.dart';
 import 'package:venue_app/redux/reducers/appState_reducer.dart';
 import 'package:venue_app/redux/states/app_state.dart';
-import 'package:venue_app/screens/registration/location_scene.dart';
 import 'package:venue_app/screens/venueRegistration/venueTimeAndPrice_scene.dart';
 
 import '../screens/registration/Tutorial_scene.dart';
@@ -36,7 +35,8 @@ class VenueApp extends StatelessWidget {
           primarySwatch: Colors.green,
         ),
         home: StoreBuilder<AppState>(
-            onInit: (store) => {}, builder: (BuildContext context, Store<AppState> store) => LocationScene(store)),
+            onInit: (store) => {},
+            builder: (BuildContext context, Store<AppState> store) => VenueAvailableSportsScene(store)),
         navigatorKey: Keys.navigationKey,
         onGenerateRoute: (routeSettings) => routes(routeSettings, store),
       ),
