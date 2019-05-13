@@ -13,6 +13,7 @@ import 'package:venue_app/screens/eventRegistration/eventPhotos_scene.dart';
 import 'package:venue_app/screens/eventRegistration/eventSport_scene.dart';
 import 'package:venue_app/screens/home/home_scene.dart';
 import 'package:venue_app/screens/userRegistration/Tutorial_scene.dart';
+import 'package:venue_app/screens/userRegistration/landing_scene.dart';
 import 'package:venue_app/screens/userRegistration/location_scene.dart';
 import 'package:venue_app/screens/userRegistration/mobile_number_scene.dart';
 import 'package:venue_app/screens/userRegistration/otp_scene.dart';
@@ -64,6 +65,12 @@ class VenueApp extends StatelessWidget {
         },
       );
     } else if (settings.name == "landing") {
+      return MaterialPageRoute(
+        builder: (context) {
+          return LandingScene(store);
+        },
+      );
+    } else if (settings.name == "home") {
       return MaterialPageRoute(
         builder: (context) {
           return HomeScene(store);

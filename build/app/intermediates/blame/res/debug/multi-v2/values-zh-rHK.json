@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mLp11/Desktop/Venue App/venue_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml",
+            "outputFile": "/Users/mLp11/Desktop/Venue App/Venue-App/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml",
             "map": [
                 {
                     "source": "/Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/5f2f1959f8bc5c644609b63a8b077a29/res/values-zh-rHK/values.xml",

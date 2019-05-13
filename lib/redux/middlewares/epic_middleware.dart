@@ -59,6 +59,7 @@ Stream<dynamic> requestOTPAPI(Stream<dynamic> actions, EpicStore<AppState> store
                 case ResponseStatus.error_400:
                   break;
                 case ResponseStatus.success_200:
+                  print(response.data);
                   break;
                 default:
                   print("Exited with default case");

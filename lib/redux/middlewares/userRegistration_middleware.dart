@@ -119,7 +119,7 @@ _validateOTP(Store<AppState> store, ValidateOTPAction action, NextDispatcher nex
   User user = store.state.userRegistrationState.user;
   UserFieldValidations validation = store.state.userRegistrationState.fieldValidations;
 
-  bool isValid = (user.otp.length == 6) ? true : false;
+  bool isValid = (user.otp.length >= 5) ? true : false;
   validation.updateWith(isValidOTP: isValid);
   store.dispatch(UpdateUserFieldValidationAction(validation));
 
@@ -132,7 +132,7 @@ _validateUserOTPScene(Store<AppState> store, OTPVerificationSuccessAction action
   User user = store.state.userRegistrationState.user;
   UserSceneValidations sceneValidation = store.state.userRegistrationState.sceneValidations;
 
-  bool isValid = (user.otp.length == 6) ? true : false;
+  bool isValid = (user.otp.length >= 5) ? true : false;
   sceneValidation.updateWith(isValidUserOTPScene: isValid);
   store.dispatch(UpdateUserSceneValidationAction(sceneValidation));
 }
@@ -153,10 +153,10 @@ _proceedToOwnerOrPlayerScene(Store<AppState> store, ProceedToOwnerOrPlayerSceneA
   UserType userType = store.state.userRegistrationState.user.userType;
   switch (userType) {
     case UserType.owner:
-      Keys.navigationKey.currentState.pushNamed("venueLocation");
+      Keys.navigationKey.currentState.pushNamed("home");
       break;
     case UserType.player:
-      Keys.navigationKey.currentState.pushNamed("venueLocation");
+      Keys.navigationKey.currentState.pushNamed("home");
       break;
   }
 }

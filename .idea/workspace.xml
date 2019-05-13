@@ -2,42 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b62ff1a-a127-42cd-90fa-802dbe00797e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/1.0x/FakeDP.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/1.0x/venueName.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/2.0x/venueName.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/3.0x/venueName.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/extras/NoSplash.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/models/Bookings.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/models/Event.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/network/endpoints.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/network/network_adapter.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/redux/actions/eventRegistration_actions.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/redux/actions/helper_actions.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/redux/actions/ownerBookings_actions.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/redux/middlewares/epic_middleware.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/redux/middlewares/eventRegistration_middleware.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/redux/middlewares/helper_middlewares.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/redux/middlewares/ownerBookings_middleware.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/redux/reducers/eventRegistration_reducer.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/redux/reducers/ownerBookings_reducer.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/redux/states/eventRegistration_state.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/redux/states/ownerBookings_state.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/eventRegistration/eventAgeGroup_scene.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/eventRegistration/eventCost_scene.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/eventRegistration/eventDate_scene.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/eventRegistration/eventDescription_scene.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/eventRegistration/eventName_scene.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/eventRegistration/eventPhotos_scene.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/eventRegistration/eventSport_scene.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/home/bookingList_scene.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/home/bookingList_tile.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/home/home_scene.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/home/venueProfile_scene.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/4.10.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/4.10.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/4.10.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/4.10.2/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/4.10.2/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/4.10.2/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/4.10.2/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/javaCompile/taskHistory.bin" afterDir="false" />
@@ -46,7 +15,6 @@
       <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/app.dill.track.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app.dill.track.dill.incremental.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/app.dill.track.dill.incremental.dill" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/debug.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-af.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-af.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-am.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-am.json" afterDir="false" />
@@ -156,41 +124,29 @@
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-zu.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values-zu.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/multi-v2/values.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/blame/res/debug/single/debug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/AssetManifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/AssetManifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/isolate_snapshot_data" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/isolate_snapshot_data" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/vm_snapshot_data" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/vm_snapshot_data" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/snapshot_blob.bin.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/snapshot_blob.bin.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/snapshot_blob.bin.d.fingerprint" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/snapshot_blob.bin.d.fingerprint" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/flutter-x86.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/flutter-x86.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJavaRes/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJavaRes/merge-state" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJavaRes/zip-cache/KN0WhNkZFtxVIqHhXSrCrpR2BgU=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJavaRes/zip-cache/OETUTU64G2Ib7skU5YOKCeRSyvM=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJavaRes/zip-cache/Ukx0LK_f1+ag3P_DQnTE6LFI2iM=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJavaRes/zip-cache/yyaPWXAXRK6YUqx65TPxohKKOus=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJavaRes/zip-cache/zKTLU6oNpOuhGqJkDub0dH0sDtc=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJavaRes/zip-cache/++IkOuh2fYVFRge1JNS6nRcnoP0=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJavaRes/zip-cache/46yHvYBANyEJ66U4Ea8G4zOMlgE=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJavaRes/zip-cache/Bmin7A5QoG+rGcPe8vhGnep5pY0=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJavaRes/zip-cache/GuC0eaS8Big5Rd_3GJz3Xy0a9nI=" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJniLibs/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJniLibs/merge-state" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJniLibs/zip-cache/KN0WhNkZFtxVIqHhXSrCrpR2BgU=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJniLibs/zip-cache/OETUTU64G2Ib7skU5YOKCeRSyvM=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJniLibs/zip-cache/Ukx0LK_f1+ag3P_DQnTE6LFI2iM=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJniLibs/zip-cache/yyaPWXAXRK6YUqx65TPxohKKOus=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJniLibs/zip-cache/zKTLU6oNpOuhGqJkDub0dH0sDtc=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJniLibs/zip-cache/++IkOuh2fYVFRge1JNS6nRcnoP0=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJniLibs/zip-cache/46yHvYBANyEJ66U4Ea8G4zOMlgE=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJniLibs/zip-cache/Bmin7A5QoG+rGcPe8vhGnep5pY0=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJniLibs/zip-cache/GuC0eaS8Big5Rd_3GJz3Xy0a9nI=" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/mergeDebugAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/mergeDebugAssets/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/mergeDebugShaders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/mergeDebugShaders/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/zip-cache/8W3DoqDEaUuYBs3nm3exkmcTOr0=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/zip-cache/YiVcwuYMEQuX1DI1ReTp5iG0rfI=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/processDebugResources/resources-list-for-resources-debug.ap_.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/mergeDebugAssets/out/flutter_assets/AssetManifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/mergeDebugAssets/out/flutter_assets/AssetManifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/mergeDebugAssets/out/flutter_assets/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/mergeDebugAssets/out/flutter_assets/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/mergeDebugAssets/out/flutter_assets/isolate_snapshot_data" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/mergeDebugAssets/out/flutter_assets/isolate_snapshot_data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/zip-cache/YLSWcOuXDoMJQXxPAW3Ail8jm7c=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/zip-cache/pSwwQZVHn0HDEU+mgE1kJIDT5Lw=" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/mergeDebugAssets/out/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/mergeDebugAssets/out/flutter_assets/kernel_blob.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/mergeDebugAssets/out/flutter_assets/vm_snapshot_data" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/mergeDebugAssets/out/flutter_assets/vm_snapshot_data" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_launch_background.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_launch_background.xml.flat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_logo.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/drawable_logo.png.flat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_activity_splashscreen.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/layout_activity_splashscreen.xml.flat" afterDir="false" />
@@ -307,55 +263,8 @@
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-zu_values-zu.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values-zu_values-zu.arsc.flat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values_values.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/values_values.arsc.flat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/xml_flutter_image_picker_file_paths.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/res/merged/debug/xml_flutter_image_picker_file_paths.xml.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/10.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/10.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/11.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/11.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/12.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/12.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/15.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/15.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/16.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/16.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/17.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/17.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/18.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/18.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/19.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/19.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/2.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/20.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/20.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/21.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/21.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/22.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/22.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/23.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/23.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/24.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/24.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/25.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/25.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/26.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/26.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/27.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/27.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/28.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/28.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/29.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/29.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/3.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/3.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/30.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/30.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/31.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/31.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/32.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/32.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/33.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/33.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/34.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/34.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/35.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/35.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/36.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/36.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/37.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/37.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/38.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/38.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/39.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/39.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/4.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/4.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/40.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/40.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/41.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/41.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/42.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/42.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/43.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/43.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/44.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/44.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/45.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/45.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/5.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/5.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/6.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/6.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/7.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/7.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/8.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/8.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/9.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/9.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/__content__.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexMerger/debug/0/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexMerger/debug/0/classes.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/externalLibsDexMerger/debug/0/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/externalLibsDexMerger/debug/0/classes.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/mergeJavaRes/debug/0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/mergeJavaRes/debug/0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/mergeJniLibs/debug/0/lib/arm64-v8a/libflutter.so" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/mergeJniLibs/debug/0/lib/arm64-v8a/libflutter.so" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/mergeJniLibs/debug/0/lib/x86/libflutter.so" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/mergeJniLibs/debug/0/lib/x86/libflutter.so" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/mergeJniLibs/debug/0/lib/x86_64/libflutter.so" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/mergeJniLibs/debug/0/lib/x86_64/libflutter.so" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/outputs/apk/app.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/apk/app.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/outputs/apk/app.apk.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/apk/app.apk.sha1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/apk/debug/app-debug.apk" afterDir="false" />
@@ -382,61 +291,8 @@
       <change beforePath="$PROJECT_DIR$/build/shared_preferences/intermediates/incremental/packageDebugAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/shared_preferences/intermediates/incremental/packageDebugAssets/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/shared_preferences/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/shared_preferences/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/shared_preferences/intermediates/incremental/packageDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/shared_preferences/intermediates/incremental/packageDebugResources/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/.symlinks/flutter" beforeDir="false" afterPath="$PROJECT_DIR$/ios/.symlinks/flutter" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/.symlinks/plugins/flutter_places_dialog" beforeDir="false" afterPath="$PROJECT_DIR$/ios/.symlinks/plugins/flutter_places_dialog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/.symlinks/plugins/google_places_picker" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/.symlinks/plugins/image_picker" beforeDir="false" afterPath="$PROJECT_DIR$/ios/.symlinks/plugins/image_picker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/.symlinks/plugins/shared_preferences" beforeDir="false" afterPath="$PROJECT_DIR$/ios/.symlinks/plugins/shared_preferences" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Flutter/Generated.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/Generated.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Podfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Private/google_places_picker/GooglePlacesPickerPlugin.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/Flutter.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/Flutter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterAppDelegate.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterAppDelegate.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterBinaryMessenger.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterBinaryMessenger.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterCallbackCache.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterCallbackCache.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterChannels.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterChannels.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterCodecs.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterCodecs.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterDartProject.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterDartProject.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterEngine.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterEngine.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterHeadlessDartRunner.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterHeadlessDartRunner.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterMacros.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterMacros.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterPlatformViews.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterPlatformViews.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterPlugin.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterPlugin.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterPluginAppLifeCycleDelegate.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterPluginAppLifeCycleDelegate.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterTexture.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterTexture.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterViewController.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterViewController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/google_places_picker/GooglePlacesPickerPlugin.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/mLp11.xcuserdatad/xcschemes/Pods-Runner.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/mLp11.xcuserdatad/xcschemes/Pods-Runner.xcscheme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/mLp11.xcuserdatad/xcschemes/google_places_picker.xcscheme" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/mLp11.xcuserdatad/xcschemes/shared_preferences.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/mLp11.xcuserdatad/xcschemes/shared_preferences.xcscheme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/mLp11.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/mLp11.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-acknowledgements.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-acknowledgements.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-acknowledgements.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-acknowledgements.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/google_places_picker/google_places_picker-dummy.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/google_places_picker/google_places_picker-prefix.pch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/google_places_picker/google_places_picker.xcconfig" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/app/app.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/app.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/User.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/User.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/Venue.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/Venue.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/redux/actions/userRegistration_actions.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/redux/actions/userRegistration_actions.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/redux/middlewares/appState_middleware.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/redux/middlewares/appState_middleware.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/redux/middlewares/userRegistration_middleware.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/redux/middlewares/userRegistration_middleware.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/redux/reducers/appState_reducer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/redux/reducers/appState_reducer.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/redux/states/app_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/redux/states/app_state.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/registration/Tutorial_scene.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/userRegistration/Tutorial_scene.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/registration/landing_scene.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/userRegistration/landing_scene.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/registration/location_scene.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/userRegistration/location_scene.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/registration/mobile_number_scene.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/userRegistration/mobile_number_scene.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/registration/otp_scene.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/userRegistration/otp_scene.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/venueRegistration/venueAmenities_scene.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/venueRegistration/venueAmenities_scene.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/venueRegistration/venueAvailableSports_scene.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/venueRegistration/venueAvailableSports_scene.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/venueRegistration/venueTimeAndPrice_scene.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/venueRegistration/venueTimeAndPrice_scene.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -519,26 +375,57 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-305166706">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="dart" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Dart" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dart" value="43" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Dart" value="43" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="venue_app" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/redux/middlewares/epic_middleware.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="85" column="54" lean-forward="true" selection-start-line="85" selection-start-column="54" selection-end-line="85" selection-end-column="54" />
+            <state relative-caret-position="1125">
+              <caret line="85" column="54" selection-start-line="85" selection-start-column="54" selection-end-line="85" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/network/network_adapter.dart">
+        <entry file="file://$PROJECT_DIR$/lib/app/app.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+            <state relative-caret-position="195">
+              <caret line="69" column="27" selection-start-line="69" selection-start-column="27" selection-end-line="69" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -546,7 +433,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/redux/middlewares/appState_middleware.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
+            <state relative-caret-position="480">
               <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
@@ -567,7 +454,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/screens/userRegistration/mobile_number_scene.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
+            <state relative-caret-position="1845">
               <caret line="128" column="48" selection-start-line="128" selection-start-column="48" selection-end-line="128" selection-end-column="48" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -576,12 +463,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/redux/middlewares/userRegistration_middleware.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="130" column="103" selection-start-line="130" selection-start-column="103" selection-end-line="130" selection-end-column="103" />
+            <state relative-caret-position="135">
+              <caret line="117" column="83" selection-start-line="117" selection-start-column="83" selection-end-line="117" selection-end-column="83" />
               <folding>
+                <element signature="e#253#2078#0" />
                 <element signature="e#323#389#0" />
                 <element signature="e#640#685#0" />
                 <element signature="e#934#979#0" />
@@ -607,6 +495,7 @@
                 <element signature="e#4667#4679#0" />
                 <element signature="e#4746#4771#0" />
                 <element signature="e#4884#5219#0" />
+                <element signature="e#5198#5215#0" />
                 <element signature="e#5324#5383#0" />
                 <element signature="e#5369#5380#0" />
                 <element signature="e#5402#5453#0" />
@@ -624,7 +513,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../FlutterSDK/flutter/.pub-cache/hosted/pub.dartlang.org/redux_epics-0.10.6/lib/src/epic.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
+            <state relative-caret-position="1725">
               <caret line="117" column="11" selection-start-line="117" selection-start-column="11" selection-end-line="117" selection-end-column="11" />
             </state>
           </provider>
@@ -633,7 +522,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../FlutterSDK/flutter/.pub-cache/hosted/pub.dartlang.org/redux_epics-0.10.6/lib/src/combine_epics.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
+            <state relative-caret-position="315">
               <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
             </state>
           </provider>
@@ -642,7 +531,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../FlutterSDK/flutter/.pub-cache/hosted/pub.dartlang.org/rxdart-0.22.0/lib/src/transformers/switch_map.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
+            <state relative-caret-position="690">
               <caret line="46" column="46" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
             </state>
           </provider>
@@ -651,7 +540,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../FlutterSDK/flutter/bin/cache/pkg/sky_engine/lib/async/zone.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
+            <state relative-caret-position="15390">
               <caret line="1028" column="18" selection-start-line="1028" selection-start-column="18" selection-end-line="1028" selection-end-column="18" />
             </state>
           </provider>
@@ -724,20 +613,20 @@
         <option value="$PROJECT_DIR$/lib/redux/middlewares/helper_middlewares.dart" />
         <option value="$PROJECT_DIR$/lib/screens/home/home_scene.dart" />
         <option value="$PROJECT_DIR$/lib/screens/home/bookingList_scene.dart" />
-        <option value="$PROJECT_DIR$/lib/app/app.dart" />
         <option value="$PROJECT_DIR$/lib/models/User.dart" />
         <option value="$PROJECT_DIR$/lib/screens/userRegistration/otp_scene.dart" />
         <option value="$PROJECT_DIR$/lib/redux/actions/userRegistration_actions.dart" />
-        <option value="$PROJECT_DIR$/lib/redux/middlewares/userRegistration_middleware.dart" />
         <option value="$PROJECT_DIR$/lib/screens/userRegistration/mobile_number_scene.dart" />
         <option value="$PROJECT_DIR$/lib/network/endpoints.dart" />
         <option value="$PROJECT_DIR$/lib/redux/middlewares/epic_middleware.dart" />
         <option value="$PROJECT_DIR$/lib/redux/middlewares/appState_middleware.dart" />
         <option value="$PROJECT_DIR$/lib/network/network_adapter.dart" />
+        <option value="$PROJECT_DIR$/lib/app/app.dart" />
+        <option value="$PROJECT_DIR$/lib/redux/middlewares/userRegistration_middleware.dart" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1600" />
     <option name="height" value="814" />
@@ -756,78 +645,39 @@
         <subPane>
           <expand>
             <path>
-              <item name="venue_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="venue_app" type="462c0819:PsiDirectoryNode" />
+              <item name="Venue-App" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Venue-App" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="venue_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="venue_app" type="462c0819:PsiDirectoryNode" />
+              <item name="Venue-App" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Venue-App" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="venue_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="venue_app" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="venue_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="venue_app" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="venue_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="venue_app" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="network" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="venue_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="venue_app" type="462c0819:PsiDirectoryNode" />
+              <item name="Venue-App" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Venue-App" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="redux" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="venue_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="venue_app" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="redux" type="462c0819:PsiDirectoryNode" />
-              <item name="actions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="venue_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="venue_app" type="462c0819:PsiDirectoryNode" />
+              <item name="Venue-App" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Venue-App" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="redux" type="462c0819:PsiDirectoryNode" />
               <item name="middlewares" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="venue_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="venue_app" type="462c0819:PsiDirectoryNode" />
+              <item name="Venue-App" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Venue-App" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="redux" type="462c0819:PsiDirectoryNode" />
-              <item name="reducers" type="462c0819:PsiDirectoryNode" />
+              <item name="states" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="venue_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="venue_app" type="462c0819:PsiDirectoryNode" />
+              <item name="Venue-App" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Venue-App" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="screens" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="venue_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="venue_app" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="screens" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="venue_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="venue_app" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="screens" type="462c0819:PsiDirectoryNode" />
-              <item name="userRegistration" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -900,11 +750,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1600" height="814" extended-state="6" />
+    <frame x="0" y="22" width="1600" height="814" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4939759" visible="true" weight="0.2618742" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4939759" visible="true" weight="0.2394095" />
       <window_info id="Structure" order="2" sideWeight="0.5060241" side_tool="true" weight="0.28883183" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
@@ -913,7 +763,7 @@
       <window_info anchor="bottom" id="Dart Analysis" order="0" sideWeight="0.49935815" weight="0.32132965" />
       <window_info anchor="bottom" id="Run" order="1" sideWeight="0.49935815" weight="0.25900277" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.32963988" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49229783" weight="0.20498616" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49229783" visible="true" weight="0.17174515" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.32963988" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5006418" side_tool="true" weight="0.32132965" />
       <window_info anchor="bottom" id="Flutter Performance" order="6" side_tool="true" />
@@ -1069,9 +919,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#74#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1155,10 +1002,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-          <folding>
-            <element signature="e#326#352#0" />
-            <element signature="e#562#622#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1262,51 +1105,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/redux/actions/eventRegistration_actions.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#47#107#0" />
-            <element signature="e#132#189#0" />
-            <element signature="e#230#330#0" />
-            <element signature="e#371#481#0" />
-            <element signature="e#500#547#0" />
-            <element signature="e#578#610#0" />
-            <element signature="e#655#700#0" />
-            <element signature="e#719#773#0" />
-            <element signature="e#811#850#0" />
-            <element signature="e#889#928#0" />
-            <element signature="e#947#995#0" />
-            <element signature="e#1034#1074#0" />
-            <element signature="e#1093#1142#0" />
-            <element signature="e#1175#1209#0" />
-            <element signature="e#1247#1285#0" />
-            <element signature="e#1304#1351#0" />
-            <element signature="e#1387#1424#0" />
-            <element signature="e#1459#1494#0" />
-            <element signature="e#1532#1570#0" />
-            <element signature="e#1589#1636#0" />
-            <element signature="e#1667#1699#0" />
-            <element signature="e#1741#1783#0" />
-            <element signature="e#1802#1853#0" />
-            <element signature="e#1890#1928#0" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/redux/actions/helper_actions.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/app/app.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="45" column="95" lean-forward="true" selection-start-line="45" selection-start-column="95" selection-end-line="45" selection-end-column="95" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1324,9 +1128,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="35" column="78" selection-start-line="35" selection-start-column="78" selection-end-line="35" selection-end-column="78" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1397,9 +1198,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="34" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1407,9 +1205,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
           <caret line="239" column="37" selection-start-line="239" selection-start-column="9" selection-end-line="239" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1424,24 +1219,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="60" selection-start-line="60" selection-end-line="60" />
-          <folding>
-            <element signature="e#35#87#0" />
-            <element signature="e#112#169#0" />
-            <element signature="e#210#310#0" />
-            <element signature="e#351#461#0" />
-            <element signature="e#480#525#0" />
-            <element signature="e#603#644#0" />
-            <element signature="e#663#713#0" />
-            <element signature="e#829#870#0" />
-            <element signature="e#889#943#0" />
-            <element signature="e#1023#1063#0" />
-            <element signature="e#1082#1133#0" />
-            <element signature="e#1211#1254#0" />
-            <element signature="e#1275#1329#0" />
-            <element signature="e#1407#1447#0" />
-            <element signature="e#1468#1519#0" />
-            <element signature="e#1596#1638#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1489,14 +1266,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#338#352#0" />
-            <element signature="e#426#455#0" />
-            <element signature="e#529#558#0" />
-            <element signature="e#657#706#0" />
-            <element signature="e#835#901#0" />
-            <element signature="e#1030#1101#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1538,40 +1307,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../FlutterSDK/flutter/.pub-cache/hosted/pub.dartlang.org/rxdart-0.22.0/lib/src/transformers/switch_map.dart">
+    <entry file="file://$PROJECT_DIR$/lib/redux/middlewares/epic_middleware.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="46" column="46" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
+        <state relative-caret-position="1125">
+          <caret line="85" column="54" selection-start-line="85" selection-start-column="54" selection-end-line="85" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../FlutterSDK/flutter/bin/cache/pkg/sky_engine/lib/async/zone.dart">
+    <entry file="file://$PROJECT_DIR$/lib/network/network_adapter.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="1028" column="18" selection-start-line="1028" selection-start-column="18" selection-end-line="1028" selection-end-column="18" />
+        <state relative-caret-position="480">
+          <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../FlutterSDK/flutter/.pub-cache/hosted/pub.dartlang.org/redux_epics-0.10.6/lib/src/combine_epics.dart">
+    <entry file="file://$PROJECT_DIR$/lib/redux/middlewares/appState_middleware.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../FlutterSDK/flutter/.pub-cache/hosted/pub.dartlang.org/redux_epics-0.10.6/lib/src/epic.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="117" column="11" selection-start-line="117" selection-start-column="11" selection-end-line="117" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/screens/userRegistration/mobile_number_scene.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="128" column="48" selection-start-line="128" selection-start-column="48" selection-end-line="128" selection-end-column="48" />
+        <state relative-caret-position="480">
+          <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1583,21 +1338,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/redux/middlewares/appState_middleware.dart">
+    <entry file="file://$PROJECT_DIR$/lib/screens/userRegistration/mobile_number_scene.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
+        <state relative-caret-position="1845">
+          <caret line="128" column="48" selection-start-line="128" selection-start-column="48" selection-end-line="128" selection-end-column="48" />
           <folding>
-            <element signature="e#0#34#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../FlutterSDK/flutter/.pub-cache/hosted/pub.dartlang.org/redux_epics-0.10.6/lib/src/epic.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1725">
+          <caret line="117" column="11" selection-start-line="117" selection-start-column="11" selection-end-line="117" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../FlutterSDK/flutter/.pub-cache/hosted/pub.dartlang.org/redux_epics-0.10.6/lib/src/combine_epics.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../FlutterSDK/flutter/.pub-cache/hosted/pub.dartlang.org/rxdart-0.22.0/lib/src/transformers/switch_map.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="46" column="46" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../FlutterSDK/flutter/bin/cache/pkg/sky_engine/lib/async/zone.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15390">
+          <caret line="1028" column="18" selection-start-line="1028" selection-start-column="18" selection-end-line="1028" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/app/app.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="69" column="27" selection-start-line="69" selection-start-column="27" selection-end-line="69" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/redux/middlewares/userRegistration_middleware.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="130" column="103" selection-start-line="130" selection-start-column="103" selection-end-line="130" selection-end-column="103" />
+        <state relative-caret-position="135">
+          <caret line="117" column="83" selection-start-line="117" selection-start-column="83" selection-end-line="117" selection-end-column="83" />
           <folding>
+            <element signature="e#253#2078#0" />
             <element signature="e#323#389#0" />
             <element signature="e#640#685#0" />
             <element signature="e#934#979#0" />
@@ -1623,6 +1417,7 @@
             <element signature="e#4667#4679#0" />
             <element signature="e#4746#4771#0" />
             <element signature="e#4884#5219#0" />
+            <element signature="e#5198#5215#0" />
             <element signature="e#5324#5383#0" />
             <element signature="e#5369#5380#0" />
             <element signature="e#5402#5453#0" />
@@ -1633,20 +1428,6 @@
             <element signature="e#5973#5990#0" />
             <element signature="e#6078#6095#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/network/network_adapter.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/redux/middlewares/epic_middleware.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="85" column="54" lean-forward="true" selection-start-line="85" selection-start-column="54" selection-end-line="85" selection-end-column="54" />
         </state>
       </provider>
     </entry>
