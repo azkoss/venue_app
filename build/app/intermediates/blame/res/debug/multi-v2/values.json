@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mLp11/Desktop/FlutterSDK/venue_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/mLp11/Desktop/Venue App/venue_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
-                    "source": "/Users/mLp11/Desktop/FlutterSDK/venue_app/android/app/src/main/res/values/styles.xml",
+                    "source": "/Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

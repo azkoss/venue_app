@@ -38,7 +38,7 @@ class _VenueAvailableSportsSceneState extends State<VenueAvailableSportsScene> {
     return Padding(
       padding: EdgeInsets.only(top: 50.0, left: 20, right: 20),
       child: Text(
-        "What are the amneties provided in venue?",
+        "What are the sports available in your venue?",
         style: const TextStyle(
             color: const Color(0xff000000),
             fontWeight: FontWeight.w700,
@@ -95,10 +95,10 @@ class _VenueAvailableSportsSceneState extends State<VenueAvailableSportsScene> {
           ),
           Padding(
             padding: EdgeInsets.only(right: 5.0),
-            child: sportModel.displayIcon(),
+            child: Sport.displayIcon(sport),
           ),
           Text(
-            sportModel.displayName(),
+            Sport.displayName(sport),
             style: const TextStyle(
                 color: const Color(0xff000000),
                 fontWeight: FontWeight.w400,

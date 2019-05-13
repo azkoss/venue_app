@@ -32,6 +32,12 @@ class ValidateMobileNoAction {
   ValidateMobileNoAction();
 }
 
+class RequestOTPEpicAction {
+  final String mobileNo;
+
+  RequestOTPEpicAction(this.mobileNo);
+}
+
 class ProceedToOTPSceneAction {
   ProceedToOTPSceneAction();
 }
@@ -40,6 +46,19 @@ class ProceedToOTPSceneAction {
 //<editor-fold desc="OTP Scene Actions">
 class ValidateOTPAction {
   ValidateOTPAction();
+}
+
+class VerifyOTPEpicAction {
+  final String mobileNo;
+  final String otp;
+
+  VerifyOTPEpicAction(this.mobileNo, this.otp);
+}
+
+class OTPVerificationSuccessAction {
+  final String accessToken;
+
+  OTPVerificationSuccessAction(this.accessToken);
 }
 
 class ProceedToLandingSceneAction {

@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:redux/redux.dart';
+import 'package:venue_app/redux/actions/venueRegistration_actions.dart';
 import 'package:venue_app/redux/states/app_state.dart';
 
 import '../../models/Venue.dart';
 
 class VenueTimeAndPriceScene extends StatefulWidget {
   final Store<AppState> store;
-  Sport currentSelectedSport;
+
+  List<String> weekDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 
   VenueTimeAndPriceScene(this.store);
 
@@ -23,15 +25,20 @@ class _VenueTimeAndPriceSceneState extends State<VenueTimeAndPriceScene> {
         converter: (store) => _ViewModel.create(store),
         builder: (BuildContext context, _ViewModel viewModel) => Stack(
               children: <Widget>[
-                ListView(
-                  children: <Widget>[
-                    buildTitle(),
-                    buildDescription(),
-                    buildSubTitle1(),
-                    buildSportsList(context, viewModel),
-                    buildSubTitle2(),
-                    buildSubTitle3(),
-                  ],
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 60.0),
+                  child: ListView(
+                    children: <Widget>[
+                      buildTitle(),
+                      buildDescription(),
+                      buildSubTitle1(),
+                      buildSportsList(context, viewModel),
+                      buildSubTitle2(),
+                      buildGroundList(context, viewModel),
+                      buildSubTitle3(),
+                      buildWeekList(context, viewModel),
+                    ],
+                  ),
                 ),
                 buildLetsGoButton(context, viewModel),
               ],
@@ -86,14 +93,15 @@ class _VenueTimeAndPriceSceneState extends State<VenueTimeAndPriceScene> {
   }
 
   Widget buildSportsList(BuildContext context, _ViewModel viewModel) {
-    if (widget.currentSelectedSport == null) {
-      widget.currentSelectedSport = viewModel.availableSports[0];
+    Sport currentSelectedSport = viewModel.availableSports.first;
+    if (viewModel.currentSelectedSport != null) {
+      currentSelectedSport = viewModel.currentSelectedSport;
     }
 
     return Padding(
       padding: const EdgeInsets.only(left: 20.0, right: 20.0),
       child: Container(
-        height: 70.0,
+        height: 60.0,
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
           itemCount: viewModel.availableSports.length,
@@ -108,16 +116,16 @@ class _VenueTimeAndPriceSceneState extends State<VenueTimeAndPriceScene> {
                     Padding(
                       padding: const EdgeInsets.only(right: 5.0),
                       child: Opacity(
-                        opacity: widget.currentSelectedSport == sport ? 1.0 : 0.3,
-                        child: sport.displayIcon(),
+                        opacity: currentSelectedSport == sport ? 1.0 : 0.3,
+                        child: Sport.displayIcon(sport.name),
                       ),
                     ),
                     Stack(
                       children: <Widget>[
                         Text(
-                          sport.displayName(),
+                          Sport.displayName(sport.name),
                           style: TextStyle(
-                              color: widget.currentSelectedSport == sport ? Colors.black : Color(0xffe8e8e8),
+                              color: currentSelectedSport == sport ? Colors.black : Color(0xffe8e8e8),
                               fontWeight: FontWeight.w700,
                               fontFamily: "GoogleSans",
                               fontStyle: FontStyle.normal,
@@ -129,7 +137,7 @@ class _VenueTimeAndPriceSceneState extends State<VenueTimeAndPriceScene> {
                           child: Container(
                             height: 2.0,
                             width: 30.0,
-                            color: widget.currentSelectedSport == sport ? Colors.green : Colors.transparent,
+                            color: currentSelectedSport == sport ? Colors.green : Colors.transparent,
                           ),
                         )
                       ],
@@ -137,8 +145,8 @@ class _VenueTimeAndPriceSceneState extends State<VenueTimeAndPriceScene> {
                   ],
                 ),
                 onTap: () {
-                  widget.currentSelectedSport = viewModel.availableSports[index];
-                  setState(() {});
+                  viewModel.setSelectedSport(sport);
+                  viewModel.setSelectedGround(sport.groundNames.first);
                 },
               ),
             );
@@ -163,6 +171,63 @@ class _VenueTimeAndPriceSceneState extends State<VenueTimeAndPriceScene> {
     );
   }
 
+  Widget buildGroundList(BuildContext context, _ViewModel viewModel) {
+    String currentSelectedGround = viewModel.currentSelectedSport.groundNames.first;
+    if (viewModel.currentSelectedGround != null) {
+      currentSelectedGround = viewModel.currentSelectedGround;
+    }
+
+    return Padding(
+      padding: const EdgeInsets.only(left: 20.0, right: 20.0),
+      child: Container(
+        height: 60.0,
+        child: ListView.builder(
+          scrollDirection: Axis.horizontal,
+          itemCount: viewModel.currentSelectedSport.groundNames.length,
+          itemBuilder: (context, index) {
+            var ground = viewModel.currentSelectedSport.groundNames[index];
+
+            return Padding(
+              padding: const EdgeInsets.only(right: 10.0),
+              child: GestureDetector(
+                child: Row(
+                  children: <Widget>[
+                    Stack(
+                      children: <Widget>[
+                        Text(
+                          ground,
+                          style: TextStyle(
+                              color: currentSelectedGround == ground ? Colors.black : Color(0xffe8e8e8),
+                              fontWeight: FontWeight.w700,
+                              fontFamily: "GoogleSans",
+                              fontStyle: FontStyle.normal,
+                              fontSize: 20.5),
+                        ),
+                        Positioned(
+                          left: 2.0,
+                          bottom: 0.0,
+                          child: Container(
+                            height: 2.0,
+                            width: 30.0,
+                            color: currentSelectedGround == ground ? Colors.green : Colors.transparent,
+                          ),
+                        )
+                      ],
+                    ),
+                  ],
+                ),
+                onTap: () {
+                  viewModel.setSelectedGround(ground);
+                  viewModel.setSelectedDay(widget.weekDays.first);
+                },
+              ),
+            );
+          },
+        ),
+      ),
+    );
+  }
+
   Widget buildSubTitle3() {
     return Padding(
       padding: EdgeInsets.only(top: 20.0, left: 20.0),
@@ -174,6 +239,62 @@ class _VenueTimeAndPriceSceneState extends State<VenueTimeAndPriceScene> {
             fontFamily: "GoogleSans",
             fontStyle: FontStyle.normal,
             fontSize: 24.0),
+      ),
+    );
+  }
+
+  Widget buildWeekList(BuildContext context, _ViewModel viewModel) {
+    String currentSelectedDay = widget.weekDays.first;
+    if (viewModel.currentSelectedDay != null) {
+      currentSelectedDay = viewModel.currentSelectedDay;
+    }
+
+    return Padding(
+      padding: const EdgeInsets.only(left: 20.0, right: 20.0),
+      child: Container(
+        height: 60.0,
+        child: ListView.builder(
+          scrollDirection: Axis.horizontal,
+          itemCount: widget.weekDays.length,
+          itemBuilder: (context, index) {
+            var day = widget.weekDays[index];
+
+            return Padding(
+              padding: const EdgeInsets.only(right: 10.0),
+              child: GestureDetector(
+                child: Row(
+                  children: <Widget>[
+                    Stack(
+                      children: <Widget>[
+                        Text(
+                          day,
+                          style: TextStyle(
+                              color: currentSelectedDay == day ? Colors.black : Color(0xffe8e8e8),
+                              fontWeight: FontWeight.w700,
+                              fontFamily: "GoogleSans",
+                              fontStyle: FontStyle.normal,
+                              fontSize: 20.5),
+                        ),
+                        Positioned(
+                          left: 2.0,
+                          bottom: 0.0,
+                          child: Container(
+                            height: 2.0,
+                            width: 30.0,
+                            color: currentSelectedDay == day ? Colors.green : Colors.transparent,
+                          ),
+                        )
+                      ],
+                    ),
+                  ],
+                ),
+                onTap: () {
+                  viewModel.setSelectedDay(day);
+                },
+              ),
+            );
+          },
+        ),
       ),
     );
   }
@@ -214,6 +335,12 @@ class _VenueTimeAndPriceSceneState extends State<VenueTimeAndPriceScene> {
 
 class _ViewModel {
   List<Sport> availableSports;
+  Sport currentSelectedSport;
+  String currentSelectedGround;
+  String currentSelectedDay;
+  Function(Sport sport) setSelectedSport;
+  Function(String ground) setSelectedGround;
+  Function(String day) setSelectedDay;
 
   VenueFieldValidations fieldValidations;
   bool canProceedToNextScene;
@@ -221,12 +348,39 @@ class _ViewModel {
 
   _ViewModel({
     this.availableSports,
+    this.currentSelectedSport,
+    this.currentSelectedGround,
+    this.currentSelectedDay,
+    this.setSelectedSport,
+    this.setSelectedGround,
+    this.setSelectedDay,
     this.fieldValidations,
     this.canProceedToNextScene,
     this.proceedToNextScene,
   });
 
   factory _ViewModel.create(Store<AppState> store) {
+    _setSelectedSport(Sport sport) {
+      Venue venue = store.state.venueRegistrationState.venue;
+      venue.currentSelectedSport = sport;
+
+      store.dispatch(UpdateVenueAction(venue));
+    }
+
+    _setSelectedGround(String ground) {
+      Venue venue = store.state.venueRegistrationState.venue;
+      venue.currentSelectedGround = ground;
+
+      store.dispatch(UpdateVenueAction(venue));
+    }
+
+    _setSelectedDay(String day) {
+      Venue venue = store.state.venueRegistrationState.venue;
+      venue.currentSelectedDay = day;
+
+      store.dispatch(UpdateVenueAction(venue));
+    }
+
 //    _availableGroundForSport(Sports sport) {
 //      Venue venue = store.state.venueRegistrationState.venue;
 //      if (venue.photos.length == 0 || index > venue.photos.length - 1) {
@@ -246,6 +400,14 @@ class _ViewModel {
 
     return _ViewModel(
       availableSports: store.state.venueRegistrationState.venue.sports,
+      currentSelectedSport: store.state.venueRegistrationState.venue.currentSelectedSport ??
+          store.state.venueRegistrationState.venue.sports.first,
+      currentSelectedGround: store.state.venueRegistrationState.venue.currentSelectedGround ??
+          store.state.venueRegistrationState.venue.sports.first.groundNames.first,
+      currentSelectedDay: store.state.venueRegistrationState.venue.currentSelectedDay,
+      setSelectedSport: _setSelectedSport,
+      setSelectedGround: _setSelectedGround,
+      setSelectedDay: _setSelectedDay,
       fieldValidations: store.state.venueRegistrationState.fieldValidations,
       canProceedToNextScene: store.state.venueRegistrationState.sceneValidations.isValidVenueTimeSlotAndPriceScene,
       proceedToNextScene: _proceedToNextScene,

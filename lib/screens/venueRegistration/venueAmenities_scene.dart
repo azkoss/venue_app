@@ -93,10 +93,10 @@ class _VenueAmenitiesSceneState extends State<VenueAmenitiesScene> {
           ),
           Padding(
             padding: EdgeInsets.only(right: 5.0),
-            child: Icon(_iconForAmenities(amenity)),
+            child: Icon(Sport.displayIconForAmenity(amenity)),
           ),
           Text(
-            _textForAmenities(amenity),
+            Sport.displayNameForAmenity(amenity),
             style: const TextStyle(
                 color: const Color(0xff000000),
                 fontWeight: FontWeight.w400,
@@ -111,52 +111,6 @@ class _VenueAmenitiesSceneState extends State<VenueAmenitiesScene> {
     }
 
     return widgets;
-  }
-
-  String _textForAmenities(Amenities amenity) {
-    String text;
-    switch (amenity) {
-      case Amenities.parking:
-        text = "Parking";
-        break;
-      case Amenities.water:
-        text = "Water";
-        break;
-      case Amenities.washroom:
-        text = "Washroom";
-        break;
-      case Amenities.freeWifi:
-        text = "Free Wifi";
-        break;
-      case Amenities.medicalAssistance:
-        text = "Medical Assistance";
-        break;
-    }
-
-    return text;
-  }
-
-  IconData _iconForAmenities(Amenities amenity) {
-    IconData icon;
-    switch (amenity) {
-      case Amenities.parking:
-        icon = Icons.directions_car;
-        break;
-      case Amenities.water:
-        icon = Icons.local_drink;
-        break;
-      case Amenities.washroom:
-        icon = Icons.accessible;
-        break;
-      case Amenities.freeWifi:
-        icon = Icons.wifi;
-        break;
-      case Amenities.medicalAssistance:
-        icon = Icons.enhanced_encryption;
-        break;
-    }
-
-    return icon;
   }
 
   Widget buildNextButton(BuildContext context, _ViewModel viewModel) {

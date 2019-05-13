@@ -3,23 +3,9 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_places_dialog/flutter_places_dialog.dart';
 
-enum Amenities {
-  parking,
-  washroom,
-  water,
-  freeWifi,
-  medicalAssistance,
-}
+enum Amenities { parking, washroom, water, freeWifi, medicalAssistance }
 
-enum Sports {
-  footBall,
-  badminton,
-  cricket,
-  swimming,
-  boxing,
-  tableTennis,
-  basketBall,
-}
+enum Sports { footBall, badminton, cricket, swimming, boxing, tableTennis, basketBall }
 
 class Sport {
   Sports name;
@@ -35,9 +21,9 @@ class Sport {
   // TODO: implement hashCode
   int get hashCode => super.hashCode;
 
-  String displayName() {
+  static String displayName(Sports sport) {
     String text;
-    switch (name) {
+    switch (sport) {
       case Sports.footBall:
         text = "Football";
         break;
@@ -64,9 +50,9 @@ class Sport {
     return text;
   }
 
-  Widget displayIcon() {
+  static Widget displayIcon(Sports sport) {
     Widget icon;
-    switch (name) {
+    switch (sport) {
       case Sports.footBall:
         icon = Icon(Icons.folder_open);
         break;
@@ -92,6 +78,52 @@ class Sport {
 
     return icon;
   }
+
+  static String displayNameForAmenity(Amenities amenity) {
+    String text;
+    switch (amenity) {
+      case Amenities.parking:
+        text = "Parking";
+        break;
+      case Amenities.water:
+        text = "Water";
+        break;
+      case Amenities.washroom:
+        text = "Washroom";
+        break;
+      case Amenities.freeWifi:
+        text = "Free Wifi";
+        break;
+      case Amenities.medicalAssistance:
+        text = "Medical Assistance";
+        break;
+    }
+
+    return text;
+  }
+
+  static IconData displayIconForAmenity(Amenities amenity) {
+    IconData icon;
+    switch (amenity) {
+      case Amenities.parking:
+        icon = Icons.directions_car;
+        break;
+      case Amenities.water:
+        icon = Icons.local_drink;
+        break;
+      case Amenities.washroom:
+        icon = Icons.accessible;
+        break;
+      case Amenities.freeWifi:
+        icon = Icons.wifi;
+        break;
+      case Amenities.medicalAssistance:
+        icon = Icons.enhanced_encryption;
+        break;
+    }
+
+    return icon;
+  }
 }
 
 class Venue {
@@ -104,6 +136,10 @@ class Venue {
   List<Amenities> amenities;
   List<Sport> sports;
 
+  Sport currentSelectedSport;
+  String currentSelectedGround;
+  String currentSelectedDay;
+
   Venue({
     this.location,
     this.venueName = "",
@@ -113,6 +149,9 @@ class Venue {
     this.photos,
     this.amenities,
     this.sports,
+    this.currentSelectedSport,
+    this.currentSelectedGround,
+    this.currentSelectedDay,
   });
 }
 

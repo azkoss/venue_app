@@ -35,7 +35,13 @@ Middleware<AppState> userRegistrationMiddleware(AppState state) {
     //<editor-fold desc="OTP Scene Actions">
     else if (action is ValidateOTPAction) {
       _validateOTP(store, action, next);
-    } else if (action is ProceedToLandingSceneAction) {
+    } else if (action is OTPVerificationSuccessAction) {
+      _validateUserOTPScene(store, action, next);
+    }
+//    else if (action is OTPVerificationErrorAction) {
+//      _proceedToLandingScene(store, action, next);
+//    }
+    else if (action is ProceedToLandingSceneAction) {
       _proceedToLandingScene(store, action, next);
     }
     //</editor-fold>
@@ -113,18 +119,20 @@ _validateOTP(Store<AppState> store, ValidateOTPAction action, NextDispatcher nex
   User user = store.state.userRegistrationState.user;
   UserFieldValidations validation = store.state.userRegistrationState.fieldValidations;
 
-  bool isValid = (user.otp.length == 5) ? true : false;
+  bool isValid = (user.otp.length == 6) ? true : false;
   validation.updateWith(isValidOTP: isValid);
-
   store.dispatch(UpdateUserFieldValidationAction(validation));
-  _validateUserOTPScene(store);
+
+  if (isValid == true) {
+    store.dispatch(VerifyOTPEpicAction(user.mobileNo, user.otp));
+  }
 }
 
-_validateUserOTPScene(Store<AppState> store) {
+_validateUserOTPScene(Store<AppState> store, OTPVerificationSuccessAction action, NextDispatcher next) {
   User user = store.state.userRegistrationState.user;
   UserSceneValidations sceneValidation = store.state.userRegistrationState.sceneValidations;
 
-  bool isValid = (user.otp.length == 5) ? true : false;
+  bool isValid = (user.otp.length == 6) ? true : false;
   sceneValidation.updateWith(isValidUserOTPScene: isValid);
   store.dispatch(UpdateUserSceneValidationAction(sceneValidation));
 }

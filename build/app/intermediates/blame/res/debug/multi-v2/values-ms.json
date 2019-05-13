@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mLp11/Desktop/FlutterSDK/venue_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-ms/values-ms.xml",
+            "outputFile": "/Users/mLp11/Desktop/Venue App/venue_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-ms/values-ms.xml",
             "map": [
                 {
                     "source": "/Users/mLp11/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/2a108bdddb8729b865f01e7da88df970/res/values-ms/values-ms.xml",

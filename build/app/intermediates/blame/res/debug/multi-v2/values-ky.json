@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mLp11/Desktop/FlutterSDK/venue_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-ky/values-ky.xml",
+            "outputFile": "/Users/mLp11/Desktop/Venue App/venue_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-ky/values-ky.xml",
             "map": [
                 {
                     "source": "/Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/c67c27b02e9716aa02a8491ac144364f/res/values-ky/values.xml",

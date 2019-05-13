@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter_places_dialog/flutter_places_dialog.dart';
 
 enum UserType {
@@ -6,6 +8,7 @@ enum UserType {
 }
 
 class User {
+  String id;
   PlaceDetails place;
   String mobileNo;
   String otp;
@@ -13,12 +16,31 @@ class User {
   UserType userType;
 
   User({
+    this.id,
     this.place,
     this.mobileNo = "",
     this.otp = "",
     this.tutorialIndex = 0,
     this.userType = UserType.owner,
   });
+
+  factory User.fromRawJson(String str) => User.fromJson(json.decode(str));
+
+  String toRawJson() => json.encode(toJson());
+
+  factory User.fromJson(Map<String, dynamic> json) => new User(
+      id: json["id"],
+      place: json["id"],
+      mobileNo: json["name"],
+      otp: json["image"],
+      userType: json["userType"] == "owner" ? UserType.owner : UserType.player);
+
+  Map<String, dynamic> toJson() => {
+        "latitude": place.location.latitude.toString(),
+        "longitude": place.location.longitude.toString(),
+        "mobileNo": mobileNo,
+        "userType": userType == UserType.owner ? "owner" : "player",
+      };
 }
 
 class UserFieldValidations {

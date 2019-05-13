@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:venue_app/redux/states/eventRegistration_state.dart';
+import 'package:venue_app/redux/states/ownerBookings_state.dart';
 
 import '../states/userRegistration_state.dart';
 import '../states/venueRegistration_state.dart';
@@ -6,20 +8,28 @@ import '../states/venueRegistration_state.dart';
 class AppState {
   final UserRegistrationState userRegistrationState;
   final VenueRegistrationState venueRegistrationState;
+  final EventRegistrationState eventRegistrationState;
+  final OwnerBookingsState ownerBookingsState;
 
   const AppState({
     this.userRegistrationState,
     this.venueRegistrationState,
+    this.eventRegistrationState,
+    this.ownerBookingsState,
   });
 
   AppState.initialState()
       : userRegistrationState = UserRegistrationState.initial(),
-        venueRegistrationState = VenueRegistrationState.initial();
+        venueRegistrationState = VenueRegistrationState.initial(),
+        eventRegistrationState = EventRegistrationState.initial(),
+        ownerBookingsState = OwnerBookingsState.initial();
 
   AppState copyWith({UserRegistrationState userRegistrationState}) {
     return new AppState(
       userRegistrationState: userRegistrationState ?? this.userRegistrationState,
       venueRegistrationState: venueRegistrationState ?? this.venueRegistrationState,
+      eventRegistrationState: eventRegistrationState ?? this.eventRegistrationState,
+      ownerBookingsState: ownerBookingsState ?? this.ownerBookingsState,
     );
   }
 

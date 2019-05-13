@@ -4,12 +4,20 @@ import 'package:redux/redux.dart';
 import 'package:venue_app/redux/middlewares/appState_middleware.dart';
 import 'package:venue_app/redux/reducers/appState_reducer.dart';
 import 'package:venue_app/redux/states/app_state.dart';
+import 'package:venue_app/screens/eventRegistration/eventAgeGroup_scene.dart';
+import 'package:venue_app/screens/eventRegistration/eventCost_scene.dart';
+import 'package:venue_app/screens/eventRegistration/eventDate_scene.dart';
+import 'package:venue_app/screens/eventRegistration/eventDescription_scene.dart';
+import 'package:venue_app/screens/eventRegistration/eventName_scene.dart';
+import 'package:venue_app/screens/eventRegistration/eventPhotos_scene.dart';
+import 'package:venue_app/screens/eventRegistration/eventSport_scene.dart';
+import 'package:venue_app/screens/home/home_scene.dart';
+import 'package:venue_app/screens/userRegistration/Tutorial_scene.dart';
+import 'package:venue_app/screens/userRegistration/location_scene.dart';
+import 'package:venue_app/screens/userRegistration/mobile_number_scene.dart';
+import 'package:venue_app/screens/userRegistration/otp_scene.dart';
 import 'package:venue_app/screens/venueRegistration/venueTimeAndPrice_scene.dart';
 
-import '../screens/registration/Tutorial_scene.dart';
-import '../screens/registration/landing_scene.dart';
-import '../screens/registration/mobile_number_scene.dart';
-import '../screens/registration/otp_scene.dart';
 import '../screens/venueRegistration/venueAddress_scene.dart';
 import '../screens/venueRegistration/venueAmenities_scene.dart';
 import '../screens/venueRegistration/venueAvailableSports_scene.dart';
@@ -35,8 +43,7 @@ class VenueApp extends StatelessWidget {
           primarySwatch: Colors.green,
         ),
         home: StoreBuilder<AppState>(
-            onInit: (store) => {},
-            builder: (BuildContext context, Store<AppState> store) => VenueAvailableSportsScene(store)),
+            onInit: (store) => {}, builder: (BuildContext context, Store<AppState> store) => LocationScene(store)),
         navigatorKey: Keys.navigationKey,
         onGenerateRoute: (routeSettings) => routes(routeSettings, store),
       ),
@@ -59,7 +66,7 @@ class VenueApp extends StatelessWidget {
     } else if (settings.name == "landing") {
       return MaterialPageRoute(
         builder: (context) {
-          return LandingScene(store);
+          return HomeScene(store);
         },
       );
     } else if (settings.name == "tutorial") {
@@ -108,6 +115,48 @@ class VenueApp extends StatelessWidget {
       return MaterialPageRoute(
         builder: (context) {
           return VenueTimeAndPriceScene(store);
+        },
+      );
+    } else if (settings.name == "eventName") {
+      return MaterialPageRoute(
+        builder: (context) {
+          return EventNameScene(store);
+        },
+      );
+    } else if (settings.name == "eventDescription") {
+      return MaterialPageRoute(
+        builder: (context) {
+          return EventDescriptionScene(store);
+        },
+      );
+    } else if (settings.name == "eventSport") {
+      return MaterialPageRoute(
+        builder: (context) {
+          return EventSportScene(store);
+        },
+      );
+    } else if (settings.name == "eventPhotos") {
+      return MaterialPageRoute(
+        builder: (context) {
+          return EventPhotosScene(store);
+        },
+      );
+    } else if (settings.name == "eventDate") {
+      return MaterialPageRoute(
+        builder: (context) {
+          return EventDateScene(store);
+        },
+      );
+    } else if (settings.name == "eventCost") {
+      return MaterialPageRoute(
+        builder: (context) {
+          return EventCostScene(store);
+        },
+      );
+    } else if (settings.name == "eventAgeGroup") {
+      return MaterialPageRoute(
+        builder: (context) {
+          return EventAgeGroupScene(store);
         },
       );
     }
