@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_places_dialog/flutter_places_dialog.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:redux/redux.dart';
+import 'package:venue_app/extras/NoSplash.dart';
 import 'package:venue_app/models/User.dart';
 import 'package:venue_app/redux/actions/userRegistration_actions.dart';
 import 'package:venue_app/redux/states/app_state.dart';
@@ -12,7 +13,7 @@ class LocationScene extends StatelessWidget {
   LocationScene(this.store);
 
   final TextEditingController controller = TextEditingController();
-  final focusNode = FocusNode();
+  final focusNode = NoKeyboardEditableTextFocusNode();
 
   @override
   Widget build(BuildContext context) {
@@ -100,9 +101,7 @@ class LocationScene extends StatelessWidget {
       child: Container(
         alignment: Alignment.topRight,
         child: FloatingActionButton(
-          onPressed: () {
-            viewModel.proceedToNextScene();
-          },
+          onPressed: () => viewModel.canProceedToNextScene ? viewModel.proceedToNextScene() : null,
           backgroundColor: viewModel.canProceedToNextScene ? Colors.green : Colors.grey,
           child: Icon(Icons.arrow_forward),
         ),

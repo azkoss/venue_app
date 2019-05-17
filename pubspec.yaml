@@ -32,6 +32,7 @@ dependencies:
   smooth_star_rating: ^1.0.2
   flutter_spinkit: ^3.1.0
   modal_progress_hud: ^0.1.3
+  cached_network_image: ^0.8.0
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -76,6 +77,8 @@ flutter:
     - assets/profileSelected.png
     - assets/FakeDP.jpeg
     - assets/edit.png
+    - assets/poster1.png
+    - assets/poster2.jpg
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

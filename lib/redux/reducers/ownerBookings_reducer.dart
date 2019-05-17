@@ -6,6 +6,8 @@ final ownerBookingsReducer = combineReducers<OwnerBookingsState>([
   // Owner Bookings updation
   TypedReducer<OwnerBookingsState, ListOwnerBookingsAction>(_updateOwnerBookingsList),
   TypedReducer<OwnerBookingsState, UpdateOwnerBookingLoadingStatusAction>(_updateOwnerBookingsLoadingStatus),
+  TypedReducer<OwnerBookingsState, SetSelectedIndexForMatchesOrEvents>(_setSelectedIndex),
+  TypedReducer<OwnerBookingsState, SetSelectedFilterIndex>(_setSelectedFilterIndex),
 ]);
 
 OwnerBookingsState _updateOwnerBookingsList(OwnerBookingsState state, ListOwnerBookingsAction action) {
@@ -15,4 +17,12 @@ OwnerBookingsState _updateOwnerBookingsList(OwnerBookingsState state, ListOwnerB
 OwnerBookingsState _updateOwnerBookingsLoadingStatus(
     OwnerBookingsState state, UpdateOwnerBookingLoadingStatusAction action) {
   return state.copyWith(loadingStatus: action.loadingStatus);
+}
+
+OwnerBookingsState _setSelectedIndex(OwnerBookingsState state, SetSelectedIndexForMatchesOrEvents action) {
+  return state.copyWith(selectedIndex: action.index);
+}
+
+OwnerBookingsState _setSelectedFilterIndex(OwnerBookingsState state, SetSelectedFilterIndex action) {
+  return state.copyWith(selectedFilterIndex: action.index);
 }

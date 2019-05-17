@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:redux/redux.dart';
+import 'package:venue_app/app/app.dart';
 import 'package:venue_app/models/User.dart';
 import 'package:venue_app/redux/states/app_state.dart';
 
@@ -18,11 +19,15 @@ class OTPScene extends StatelessWidget {
     return StoreConnector<AppState, _ViewModel>(
       converter: (store) => _ViewModel.create(store),
       builder: (BuildContext context, viewModel) {
+        if (store.state.helperState.shouldShowAlert) {
+          showAlertDialogueForApp(context, store);
+        }
+
         return Scaffold(
             body: ListView(
           children: <Widget>[
             buildTitle(),
-            buildDescription(),
+            buildDescription(context, viewModel),
             buildTextField(context, viewModel),
             buildNextButton(context, viewModel),
             buildHelpText(),
@@ -48,11 +53,13 @@ class OTPScene extends StatelessWidget {
     );
   }
 
-  Widget buildDescription() {
+  Widget buildDescription(BuildContext context, _ViewModel viewmodel) {
     return Padding(
       padding: EdgeInsets.only(top: 20.0, left: 20.0, right: 20.0),
       child: Text(
-        "A OTP (One Time Passcode) has been sent to +919037033354. Please enter the OTP in the field below to verify.",
+        "A OTP (One Time Passcode) has been sent to +91 ${viewmodel.mobileNo}. Please enter the OTP in the field below "
+        "to "
+        "verify.",
         style: const TextStyle(
             color: const Color(0xffc7c7c7),
             fontWeight: FontWeight.w400,
@@ -94,9 +101,7 @@ class OTPScene extends StatelessWidget {
       child: Container(
         alignment: Alignment.topRight,
         child: FloatingActionButton(
-          onPressed: () {
-            viewModel.proceedToNextScene();
-          },
+          onPressed: () => viewModel.canProceedToNextScene ? viewModel.proceedToNextScene() : null,
           backgroundColor: viewModel.canProceedToNextScene ? Colors.green : Colors.grey,
           child: Icon(Icons.arrow_forward),
         ),
@@ -135,7 +140,7 @@ class OTPScene extends StatelessWidget {
               fontSize: 17.0),
         ),
         onPressed: () {
-//          viewModel.proceedToNextScene();
+          viewModel.resendOTP();
         },
       ),
     );
@@ -143,16 +148,20 @@ class OTPScene extends StatelessWidget {
 }
 
 class _ViewModel {
+  String mobileNo;
   String otp;
   final Function(String) setOTP;
+  final Function resendOTP;
 
   UserFieldValidations fieldValidations;
   bool canProceedToNextScene;
   final Function proceedToNextScene;
 
   _ViewModel({
+    this.mobileNo,
     this.otp,
     this.setOTP,
+    this.resendOTP,
     this.fieldValidations,
     this.canProceedToNextScene,
     this.proceedToNextScene,
@@ -166,13 +175,19 @@ class _ViewModel {
       store.dispatch(ValidateOTPAction());
     }
 
+    _resendOTP() {
+      store.dispatch(RequestOTPEpicAction(store.state.userRegistrationState.user.mobileNo));
+    }
+
     _proceedToNextScene() {
       store.dispatch(ProceedToLandingSceneAction());
     }
 
     return _ViewModel(
+      mobileNo: store.state.userRegistrationState.user.mobileNo,
       otp: store.state.userRegistrationState.user.otp,
       setOTP: _setOTP,
+      resendOTP: _resendOTP,
       fieldValidations: store.state.userRegistrationState.fieldValidations,
       canProceedToNextScene: store.state.userRegistrationState.sceneValidations.isValidUserOTPScene,
       proceedToNextScene: _proceedToNextScene,

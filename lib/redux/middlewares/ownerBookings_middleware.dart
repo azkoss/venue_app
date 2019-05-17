@@ -9,6 +9,10 @@ Middleware<AppState> ownerBookingsMiddleWare(AppState state) {
       next(action);
     } else if (action is UpdateOwnerBookingLoadingStatusAction) {
       next(action);
+    } else if (action is SetSelectedFilterIndex) {
+      next(action);
+    } else if (action is SetSelectedIndexForMatchesOrEvents) {
+      next(action);
     }
     //</editor-fold>
   };

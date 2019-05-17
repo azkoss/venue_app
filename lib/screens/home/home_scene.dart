@@ -4,8 +4,11 @@ import 'package:redux/redux.dart';
 import 'package:venue_app/models/User.dart';
 import 'package:venue_app/redux/actions/userRegistration_actions.dart';
 import 'package:venue_app/redux/states/app_state.dart';
-import 'package:venue_app/screens/home/bookingList_scene.dart';
-import 'package:venue_app/screens/home/venueProfile_scene.dart';
+import 'package:venue_app/screens/home/owner/bookingList_scene.dart';
+import 'package:venue_app/screens/home/owner/venueProfile_scene.dart';
+import 'package:venue_app/screens/home/player/venueList_scene.dart';
+
+import 'explore_scene.dart';
 
 class HomeScene extends StatefulWidget {
   final Store<AppState> store;
@@ -20,6 +23,7 @@ class _HomeSceneState extends State<HomeScene> with SingleTickerProviderStateMix
   TabController tabController;
 
   BookingListScene bookingListScene;
+  VenueListScene venueListScene;
   VenueProfileScene venueProfileScene;
 
   @override
@@ -27,14 +31,12 @@ class _HomeSceneState extends State<HomeScene> with SingleTickerProviderStateMix
     // TODO: implement initState
     super.initState();
     tabController = new TabController(vsync: this, length: 3);
-    tabController.addListener(() {
-      setState(() {});
-    });
   }
 
   @override
   Widget build(BuildContext context) {
     bookingListScene == null ? bookingListScene = BookingListScene(widget.store) : null;
+    venueListScene == null ? venueListScene = VenueListScene(widget.store) : null;
     venueProfileScene == null ? venueProfileScene = VenueProfileScene(widget.store) : null;
 
     return Scaffold(
@@ -42,9 +44,10 @@ class _HomeSceneState extends State<HomeScene> with SingleTickerProviderStateMix
         converter: (store) => _ViewModel.create(store),
         builder: (BuildContext context, _ViewModel viewModel) => TabBarView(
               controller: tabController,
+              physics: BouncingScrollPhysics(),
               children: [
-                Container(color: Colors.orange),
-                bookingListScene,
+                ExploreScene(widget.store),
+                venueListScene,
                 venueProfileScene,
               ],
             ),
@@ -75,24 +78,15 @@ class _HomeSceneState extends State<HomeScene> with SingleTickerProviderStateMix
           ),
           tabs: [
             Tab(
-              icon: Image.asset(
-                "assets/explore.png",
-                color: tabController.index == 0 ? Colors.black : Color(0xffd4d4d4),
-              ),
+              icon: ImageIcon(AssetImage("assets/explore.png")),
               text: "EXPLORE",
             ),
             Tab(
-              icon: Image.asset(
-                "assets/bookSelected.png",
-                color: tabController.index == 1 ? Colors.black : Color(0xffd4d4d4),
-              ),
+              icon: ImageIcon(AssetImage("assets/bookSelected.png")),
               text: "BOOKINGS",
             ),
             Tab(
-              icon: Image.asset(
-                "assets/profileSelected.png",
-                color: tabController.index == 2 ? Colors.black : Color(0xffd4d4d4),
-              ),
+              icon: ImageIcon(AssetImage("assets/profileSelected.png")),
               text: "ACCOUNT",
             ),
           ],

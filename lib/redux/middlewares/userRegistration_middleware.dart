@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:redux/redux.dart';
 import 'package:venue_app/models/User.dart';
 import 'package:venue_app/redux/actions/userRegistration_actions.dart';
@@ -93,7 +94,7 @@ _validateMobileNo(Store<AppState> store, ValidateMobileNoAction action, NextDisp
   User user = store.state.userRegistrationState.user;
   UserFieldValidations validation = store.state.userRegistrationState.fieldValidations;
 
-  bool isValid = (user.mobileNo.length == 10) ? true : false;
+  bool isValid = (user.mobileNo.length == 10 && !user.mobileNo.contains('.')) ? true : false;
   validation.updateWith(isValidMobileNo: isValid);
 
   store.dispatch(UpdateUserFieldValidationAction(validation));
@@ -104,7 +105,7 @@ _validateUserMobileNoScene(Store<AppState> store) {
   User user = store.state.userRegistrationState.user;
   UserSceneValidations sceneValidation = store.state.userRegistrationState.sceneValidations;
 
-  bool isValid = (user.mobileNo.length == 10) ? true : false;
+  bool isValid = (user.mobileNo.length == 10 && !user.mobileNo.contains('.')) ? true : false;
   sceneValidation.updateWith(isValidUserMobileNoScene: isValid);
   store.dispatch(UpdateUserSceneValidationAction(sceneValidation));
 }
@@ -118,6 +119,7 @@ _proceedToOTPScene(Store<AppState> store, ProceedToOTPSceneAction action, NextDi
 _validateOTP(Store<AppState> store, ValidateOTPAction action, NextDispatcher next) {
   User user = store.state.userRegistrationState.user;
   UserFieldValidations validation = store.state.userRegistrationState.fieldValidations;
+  UserSceneValidations sceneValidation = store.state.userRegistrationState.sceneValidations;
 
   bool isValid = (user.otp.length >= 5) ? true : false;
   validation.updateWith(isValidOTP: isValid);
@@ -125,6 +127,9 @@ _validateOTP(Store<AppState> store, ValidateOTPAction action, NextDispatcher nex
 
   if (isValid == true) {
     store.dispatch(VerifyOTPEpicAction(user.mobileNo, user.otp));
+  } else {
+    sceneValidation.updateWith(isValidUserOTPScene: isValid);
+    store.dispatch(UpdateUserSceneValidationAction(sceneValidation));
   }
 }
 
@@ -153,10 +158,11 @@ _proceedToOwnerOrPlayerScene(Store<AppState> store, ProceedToOwnerOrPlayerSceneA
   UserType userType = store.state.userRegistrationState.user.userType;
   switch (userType) {
     case UserType.owner:
-      Keys.navigationKey.currentState.pushNamed("home");
+      Keys.navigationKey.currentState.pushNamedAndRemoveUntil("home", (Route<dynamic> route) => false);
+
       break;
     case UserType.player:
-      Keys.navigationKey.currentState.pushNamed("home");
+      Keys.navigationKey.currentState.pushNamedAndRemoveUntil("home", (Route<dynamic> route) => false);
       break;
   }
 }

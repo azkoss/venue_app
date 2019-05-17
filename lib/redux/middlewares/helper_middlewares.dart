@@ -14,3 +14,15 @@ Middleware<AppState> combineMultipleActionsMiddleWare(AppState state) {
     //</editor-fold>
   };
 }
+
+Middleware<AppState> appHelperMiddleWare(AppState state) {
+  return (Store<AppState> store, action, NextDispatcher next) {
+    //<editor-fold desc="Showing and clearing dialogues">
+    if (action is ShowDialogueMessageAction) {
+      next(action);
+    } else if (action is ClearDialogueMessageAction) {
+      next(action);
+    }
+    //</editor-fold>
+  };
+}

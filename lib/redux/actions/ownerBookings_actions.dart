@@ -16,3 +16,13 @@ class UpdateOwnerBookingLoadingStatusAction {
   LoadingStatus loadingStatus;
   UpdateOwnerBookingLoadingStatusAction(this.loadingStatus);
 }
+
+class SetSelectedIndexForMatchesOrEvents {
+  int index;
+  SetSelectedIndexForMatchesOrEvents(this.index);
+}
+
+class SetSelectedFilterIndex {
+  int index;
+  SetSelectedFilterIndex(this.index);
+}
