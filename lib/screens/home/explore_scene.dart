@@ -8,7 +8,7 @@ import 'package:venue_app/extras/custom_flexible_space_bar.dart';
 import 'package:venue_app/models/Bookings.dart';
 import 'package:venue_app/network/network_adapter.dart';
 import 'package:venue_app/redux/actions/helper_actions.dart';
-import 'package:venue_app/redux/actions/ownerBookings_actions.dart';
+import 'package:venue_app/redux/actions/ownerBooking_actions.dart';
 import 'package:venue_app/redux/states/app_state.dart';
 
 class ExploreScene extends StatefulWidget {

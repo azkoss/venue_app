@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1B7276B90C7521B0A69AA1E4E924BEF1"
+               BlueprintIdentifier = "E58F2A941F08A46DF781DE709FFA5713"
                BlueprintName = "flutter_places_dialog"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libflutter_places_dialog.a">
+               BuildableName = "flutter_places_dialog.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

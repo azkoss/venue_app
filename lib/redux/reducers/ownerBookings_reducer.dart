@@ -1,5 +1,5 @@
 import 'package:redux/redux.dart';
-import 'package:venue_app/redux/actions/ownerBookings_actions.dart';
+import 'package:venue_app/redux/actions/ownerBooking_actions.dart';
 import 'package:venue_app/redux/states/ownerBookings_state.dart';
 
 final ownerBookingsReducer = combineReducers<OwnerBookingsState>([

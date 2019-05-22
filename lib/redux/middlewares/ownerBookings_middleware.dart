@@ -1,5 +1,5 @@
 import 'package:redux/redux.dart';
-import 'package:venue_app/redux/actions/ownerBookings_actions.dart';
+import 'package:venue_app/redux/actions/ownerBooking_actions.dart';
 import 'package:venue_app/redux/states/app_state.dart';
 
 Middleware<AppState> ownerBookingsMiddleWare(AppState state) {

@@ -52,7 +52,7 @@ class _HomeSceneState extends State<HomeScene> with SingleTickerProviderStateMix
               ],
             ),
       ),
-      bottomNavigationBar: buildTabBar(),
+      bottomNavigationBar: SafeArea(child: buildTabBar()),
     );
   }
 

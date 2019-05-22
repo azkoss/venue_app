@@ -1,4 +1,5 @@
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -8,7 +9,7 @@ import 'package:venue_app/extras/custom_flexible_space_bar.dart';
 import 'package:venue_app/models/VenueList.dart';
 import 'package:venue_app/network/network_adapter.dart';
 import 'package:venue_app/redux/actions/helper_actions.dart';
-import 'package:venue_app/redux/actions/ownerBookings_actions.dart';
+import 'package:venue_app/redux/actions/ownerBooking_actions.dart';
 import 'package:venue_app/redux/actions/playerBooking_actions.dart';
 import 'package:venue_app/redux/states/app_state.dart';
 
@@ -250,7 +251,7 @@ class VenueListTile extends StatelessWidget {
                                     fontSize: 15.0),
                               ),
                               onPressed: () {
-                                print("Book pressed");
+                                viewModel.proceedToNextScene();
                               },
                             )
                           ],
@@ -356,10 +357,11 @@ class _ViewModel {
   Function(int) setSelectedIndex;
   Function(int) setSelectedFilterIndex;
   Function fetchVenueList;
+  Function(String) bookVenue;
 
 //  EventFieldValidations fieldValidations;
 //  bool canProceedToNextScene;
-//  final Function proceedToNextScene;
+  final Function proceedToNextScene;
 
   _ViewModel({
     this.loadingStatus,
@@ -369,40 +371,17 @@ class _ViewModel {
     this.setSelectedIndex,
     this.setSelectedFilterIndex,
     this.fetchVenueList,
-
+    this.bookVenue,
 //    this.setEventDescription,
 //    this.fieldValidations,
 //    this.canProceedToNextScene,
-//    this.proceedToNextScene,
+    this.proceedToNextScene,
   });
 
-//  List<Booking> filteredBookings() {
-//    List<Booking> bookings =
-//        this.selectedIndex == 0 ? this.venueList.matchBookings ?? [] : this.venueList.eventBookings ?? [];
-//
-//    List<Booking> filteredBookings = bookings.where((booking) {
-//      String status;
-//      switch (this.selectedFilterIndex) {
-//        case 0:
-//          status = "waiting";
-//          break;
-//        case 1:
-//          status = "accepted";
-//          break;
-//        case 2:
-//          status = "rejected";
-//          break;
-//      }
-//      return booking.status == status;
-//    }).toList();
-//
-//    return filteredBookings;
-//  }
-
   factory _ViewModel.create(Store<AppState> store) {
-//    _proceedToNextScene() {
-//      store.dispatch(ProceedToEventSportSceneAction());
-//    }
+    _proceedToNextScene() {
+      store.dispatch(ProceedToVenueInfoSceneAction());
+    }
 
     _setSelectedIndex(int index) {
       store.dispatch(SetSelectedIndexForMatchesOrEvents(index));
@@ -419,8 +398,8 @@ class _ViewModel {
     }
 
     return _ViewModel(
-      loadingStatus: store.state.venueListState.loadingStatus,
-      venueList: store.state.venueListState.venueList,
+      loadingStatus: store.state.playerBookingsState.loadingStatus,
+      venueList: store.state.playerBookingsState.venueList,
       selectedIndex: store.state.ownerBookingsState.selectedIndex,
       selectedFilterIndex: store.state.ownerBookingsState.selectedFilterIndex,
       setSelectedIndex: _setSelectedIndex,
@@ -429,7 +408,7 @@ class _ViewModel {
 
 //      fieldValidations: store.state.eventRegistrationState.fieldValidations,
 //      canProceedToNextScene: store.state.eventRegistrationState.sceneValidations.isValidEventDescriptionScene,
-//      proceedToNextScene: _proceedToNextScene,
+      proceedToNextScene: _proceedToNextScene,
     );
   }
 }

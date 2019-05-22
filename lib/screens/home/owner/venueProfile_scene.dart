@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:redux/redux.dart';
 import 'package:smooth_star_rating/smooth_star_rating.dart';
+import 'package:venue_app/extras/custom_flexible_space_bar.dart';
 import 'package:venue_app/models/Event.dart';
 import 'package:venue_app/models/Venue.dart';
 import 'package:venue_app/redux/actions/eventRegistration_actions.dart';
@@ -33,86 +34,93 @@ class VenueProfileScene extends StatelessWidget {
           SliverAppBar(
             elevation: 3.0,
             backgroundColor: Colors.white,
-            expandedHeight: 100.0,
+            expandedHeight: 80.0,
             floating: true,
             snap: true,
-            flexibleSpace: FlexibleSpaceBar(
+            pinned: true,
+            flexibleSpace: CustomFlexibleSpaceBar(
               collapseMode: CollapseMode.pin,
-              background: Column(
-                children: <Widget>[
-                  buildHeaderNameAndLocation(),
-                ],
-              ),
+              title: buildHeaderNameAndLocation(),
+              titlePadding: EdgeInsets.zero,
+              scaleValue: 1.0,
             ),
           ),
         ];
       },
-      body: ListView(
-        children: <Widget>[
-          buildPhotosAndDetailsRow(),
-          buildDescription(),
-          buildSportsSelectedSubtitle(),
-          buildSportsList(context, viewModel),
-          buildTimingsSelectedSubTitle(),
-          buildTimingsList(context, viewModel),
-          buildAmenitiesSubTitle(),
-          buildAmenitiesList(context, viewModel),
-        ],
+      body: SafeArea(
+        child: ListView(
+          children: <Widget>[
+            buildPhotosAndDetailsRow(),
+            buildDescription(),
+            buildSportsSelectedSubtitle(),
+            buildSportsList(context, viewModel),
+            buildTimingsSelectedSubTitle(),
+            buildTimingsList(context, viewModel),
+            buildAmenitiesSubTitle(),
+            buildAmenitiesList(context, viewModel),
+          ],
+        ),
       ),
     );
   }
 
   Widget buildHeaderNameAndLocation() {
     controller.text = "Immortal arena";
+    Image.asset("assets/edit.png");
 
     return Padding(
-      padding: const EdgeInsets.only(top: 50.0, left: 20.0, right: 20.0),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+      padding: const EdgeInsets.only(top: 30.0, left: 20.0, right: 20.0),
+      child: Wrap(
+//        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               Flexible(
-                child: TextField(
-                  controller: controller,
-                  decoration: InputDecoration(
-                    border: InputBorder.none,
-                    contentPadding: EdgeInsets.only(bottom: 8.0),
-                  ),
-                  style: TextStyle(
-                      color: const Color(0xff000000),
-                      fontWeight: FontWeight.w500,
-                      fontFamily: "GoogleSans",
-                      fontStyle: FontStyle.normal,
-                      fontSize: 21.5),
+                child: Column(
+                  children: <Widget>[
+                    SizedBox(
+                      child: TextField(
+                        controller: controller,
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                          contentPadding: EdgeInsets.only(bottom: 5.0),
+                        ),
+                        style: TextStyle(
+                            color: const Color(0xff000000),
+                            fontWeight: FontWeight.w500,
+                            fontFamily: "GoogleSans",
+                            fontStyle: FontStyle.normal,
+                            fontSize: 21.5),
+                      ),
+                    ),
+                    Row(
+                      children: <Widget>[
+                        Icon(
+                          Icons.location_on,
+                          color: Colors.grey,
+                          size: 15.0,
+                        ),
+                        Text(
+                          "Kochi",
+                          style: const TextStyle(
+                              color: const Color(0xff797b87),
+                              fontWeight: FontWeight.w400,
+                              fontFamily: "GoogleSans",
+                              fontStyle: FontStyle.normal,
+                              fontSize: 14),
+                        ),
+                      ],
+                    ),
+                  ],
                 ),
               ),
-              Container(
-                child: Image.asset("assets/edit.png"),
-              )
-            ],
-          ),
-          Row(
-            children: <Widget>[
-              Icon(
-                Icons.location_on,
-                color: Colors.grey,
-                size: 15.0,
-              ),
-              Text(
-                "Kochi",
-                style: const TextStyle(
-                    color: const Color(0xff797b87),
-                    fontWeight: FontWeight.w400,
-                    fontFamily: "GoogleSans",
-                    fontStyle: FontStyle.normal,
-                    fontSize: 14),
-              ),
+              GestureDetector(
+                  child: Image.asset("assets/edit.png"), onTap: () => Keys.navigationKey.currentState.pop()),
             ],
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 10.0),
+            padding: const EdgeInsets.only(top: 5.0, bottom: 5.0),
             child: Container(
               color: Colors.green,
               height: 1.0,

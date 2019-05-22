@@ -1,27 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mLp11/Desktop/Venue App/Venue-App/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/mLp11/Desktop/Venue App/New/venue_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
-                {
-                    "source": "/Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/res/values/styles.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "347"
-                    },
-                    "to": {
-                        "startLines": "1366",
-                        "startColumns": "4",
-                        "startOffsets": "89786",
-                        "endLines": "1370",
-                        "endColumns": "12",
-                        "endOffsets": "90078"
-                    }
-                },
                 {
                     "source": "/Users/mLp11/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/5600da1d0bcbc830417f43e6c6ab7158/res/values/values.xml",
                     "from": {
@@ -94,6 +75,25 @@
                         "endLines": "28,29,30,31,32,33,34,35,279,280,281,282,283,284,285,286,288,289,290,291,292,293,294,295,296,2767,3080",
                         "endColumns": "89,79,89,89,79,80,79,79,104,180,124,106,179,122,115,102,187,104,180,124,174,147,62,61,78,20,20",
                         "endOffsets": "2025,2105,2195,2285,2365,2446,2526,2606,18921,19102,19227,19334,19514,19637,19753,19856,20211,20316,20497,20622,20797,20945,21008,21070,21149,175788,189199"
+                    }
+                },
+                {
+                    "source": "/Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "347"
+                    },
+                    "to": {
+                        "startLines": "1366",
+                        "startColumns": "4",
+                        "startOffsets": "89786",
+                        "endLines": "1370",
+                        "endColumns": "12",
+                        "endOffsets": "90078"
                     }
                 },
                 {

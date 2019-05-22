@@ -1,4 +1,5 @@
 const developmentURL = "http://192.168.10.19:8000/api/v1/";
+//const developmentURL = "http://13.233.42.202:8080/api/v1";
 const liveURL = "http://demo6263162.mockable.io/";
 
 //const baseURL = developmentURL;

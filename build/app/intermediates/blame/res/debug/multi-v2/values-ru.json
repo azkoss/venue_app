@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mLp11/Desktop/Venue App/Venue-App/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-ru/values-ru.xml",
+            "outputFile": "/Users/mLp11/Desktop/Venue App/New/venue_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-ru/values-ru.xml",
             "map": [
                 {
                     "source": "/Users/mLp11/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/13902864d0a8c132a5de854057b3fcc7/res/values-ru/values-ru.xml",

@@ -21,6 +21,7 @@ import 'package:venue_app/screens/home/owner/venueRegistration/venueDetails_scen
 import 'package:venue_app/screens/home/owner/venueRegistration/venueLocation_scene.dart';
 import 'package:venue_app/screens/home/owner/venueRegistration/venuePhotos_scene.dart';
 import 'package:venue_app/screens/home/owner/venueRegistration/venueTimeAndPrice_scene.dart';
+import 'package:venue_app/screens/home/player/venueInfo_scene.dart';
 import 'package:venue_app/screens/userRegistration/Tutorial_scene.dart';
 import 'package:venue_app/screens/userRegistration/landing_scene.dart';
 import 'package:venue_app/screens/userRegistration/mobile_number_scene.dart';
@@ -171,6 +172,12 @@ class VenueApp extends StatelessWidget {
       return MaterialPageRoute(
         builder: (context) {
           return EventAgeGroupScene(store);
+        },
+      );
+    } else if (settings.name == "venueInfo") {
+      return MaterialPageRoute(
+        builder: (context) {
+          return VenueInfoScene(store);
         },
       );
     }

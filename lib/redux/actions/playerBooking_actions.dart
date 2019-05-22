@@ -1,6 +1,7 @@
 import 'package:venue_app/models/VenueList.dart';
 import 'package:venue_app/network/network_adapter.dart';
 
+//region Venue List Scene Actions
 class ListVenuesAction {
   VenueList venueList;
 
@@ -15,5 +16,9 @@ class FetchVenueListEpicAction {
 
 class UpdateVenueListLoadingStatusAction {
   LoadingStatus loadingStatus;
+
   UpdateVenueListLoadingStatusAction(this.loadingStatus);
 }
+
+class ProceedToVenueInfoSceneAction {}
+//endregion

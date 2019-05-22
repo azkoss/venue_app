@@ -2,13 +2,13 @@ import 'package:redux/redux.dart';
 import 'package:redux_epics/redux_epics.dart';
 import 'package:venue_app/redux/actions/eventRegistration_actions.dart';
 import 'package:venue_app/redux/actions/helper_actions.dart';
-import 'package:venue_app/redux/actions/ownerBookings_actions.dart';
+import 'package:venue_app/redux/actions/ownerBooking_actions.dart';
 import 'package:venue_app/redux/actions/playerBooking_actions.dart';
 import 'package:venue_app/redux/middlewares/epic_middleware.dart';
 import 'package:venue_app/redux/middlewares/eventRegistration_middleware.dart';
 import 'package:venue_app/redux/middlewares/helper_middlewares.dart';
 import 'package:venue_app/redux/middlewares/ownerBookings_middleware.dart';
-import 'package:venue_app/redux/middlewares/venueBookings_middleware.dart';
+import 'package:venue_app/redux/middlewares/playerBookings_middleware.dart';
 
 import '../actions/userRegistration_actions.dart';
 import '../actions/venueRegistration_actions.dart';
@@ -24,7 +24,7 @@ List<Middleware<AppState>> appStateMiddleware([AppState state]) {
   final venueRegistrationStateMiddleware = venueRegistrationMiddleWare(state);
   final eventRegistrationStateMiddleware = eventRegistrationMiddleWare(state);
   final ownerBookingsStateMiddleware = ownerBookingsMiddleWare(state);
-  final venueListStateMiddleware = venueListMiddleWare(state);
+  final playerBookingStateMiddleware = playerBookingMiddleWare(state);
 
   return [
     // Epic Middleware for network calls
@@ -130,7 +130,8 @@ List<Middleware<AppState>> appStateMiddleware([AppState state]) {
     TypedMiddleware<AppState, SetSelectedIndexForMatchesOrEvents>(ownerBookingsStateMiddleware),
 
     // Venue List Scene
-    TypedMiddleware<AppState, ListVenuesAction>(venueListStateMiddleware),
-    TypedMiddleware<AppState, UpdateVenueListLoadingStatusAction>(venueListStateMiddleware),
+    TypedMiddleware<AppState, ListVenuesAction>(playerBookingStateMiddleware),
+    TypedMiddleware<AppState, UpdateVenueListLoadingStatusAction>(playerBookingStateMiddleware),
+    TypedMiddleware<AppState, ProceedToVenueInfoSceneAction>(playerBookingStateMiddleware),
   ];
 }
