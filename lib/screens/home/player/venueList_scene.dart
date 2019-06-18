@@ -53,32 +53,34 @@ class _VenueListSceneState extends State<VenueListScene> {
   }
 
   buildAppBar(_ViewModel viewModel) {
-    return NestedScrollView(
-      headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
-        return <Widget>[
-          SliverAppBar(
-            elevation: 3.0,
-            backgroundColor: Colors.white,
-            expandedHeight: 120.0,
-            floating: true,
-            pinned: true,
-            snap: true,
-            flexibleSpace: CustomFlexibleSpaceBar(
-              scaleValue: 1.0,
-              collapseMode: CollapseMode.pin,
-              titlePadding: EdgeInsets.zero,
-              title: buildSportsListTabBar(viewModel),
-              background: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  buildLocationSettingsAndSearchBar(),
-                ],
+    return SafeArea(
+      child: NestedScrollView(
+        headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
+          return <Widget>[
+            SliverAppBar(
+              elevation: 3.0,
+              backgroundColor: Colors.white,
+              expandedHeight: 110.0,
+              floating: true,
+              pinned: true,
+              snap: true,
+              flexibleSpace: CustomFlexibleSpaceBar(
+                scaleValue: 1.0,
+                collapseMode: CollapseMode.pin,
+                titlePadding: EdgeInsets.zero,
+                title: buildSportsListTabBar(viewModel),
+                background: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    buildLocationSettingsAndSearchBar(),
+                  ],
+                ),
               ),
             ),
-          ),
-        ];
-      },
-      body: buildVenueBookingsList(viewModel),
+          ];
+        },
+        body: buildVenueBookingsList(viewModel),
+      ),
     );
   }
 
@@ -86,7 +88,7 @@ class _VenueListSceneState extends State<VenueListScene> {
     controller.text = "Carnival Infopark";
 
     return Padding(
-      padding: const EdgeInsets.only(top: 50.0, left: 15.0),
+      padding: const EdgeInsets.only(top: 15.0, left: 15.0),
       child: Column(
         children: <Widget>[
           Container(
@@ -114,7 +116,9 @@ class _VenueListSceneState extends State<VenueListScene> {
                     children: <Widget>[
                       IconButton(
                         icon: Icon(Icons.assessment),
-                        onPressed: () {},
+                        onPressed: () {
+                          widget.store.dispatch(ProceedToVenueListMapSceneAction());
+                        },
                       ),
                       IconButton(
                         icon: Icon(Icons.search),
@@ -183,7 +187,7 @@ class _VenueListSceneState extends State<VenueListScene> {
         });
       },
       child: ListView.builder(
-          padding: EdgeInsets.all(0),
+          padding: EdgeInsets.only(top: 10.0),
           itemCount: viewModel.venueList.venues.length,
           itemBuilder: (context, index) {
             return VenueListTile(widget.store, index);
@@ -400,7 +404,7 @@ class _ViewModel {
     return _ViewModel(
       loadingStatus: store.state.playerBookingsState.loadingStatus,
       venueList: store.state.playerBookingsState.venueList,
-      selectedIndex: store.state.ownerBookingsState.selectedIndex,
+      selectedIndex: store.state.ownerBookingsState.selectedMatchIndex,
       selectedFilterIndex: store.state.ownerBookingsState.selectedFilterIndex,
       setSelectedIndex: _setSelectedIndex,
       setSelectedFilterIndex: _setSelectedFilterIndex,

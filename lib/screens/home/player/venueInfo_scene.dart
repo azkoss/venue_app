@@ -6,6 +6,7 @@ import 'package:venue_app/extras/custom_flexible_space_bar.dart';
 import 'package:venue_app/models/Event.dart';
 import 'package:venue_app/models/Venue.dart';
 import 'package:venue_app/redux/actions/eventRegistration_actions.dart';
+import 'package:venue_app/redux/actions/playerBooking_actions.dart';
 import 'package:venue_app/redux/states/app_state.dart';
 
 class VenueInfoScene extends StatelessWidget {
@@ -22,7 +23,10 @@ class VenueInfoScene extends StatelessWidget {
       backgroundColor: Colors.white,
       body: StoreConnector<AppState, _ViewModel>(
         converter: (store) => _ViewModel.create(store),
-        builder: (BuildContext context, _ViewModel viewModel) => buildAppBar(context, viewModel),
+        builder: (BuildContext context, _ViewModel viewModel) => SafeArea(
+              bottom: false,
+              child: buildAppBar(context, viewModel),
+            ),
       ),
     );
   }
@@ -35,7 +39,7 @@ class VenueInfoScene extends StatelessWidget {
             automaticallyImplyLeading: false,
             elevation: 3.0,
             backgroundColor: Colors.white,
-            expandedHeight: 80.0,
+            expandedHeight: 75.0,
             floating: true,
             snap: true,
             pinned: true,
@@ -61,7 +65,7 @@ class VenueInfoScene extends StatelessWidget {
     controller.text = "Immortal arena";
 
     return Padding(
-      padding: const EdgeInsets.only(top: 30.0, left: 20.0, right: 20.0),
+      padding: const EdgeInsets.only(top: 5.0, left: 20.0, right: 20.0),
       child: Wrap(
 //        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
@@ -127,7 +131,7 @@ class VenueInfoScene extends StatelessWidget {
       bottom: 60.0,
       left: 0.0,
       right: 0.0,
-      top: 0.0,
+      top: 20.0,
       child: ListView(
         children: <Widget>[
           buildPhotosAndDetailsRow(),
@@ -494,29 +498,37 @@ class VenueInfoScene extends StatelessWidget {
       bottom: 0.0,
       right: 0.0,
       left: 0.0,
-      child: Container(
-        height: 60.0,
-        color: Colors.green,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              "LET’S BOOK",
-              style: const TextStyle(
-                  color: const Color(0xffffffff),
-                  fontWeight: FontWeight.w500,
-                  fontFamily: "GoogleSans",
-                  fontStyle: FontStyle.normal,
-                  fontSize: 23.3),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 10.0),
-              child: Icon(
-                Icons.arrow_forward,
-                color: Colors.white,
+      child: GestureDetector(
+        onTap: () => viewModel.proceedToNextScene(),
+        child: Container(
+          color: Colors.green,
+          child: SafeArea(
+            child: Container(
+              height: 60.0,
+              color: Colors.green,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Text(
+                    "LET’S BOOK",
+                    style: const TextStyle(
+                        color: const Color(0xffffffff),
+                        fontWeight: FontWeight.w500,
+                        fontFamily: "GoogleSans",
+                        fontStyle: FontStyle.normal,
+                        fontSize: 23.3),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
+                    child: Icon(
+                      Icons.arrow_forward,
+                      color: Colors.white,
+                    ),
+                  ),
+                ],
               ),
             ),
-          ],
+          ),
         ),
       ),
     );
@@ -549,7 +561,7 @@ class _ViewModel {
     }
 
     _proceedToNextScene() {
-      store.dispatch(ProceedToEventSportSceneAction());
+      store.dispatch(ProceedToVenueBookingSceneAction());
     }
 
     return _ViewModel(

@@ -50,6 +50,8 @@ Middleware<AppState> userRegistrationMiddleware(AppState state) {
     //<editor-fold desc="Landing Scene Actions">
     else if (action is ProceedToTutorialSceneAction) {
       _proceedToTutorialScene(store, action, next);
+    } else if (action is ProceedToVenueLocationSceneAction) {
+      _proceedToVenueLocationScene(store, action, next);
     }
     //</editor-fold>
 
@@ -126,7 +128,9 @@ _validateOTP(Store<AppState> store, ValidateOTPAction action, NextDispatcher nex
   store.dispatch(UpdateUserFieldValidationAction(validation));
 
   if (isValid == true) {
-    store.dispatch(VerifyOTPEpicAction(user.mobileNo, user.otp));
+//    store.dispatch(VerifyOTPEpicAction(user.mobileNo, user.otp));
+    sceneValidation.updateWith(isValidUserOTPScene: isValid);
+    store.dispatch(UpdateUserSceneValidationAction(sceneValidation));
   } else {
     sceneValidation.updateWith(isValidUserOTPScene: isValid);
     store.dispatch(UpdateUserSceneValidationAction(sceneValidation));
@@ -148,6 +152,10 @@ _proceedToLandingScene(Store<AppState> store, ProceedToLandingSceneAction action
 //</editor-fold>
 
 //<editor-fold desc="Landing Scene Helper Methods">
+_proceedToVenueLocationScene(Store<AppState> store, ProceedToVenueLocationSceneAction action, NextDispatcher next) {
+  Keys.navigationKey.currentState.pushNamed("venueLocation");
+}
+
 _proceedToTutorialScene(Store<AppState> store, ProceedToTutorialSceneAction action, NextDispatcher next) {
   Keys.navigationKey.currentState.pushNamed("tutorial");
 }

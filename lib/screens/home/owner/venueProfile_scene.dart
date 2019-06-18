@@ -22,7 +22,9 @@ class VenueProfileScene extends StatelessWidget {
       backgroundColor: Colors.white,
       body: StoreConnector<AppState, _ViewModel>(
         converter: (store) => _ViewModel.create(store),
-        builder: (BuildContext context, _ViewModel viewModel) => buildAppBar(context, viewModel),
+        builder: (BuildContext context, _ViewModel viewModel) => SafeArea(
+              child: buildAppBar(context, viewModel),
+            ),
       ),
     );
   }
@@ -34,7 +36,7 @@ class VenueProfileScene extends StatelessWidget {
           SliverAppBar(
             elevation: 3.0,
             backgroundColor: Colors.white,
-            expandedHeight: 80.0,
+            expandedHeight: 75.0,
             floating: true,
             snap: true,
             pinned: true,
@@ -47,29 +49,27 @@ class VenueProfileScene extends StatelessWidget {
           ),
         ];
       },
-      body: SafeArea(
-        child: ListView(
-          children: <Widget>[
-            buildPhotosAndDetailsRow(),
-            buildDescription(),
-            buildSportsSelectedSubtitle(),
-            buildSportsList(context, viewModel),
-            buildTimingsSelectedSubTitle(),
-            buildTimingsList(context, viewModel),
-            buildAmenitiesSubTitle(),
-            buildAmenitiesList(context, viewModel),
-          ],
-        ),
+      body: ListView(
+        padding: EdgeInsets.only(top: 20.0),
+        children: <Widget>[
+          buildPhotosAndDetailsRow(),
+          buildDescription(),
+          buildSportsSelectedSubtitle(),
+          buildSportsList(context, viewModel),
+          buildTimingsSelectedSubTitle(),
+          buildTimingsList(context, viewModel),
+          buildAmenitiesSubTitle(),
+          buildAmenitiesList(context, viewModel),
+        ],
       ),
     );
   }
 
   Widget buildHeaderNameAndLocation() {
     controller.text = "Immortal arena";
-    Image.asset("assets/edit.png");
 
     return Padding(
-      padding: const EdgeInsets.only(top: 30.0, left: 20.0, right: 20.0),
+      padding: const EdgeInsets.only(top: 5.0, left: 20.0, right: 20.0),
       child: Wrap(
 //        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
@@ -115,8 +115,7 @@ class VenueProfileScene extends StatelessWidget {
                   ],
                 ),
               ),
-              GestureDetector(
-                  child: Image.asset("assets/edit.png"), onTap: () => Keys.navigationKey.currentState.pop()),
+              GestureDetector(child: Image.asset("assets/edit.png"), onTap: () {}),
             ],
           ),
           Padding(

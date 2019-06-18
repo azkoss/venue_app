@@ -7,26 +7,42 @@ import 'package:venue_app/models/User.dart';
 import 'package:venue_app/redux/actions/userRegistration_actions.dart';
 import 'package:venue_app/redux/states/app_state.dart';
 
-class LocationScene extends StatelessWidget {
+class LocationScene extends StatefulWidget {
   final Store<AppState> store;
 
   LocationScene(this.store);
 
+  @override
+  _LocationSceneState createState() => _LocationSceneState();
+}
+
+class _LocationSceneState extends State<LocationScene> {
   final TextEditingController controller = TextEditingController();
+
   final focusNode = NoKeyboardEditableTextFocusNode();
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    FlutterPlacesDialog.setGoogleApiKey("AIzaSyBiF6Y2YSPtmy1dFwk-FYebVTiXrU2HGP0");
+//    FlutterPlacesDialog.setGoogleApiKey("AIzaSyBlE8_08sSszyV4Yz6Qf4UWDsfSpegMKaE");
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: StoreConnector<AppState, _ViewModel>(
         converter: (store) => _ViewModel.create(store),
-        builder: (BuildContext context, _ViewModel viewModel) => ListView(
-              children: <Widget>[
-                buildTitle(),
-                buildDescription(),
-                buildTextField(context, viewModel),
-                buildNextButton(context, viewModel),
-              ],
+        builder: (BuildContext context, _ViewModel viewModel) => SafeArea(
+              child: ListView(
+                children: <Widget>[
+                  buildTitle(),
+                  buildDescription(),
+                  buildTextField(context, viewModel),
+                  buildNextButton(context, viewModel),
+                ],
+              ),
             ),
       ),
     );
@@ -34,7 +50,7 @@ class LocationScene extends StatelessWidget {
 
   Widget buildTitle() {
     return Padding(
-      padding: EdgeInsets.only(top: 50.0, left: 20, right: 20),
+      padding: EdgeInsets.only(top: 50, left: 20, right: 20),
       child: Text(
         "Hi there!\nWhere are you from?",
         style: const TextStyle(

@@ -9,11 +9,25 @@ Middleware<AppState> ownerBookingsMiddleWare(AppState state) {
       next(action);
     } else if (action is UpdateOwnerBookingLoadingStatusAction) {
       next(action);
+    } else if (action is SetSelectedSportIndex) {
+      next(action);
     } else if (action is SetSelectedFilterIndex) {
       next(action);
     } else if (action is SetSelectedIndexForMatchesOrEvents) {
       next(action);
+    } else if (action is ProceedToEventNameSceneAction) {
+      _proceedToEventNameScene(store, action, next);
+    } else if (action is ProceedToEventBookingSceneAction) {
+      _proceedToEventBookingScene(store, action, next);
     }
     //</editor-fold>
   };
+}
+
+_proceedToEventNameScene(Store<AppState> store, ProceedToEventNameSceneAction action, NextDispatcher next) {
+  Keys.navigationKey.currentState.pushNamed("eventName");
+}
+
+_proceedToEventBookingScene(Store<AppState> store, ProceedToEventBookingSceneAction action, NextDispatcher next) {
+  Keys.navigationKey.currentState.pushNamed("eventBooking");
 }

@@ -1,4 +1,4 @@
-#Tue May 21 18:13:29 IST 2019
-base.0=/Users/mLp11/Desktop/Venue App/New/venue_app/build/app/intermediates/transforms/dexMerger/debug/0
+#Tue Jun 18 14:56:45 IST 2019
+base.0=/Users/mLp11/Desktop/Venue App/venue_app/build/app/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex

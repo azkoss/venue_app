@@ -21,15 +21,18 @@ class _VenueAvailableSportsSceneState extends State<VenueAvailableSportsScene> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: StoreConnector<AppState, _ViewModel>(
-          converter: (store) => _ViewModel.create(store),
-          builder: (BuildContext context, _ViewModel viewModel) => ListView(
+        converter: (store) => _ViewModel.create(store),
+        builder: (BuildContext context, _ViewModel viewModel) => SafeArea(
+              child: ListView(
                 children: <Widget>[
                   buildTitle(),
                   buildDescription(),
                   buildAvailableSportsList(context, viewModel),
                   buildNextButton(context, viewModel),
                 ],
-              )),
+              ),
+            ),
+      ),
     );
   }
 
@@ -65,7 +68,7 @@ class _VenueAvailableSportsSceneState extends State<VenueAvailableSportsScene> {
 
   Widget buildAvailableSportsList(BuildContext context, _ViewModel viewModel) {
     return Padding(
-      padding: EdgeInsets.only(top: 50.0, left: 8.0, right: 20.0),
+      padding: EdgeInsets.only(top: 50.0, left: 10.0, right: 20.0),
       child: Column(
         children: _buildAvailableSportsCheckBoxes(context, viewModel),
       ),
@@ -76,21 +79,18 @@ class _VenueAvailableSportsSceneState extends State<VenueAvailableSportsScene> {
     List<Widget> widgets = [];
 
     for (Sports sport in Sports.values) {
-      var sportModel = Sport();
-      sportModel.name = sport;
+      var sportModel = Sport(sport, []);
 
       var row = Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
-          Container(
-            child: Checkbox(
-              checkColor: Colors.green,
-              activeColor: Colors.white10,
-              value: viewModel.sports.contains(sportModel),
-              onChanged: (value) {
-                viewModel.addOrRemoveSport(sportModel);
-              },
-            ),
+          Checkbox(
+            checkColor: Colors.green,
+            activeColor: Colors.white10,
+            value: viewModel.sports.contains(sportModel),
+            onChanged: (value) {
+              viewModel.addOrRemoveSport(sportModel);
+            },
           ),
           Padding(
             padding: EdgeInsets.only(right: 5.0),
@@ -121,9 +121,9 @@ class _VenueAvailableSportsSceneState extends State<VenueAvailableSportsScene> {
 
   Widget _buildVenueTypesForSport(Sport sport, BuildContext context, _ViewModel viewModel) {
     return Padding(
-      padding: const EdgeInsets.only(left: 18.0),
+      padding: const EdgeInsets.only(left: 15.0),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Text(
             "Add your venue types here",
@@ -139,6 +139,7 @@ class _VenueAvailableSportsSceneState extends State<VenueAvailableSportsScene> {
             child: SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: _venueTypeListFromModel(sport, context, viewModel),
               ),

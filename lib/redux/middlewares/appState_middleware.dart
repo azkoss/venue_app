@@ -57,6 +57,7 @@ List<Middleware<AppState>> appStateMiddleware([AppState state]) {
 
     //Landing Scene
     TypedMiddleware<AppState, ProceedToTutorialSceneAction>(userRegistrationStateMiddleware),
+    TypedMiddleware<AppState, ProceedToVenueLocationSceneAction>(userRegistrationStateMiddleware),
 
     //Tutorial Scene
     TypedMiddleware<AppState, ProceedToOwnerOrPlayerSceneAction>(userRegistrationStateMiddleware),
@@ -126,12 +127,18 @@ List<Middleware<AppState>> appStateMiddleware([AppState state]) {
     // Owner Bookings Scene
     TypedMiddleware<AppState, ListOwnerBookingsAction>(ownerBookingsStateMiddleware),
     TypedMiddleware<AppState, UpdateOwnerBookingLoadingStatusAction>(ownerBookingsStateMiddleware),
+    TypedMiddleware<AppState, SetSelectedSportIndex>(ownerBookingsStateMiddleware),
     TypedMiddleware<AppState, SetSelectedFilterIndex>(ownerBookingsStateMiddleware),
     TypedMiddleware<AppState, SetSelectedIndexForMatchesOrEvents>(ownerBookingsStateMiddleware),
+    TypedMiddleware<AppState, ProceedToEventNameSceneAction>(ownerBookingsStateMiddleware),
+    TypedMiddleware<AppState, ProceedToEventBookingSceneAction>(ownerBookingsStateMiddleware),
 
     // Venue List Scene
     TypedMiddleware<AppState, ListVenuesAction>(playerBookingStateMiddleware),
     TypedMiddleware<AppState, UpdateVenueListLoadingStatusAction>(playerBookingStateMiddleware),
     TypedMiddleware<AppState, ProceedToVenueInfoSceneAction>(playerBookingStateMiddleware),
+    TypedMiddleware<AppState, ProceedToVenueBookingSceneAction>(playerBookingStateMiddleware),
+    TypedMiddleware<AppState, ProceedToVenueSummarySceneAction>(playerBookingStateMiddleware),
+    TypedMiddleware<AppState, ProceedToVenueListMapSceneAction>(playerBookingStateMiddleware),
   ];
 }

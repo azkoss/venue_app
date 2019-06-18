@@ -6,6 +6,7 @@ import 'package:venue_app/redux/actions/userRegistration_actions.dart';
 import 'package:venue_app/redux/states/app_state.dart';
 import 'package:venue_app/screens/home/owner/bookingList_scene.dart';
 import 'package:venue_app/screens/home/owner/venueProfile_scene.dart';
+import 'package:venue_app/screens/home/player/playerProfile_scene.dart';
 import 'package:venue_app/screens/home/player/venueList_scene.dart';
 
 import 'explore_scene.dart';
@@ -25,6 +26,7 @@ class _HomeSceneState extends State<HomeScene> with SingleTickerProviderStateMix
   BookingListScene bookingListScene;
   VenueListScene venueListScene;
   VenueProfileScene venueProfileScene;
+  PlayerProfileScene playerProfileScene;
 
   @override
   void initState() {
@@ -38,6 +40,7 @@ class _HomeSceneState extends State<HomeScene> with SingleTickerProviderStateMix
     bookingListScene == null ? bookingListScene = BookingListScene(widget.store) : null;
     venueListScene == null ? venueListScene = VenueListScene(widget.store) : null;
     venueProfileScene == null ? venueProfileScene = VenueProfileScene(widget.store) : null;
+    playerProfileScene == null ? playerProfileScene = PlayerProfileScene(widget.store) : null;
 
     return Scaffold(
       body: StoreConnector<AppState, _ViewModel>(
@@ -47,8 +50,8 @@ class _HomeSceneState extends State<HomeScene> with SingleTickerProviderStateMix
               physics: BouncingScrollPhysics(),
               children: [
                 ExploreScene(widget.store),
-                venueListScene,
-                venueProfileScene,
+                viewModel.userType == UserType.owner ? bookingListScene : venueListScene,
+                viewModel.userType == UserType.owner ? venueProfileScene : playerProfileScene,
               ],
             ),
       ),

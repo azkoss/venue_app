@@ -1,23 +1,24 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:1:1-38:12
-INJECTED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:1:1-38:12
-INJECTED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:1:1-38:12
-INJECTED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:1:1-38:12
-MERGED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:1:1-38:12
-MERGED from [:shared_preferences] /Users/mLp11/Desktop/Venue App/New/venue_app/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:flutter_places_dialog] /Users/mLp11/Desktop/Venue App/New/venue_app/build/flutter_places_dialog/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:sqflite] /Users/mLp11/Desktop/Venue App/New/venue_app/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:image_picker] /Users/mLp11/Desktop/Venue App/New/venue_app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-22:12
-MERGED from [:path_provider] /Users/mLp11/Desktop/Venue App/New/venue_app/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+ADDED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:1:1-38:12
+INJECTED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:1:1-38:12
+INJECTED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:1:1-38:12
+INJECTED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:1:1-38:12
+MERGED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:1:1-38:12
+MERGED from [:shared_preferences] /Users/mLp11/Desktop/Venue App/venue_app/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:flutter_places_dialog] /Users/mLp11/Desktop/Venue App/venue_app/build/flutter_places_dialog/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:sqflite] /Users/mLp11/Desktop/Venue App/venue_app/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:image_picker] /Users/mLp11/Desktop/Venue App/venue_app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-22:12
+MERGED from [:google_maps_flutter] /Users/mLp11/Desktop/Venue App/venue_app/build/google_maps_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:path_provider] /Users/mLp11/Desktop/Venue App/venue_app/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/2a108bdddb8729b865f01e7da88df970/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.gms:play-services-places:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-15.0.1.aar/399c22ac247e155cb60574a9f1ab8844/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/5c3e68d674ad23abb943fc857877e464/AndroidManifest.xml:17:1-32:12
-MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-15.0.1.aar/89d7ed23811f80174099716c095a9692/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/c67c27b02e9716aa02a8491ac144364f/AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-15.0.1.aar/116decec3d19e1a83914f8d197d1824c/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-places:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-15.0.1.aar/a578f47c08ccfcada88f421e8c2abc11/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.1.0.aar/19789f71fee9bdcf7649fcbe6d6a5fa5/AndroidManifest.xml:17:1-38:12
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-15.0.1.aar/82fb7390ad503536da298203e70287be/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/7b6721642911e85110ac4bf9c6a8c6fb/AndroidManifest.xml:17:1-29:12
 MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/377961da3a0c86dae98b78e2da4f817d/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/5f2f1959f8bc5c644609b63a8b077a29/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-16.0.1.aar/392da65fc923444f655a5c1e497059d3/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/59ab011c0db8076aea0ea02acf992ec3/AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0.aar/679738b7cb2c884a1c591cd991e391d2/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/875fe3f73116f619b1f79eef4b17d0aa/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/b87d71a8621902e9c39557469f6b0840/AndroidManifest.xml:17:1-22:12
@@ -45,49 +46,49 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mLp11/.gradle/cach
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/b48df870f0dff599ec4c72e63bdd6517/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/3d55efc3bd0621f0c2969cc72ddfb1bf/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/260245b5f80894f80ff2492eb94a7fed/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 	package
-		ADDED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:2:5-36
-		INJECTED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/debug/AndroidManifest.xml
+		ADDED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:2:5-36
+		INJECTED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/debug/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:1:1-38:12
-		INJECTED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:1:1-38:12
+		INJECTED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/debug/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:1:1-38:12
-		INJECTED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:1:1-38:12
+		INJECTED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:9:5-78
+ADDED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:9:5-78
 	android:name
-		ADDED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:9:22-76
+		ADDED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:9:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:10:5-80
+ADDED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:10:5-80
 	android:name
-		ADDED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:10:22-78
+		ADDED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:10:22-78
 application
-ADDED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:11:5-37:19
-MERGED from [:image_picker] /Users/mLp11/Desktop/Venue App/New/venue_app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-20:19
-MERGED from [:image_picker] /Users/mLp11/Desktop/Venue App/New/venue_app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-20:19
-MERGED from [com.google.android.gms:play-services-places:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-15.0.1.aar/399c22ac247e155cb60574a9f1ab8844/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-places:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-15.0.1.aar/399c22ac247e155cb60574a9f1ab8844/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/5c3e68d674ad23abb943fc857877e464/AndroidManifest.xml:30:5-20
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/5c3e68d674ad23abb943fc857877e464/AndroidManifest.xml:30:5-20
-MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-15.0.1.aar/89d7ed23811f80174099716c095a9692/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-15.0.1.aar/89d7ed23811f80174099716c095a9692/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/c67c27b02e9716aa02a8491ac144364f/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/c67c27b02e9716aa02a8491ac144364f/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-15.0.1.aar/116decec3d19e1a83914f8d197d1824c/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-15.0.1.aar/116decec3d19e1a83914f8d197d1824c/AndroidManifest.xml:7:5-20
+ADDED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:11:5-37:19
+MERGED from [:image_picker] /Users/mLp11/Desktop/Venue App/venue_app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-20:19
+MERGED from [:image_picker] /Users/mLp11/Desktop/Venue App/venue_app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-20:19
+MERGED from [com.google.android.gms:play-services-places:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-15.0.1.aar/a578f47c08ccfcada88f421e8c2abc11/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-15.0.1.aar/a578f47c08ccfcada88f421e8c2abc11/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.1.0.aar/19789f71fee9bdcf7649fcbe6d6a5fa5/AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.1.0.aar/19789f71fee9bdcf7649fcbe6d6a5fa5/AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-15.0.1.aar/82fb7390ad503536da298203e70287be/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-15.0.1.aar/82fb7390ad503536da298203e70287be/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/7b6721642911e85110ac4bf9c6a8c6fb/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/7b6721642911e85110ac4bf9c6a8c6fb/AndroidManifest.xml:22:5-27:19
 MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/377961da3a0c86dae98b78e2da4f817d/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/377961da3a0c86dae98b78e2da4f817d/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/5f2f1959f8bc5c644609b63a8b077a29/AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/5f2f1959f8bc5c644609b63a8b077a29/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-16.0.1.aar/392da65fc923444f655a5c1e497059d3/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-16.0.1.aar/392da65fc923444f655a5c1e497059d3/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/59ab011c0db8076aea0ea02acf992ec3/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/59ab011c0db8076aea0ea02acf992ec3/AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.core:core:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/13902864d0a8c132a5de854057b3fcc7/AndroidManifest.xml:22:5-89
 MERGED from [androidx.core:core:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/13902864d0a8c132a5de854057b3fcc7/AndroidManifest.xml:22:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/816c37817a329fec66ee658bbcc77b51/AndroidManifest.xml:22:5-23:19
@@ -95,77 +96,79 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/mLp1
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/13902864d0a8c132a5de854057b3fcc7/AndroidManifest.xml:22:18-86
 	android:label
-		ADDED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:13:9-34
+		ADDED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:13:9-34
 	android:icon
-		ADDED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:14:9-43
+		ADDED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:14:9-43
 	android:name
-		ADDED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:12:9-57
+		ADDED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:12:9-57
 meta-data#com.google.android.geo.API_KEY
-ADDED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:15:9-17:70
+ADDED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:15:9-17:70
 	android:value
-		ADDED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:17:13-68
+		ADDED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:17:13-68
 	android:name
-		ADDED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:16:13-58
+		ADDED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:16:13-58
 activity#com.example.venue_app.MainActivity
-ADDED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:18:9-36:20
+ADDED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:18:9-36:20
 	android:launchMode
-		ADDED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:20:13-43
+		ADDED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:20:13-43
 	android:hardwareAccelerated
-		ADDED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:23:13-47
+		ADDED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:23:13-47
 	android:windowSoftInputMode
-		ADDED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:24:13-55
+		ADDED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:24:13-55
 	android:configChanges
-		ADDED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:22:13-144
+		ADDED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:22:13-144
 	android:theme
-		ADDED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:21:13-47
+		ADDED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:21:13-47
 	android:name
-		ADDED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:19:13-41
+		ADDED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:19:13-41
 meta-data#io.flutter.app.android.SplashScreenUntilFirstFrame
-ADDED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:29:13-31:40
+ADDED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:29:13-31:40
 	android:value
-		ADDED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:31:17-37
+		ADDED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:31:17-37
 	android:name
-		ADDED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:30:17-82
+		ADDED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:30:17-82
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:32:13-35:29
+ADDED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:32:13-35:29
 action#android.intent.action.MAIN
-ADDED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:33:17-68
+ADDED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:33:17-68
 	android:name
-		ADDED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:33:25-66
+		ADDED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:33:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:34:17-76
+ADDED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:34:17-76
 	android:name
-		ADDED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml:34:27-74
+		ADDED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml:34:27-74
 uses-sdk
-INJECTED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml
-MERGED from [:shared_preferences] /Users/mLp11/Desktop/Venue App/New/venue_app/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:shared_preferences] /Users/mLp11/Desktop/Venue App/New/venue_app/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:flutter_places_dialog] /Users/mLp11/Desktop/Venue App/New/venue_app/build/flutter_places_dialog/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:flutter_places_dialog] /Users/mLp11/Desktop/Venue App/New/venue_app/build/flutter_places_dialog/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:sqflite] /Users/mLp11/Desktop/Venue App/New/venue_app/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:sqflite] /Users/mLp11/Desktop/Venue App/New/venue_app/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:image_picker] /Users/mLp11/Desktop/Venue App/New/venue_app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:image_picker] /Users/mLp11/Desktop/Venue App/New/venue_app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:path_provider] /Users/mLp11/Desktop/Venue App/New/venue_app/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:path_provider] /Users/mLp11/Desktop/Venue App/New/venue_app/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+INJECTED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml
+MERGED from [:shared_preferences] /Users/mLp11/Desktop/Venue App/venue_app/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences] /Users/mLp11/Desktop/Venue App/venue_app/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_places_dialog] /Users/mLp11/Desktop/Venue App/venue_app/build/flutter_places_dialog/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_places_dialog] /Users/mLp11/Desktop/Venue App/venue_app/build/flutter_places_dialog/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:sqflite] /Users/mLp11/Desktop/Venue App/venue_app/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] /Users/mLp11/Desktop/Venue App/venue_app/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:image_picker] /Users/mLp11/Desktop/Venue App/venue_app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:image_picker] /Users/mLp11/Desktop/Venue App/venue_app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:google_maps_flutter] /Users/mLp11/Desktop/Venue App/venue_app/build/google_maps_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:google_maps_flutter] /Users/mLp11/Desktop/Venue App/venue_app/build/google_maps_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] /Users/mLp11/Desktop/Venue App/venue_app/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] /Users/mLp11/Desktop/Venue App/venue_app/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/2a108bdddb8729b865f01e7da88df970/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/2a108bdddb8729b865f01e7da88df970/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-places:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-15.0.1.aar/399c22ac247e155cb60574a9f1ab8844/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-places:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-15.0.1.aar/399c22ac247e155cb60574a9f1ab8844/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/5c3e68d674ad23abb943fc857877e464/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/5c3e68d674ad23abb943fc857877e464/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-15.0.1.aar/89d7ed23811f80174099716c095a9692/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-15.0.1.aar/89d7ed23811f80174099716c095a9692/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/c67c27b02e9716aa02a8491ac144364f/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/c67c27b02e9716aa02a8491ac144364f/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-15.0.1.aar/116decec3d19e1a83914f8d197d1824c/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-15.0.1.aar/116decec3d19e1a83914f8d197d1824c/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-places:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-15.0.1.aar/a578f47c08ccfcada88f421e8c2abc11/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-15.0.1.aar/a578f47c08ccfcada88f421e8c2abc11/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.1.0.aar/19789f71fee9bdcf7649fcbe6d6a5fa5/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.1.0.aar/19789f71fee9bdcf7649fcbe6d6a5fa5/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-15.0.1.aar/82fb7390ad503536da298203e70287be/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-15.0.1.aar/82fb7390ad503536da298203e70287be/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/7b6721642911e85110ac4bf9c6a8c6fb/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/7b6721642911e85110ac4bf9c6a8c6fb/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/377961da3a0c86dae98b78e2da4f817d/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/377961da3a0c86dae98b78e2da4f817d/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/5f2f1959f8bc5c644609b63a8b077a29/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/5f2f1959f8bc5c644609b63a8b077a29/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-16.0.1.aar/392da65fc923444f655a5c1e497059d3/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-16.0.1.aar/392da65fc923444f655a5c1e497059d3/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/59ab011c0db8076aea0ea02acf992ec3/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/59ab011c0db8076aea0ea02acf992ec3/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0.aar/679738b7cb2c884a1c591cd991e391d2/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0.aar/679738b7cb2c884a1c591cd991e391d2/AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/875fe3f73116f619b1f79eef4b17d0aa/AndroidManifest.xml:20:5-44
@@ -220,65 +223,71 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/mLp11/.gra
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/3d55efc3bd0621f0c2969cc72ddfb1bf/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/260245b5f80894f80ff2492eb94a7fed/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/260245b5f80894f80ff2492eb94a7fed/AndroidManifest.xml:20:5-44
-INJECTED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/debug/AndroidManifest.xml
-INJECTED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/debug/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/debug/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/debug/AndroidManifest.xml:6:5-66
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/5c3e68d674ad23abb943fc857877e464/AndroidManifest.xml:24:5-67
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/5c3e68d674ad23abb943fc857877e464/AndroidManifest.xml:24:5-67
+ADDED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/debug/AndroidManifest.xml:6:5-66
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.1.0.aar/19789f71fee9bdcf7649fcbe6d6a5fa5/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.1.0.aar/19789f71fee9bdcf7649fcbe6d6a5fa5/AndroidManifest.xml:24:5-67
 	android:name
-		ADDED from /Users/mLp11/Desktop/Venue App/New/venue_app/android/app/src/debug/AndroidManifest.xml:6:22-64
+		ADDED from /Users/mLp11/Desktop/Venue App/venue_app/android/app/src/debug/AndroidManifest.xml:6:22-64
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/New/venue_app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-80
+ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/venue_app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-80
 	android:name
-		ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/New/venue_app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-77
+		ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/venue_app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/New/venue_app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-81
+ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/venue_app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-81
 	android:name
-		ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/New/venue_app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-78
+		ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/venue_app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-78
 provider#io.flutter.plugins.imagepicker.ImagePickerFileProvider
-ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/New/venue_app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-19:20
+ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/venue_app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-19:20
 	android:grantUriPermissions
-		ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/New/venue_app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-47
+		ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/venue_app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-47
 	android:authorities
-		ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/New/venue_app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-74
+		ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/venue_app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-74
 	android:exported
-		ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/New/venue_app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
+		ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/venue_app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
 	android:name
-		ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/New/venue_app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-82
+		ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/venue_app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-82
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/New/venue_app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-18:75
+ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/venue_app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-18:75
 	android:resource
-		ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/New/venue_app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-72
+		ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/venue_app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-72
 	android:name
-		ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/New/venue_app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-67
+		ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/venue_app/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-67
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/5c3e68d674ad23abb943fc857877e464/AndroidManifest.xml:23:5-79
+ADDED from [com.google.android.gms:play-services-maps:16.1.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.1.0.aar/19789f71fee9bdcf7649fcbe6d6a5fa5/AndroidManifest.xml:23:5-79
 	android:name
-		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/5c3e68d674ad23abb943fc857877e464/AndroidManifest.xml:23:22-76
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.1.0.aar/19789f71fee9bdcf7649fcbe6d6a5fa5/AndroidManifest.xml:23:22-76
 uses-feature#0x00020000
-ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/5c3e68d674ad23abb943fc857877e464/AndroidManifest.xml:26:5-28:35
+ADDED from [com.google.android.gms:play-services-maps:16.1.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.1.0.aar/19789f71fee9bdcf7649fcbe6d6a5fa5/AndroidManifest.xml:26:5-28:35
 	android:glEsVersion
-		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/5c3e68d674ad23abb943fc857877e464/AndroidManifest.xml:27:9-41
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.1.0.aar/19789f71fee9bdcf7649fcbe6d6a5fa5/AndroidManifest.xml:27:9-41
 	android:required
-		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/5c3e68d674ad23abb943fc857877e464/AndroidManifest.xml:28:9-32
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.1.0.aar/19789f71fee9bdcf7649fcbe6d6a5fa5/AndroidManifest.xml:28:9-32
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:16.1.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.1.0.aar/19789f71fee9bdcf7649fcbe6d6a5fa5/AndroidManifest.xml:33:9-35:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.1.0.aar/19789f71fee9bdcf7649fcbe6d6a5fa5/AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.1.0.aar/19789f71fee9bdcf7649fcbe6d6a5fa5/AndroidManifest.xml:34:13-50
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/c67c27b02e9716aa02a8491ac144364f/AndroidManifest.xml:23:9-26:75
+ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/7b6721642911e85110ac4bf9c6a8c6fb/AndroidManifest.xml:23:9-26:75
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/c67c27b02e9716aa02a8491ac144364f/AndroidManifest.xml:25:13-37
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/7b6721642911e85110ac4bf9c6a8c6fb/AndroidManifest.xml:25:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/c67c27b02e9716aa02a8491ac144364f/AndroidManifest.xml:26:13-72
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/7b6721642911e85110ac4bf9c6a8c6fb/AndroidManifest.xml:26:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/c67c27b02e9716aa02a8491ac144364f/AndroidManifest.xml:24:13-79
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/7b6721642911e85110ac4bf9c6a8c6fb/AndroidManifest.xml:24:13-79
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/5f2f1959f8bc5c644609b63a8b077a29/AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/59ab011c0db8076aea0ea02acf992ec3/AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/5f2f1959f8bc5c644609b63a8b077a29/AndroidManifest.xml:25:13-66
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/59ab011c0db8076aea0ea02acf992ec3/AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/5f2f1959f8bc5c644609b63a8b077a29/AndroidManifest.xml:24:13-58
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/59ab011c0db8076aea0ea02acf992ec3/AndroidManifest.xml:24:13-58

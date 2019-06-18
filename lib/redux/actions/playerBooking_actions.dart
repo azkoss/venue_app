@@ -21,4 +21,10 @@ class UpdateVenueListLoadingStatusAction {
 }
 
 class ProceedToVenueInfoSceneAction {}
+
+class ProceedToVenueBookingSceneAction {}
+
+class ProceedToVenueSummarySceneAction {}
+
+class ProceedToVenueListMapSceneAction {}
 //endregion

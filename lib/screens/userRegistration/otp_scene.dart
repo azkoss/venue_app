@@ -24,16 +24,19 @@ class OTPScene extends StatelessWidget {
         }
 
         return Scaffold(
-            body: ListView(
-          children: <Widget>[
-            buildTitle(),
-            buildDescription(context, viewModel),
-            buildTextField(context, viewModel),
-            buildNextButton(context, viewModel),
-            buildHelpText(),
-            buildResendButton(context, viewModel)
-          ],
-        ));
+          body: SafeArea(
+            child: ListView(
+              children: <Widget>[
+                buildTitle(),
+                buildDescription(context, viewModel),
+                buildTextField(context, viewModel),
+                buildNextButton(context, viewModel),
+                buildHelpText(),
+                buildResendButton(context, viewModel)
+              ],
+            ),
+          ),
+        );
       },
     );
   }
@@ -81,6 +84,7 @@ class OTPScene extends StatelessWidget {
         cursorColor: Colors.green,
         controller: controller,
         keyboardType: TextInputType.number,
+        onEditingComplete: () => {},
         onChanged: (value) {
           viewModel.setOTP(value);
         },

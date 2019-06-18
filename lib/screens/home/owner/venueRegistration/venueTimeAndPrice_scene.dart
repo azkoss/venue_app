@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:redux/redux.dart';
 import 'package:venue_app/models/Venue.dart';
+import 'package:venue_app/redux/actions/userRegistration_actions.dart';
 import 'package:venue_app/redux/actions/venueRegistration_actions.dart';
 import 'package:venue_app/redux/states/app_state.dart';
 
@@ -16,31 +17,36 @@ class VenueTimeAndPriceScene extends StatefulWidget {
   _VenueTimeAndPriceSceneState createState() => _VenueTimeAndPriceSceneState();
 }
 
-class _VenueTimeAndPriceSceneState extends State<VenueTimeAndPriceScene> {
+class _VenueTimeAndPriceSceneState extends State<VenueTimeAndPriceScene> with TickerProviderStateMixin {
+  TabController groundListTabController;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: StoreConnector<AppState, _ViewModel>(
         converter: (store) => _ViewModel.create(store),
-        builder: (BuildContext context, _ViewModel viewModel) => Stack(
-              children: <Widget>[
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 60.0),
-                  child: ListView(
-                    children: <Widget>[
-                      buildTitle(),
-                      buildDescription(),
-                      buildSubTitle1(),
-                      buildSportsList(context, viewModel),
-                      buildSubTitle2(),
-                      buildGroundList(context, viewModel),
-                      buildSubTitle3(),
-                      buildWeekList(context, viewModel),
-                    ],
+        builder: (BuildContext context, _ViewModel viewModel) => SafeArea(
+              bottom: false,
+              child: Stack(
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 80.0),
+                    child: ListView(
+                      children: <Widget>[
+                        buildTitle(),
+                        buildDescription(),
+                        buildSubTitle1(),
+                        buildSportsList(context, viewModel),
+                        buildSubTitle2(),
+                        buildGroundList(context, viewModel),
+                        buildSubTitle3(),
+                        buildWeekList(context, viewModel),
+                      ],
+                    ),
                   ),
-                ),
-                buildLetsGoButton(context, viewModel),
-              ],
+                  buildLetsGoButton(context, viewModel),
+                ],
+              ),
             ),
       ),
     );
@@ -97,62 +103,54 @@ class _VenueTimeAndPriceSceneState extends State<VenueTimeAndPriceScene> {
       currentSelectedSport = viewModel.currentSelectedSport;
     }
 
-    return Padding(
-      padding: const EdgeInsets.only(left: 20.0, right: 20.0),
-      child: Container(
-        height: 60.0,
-        child: ListView.builder(
-          scrollDirection: Axis.horizontal,
-          itemCount: viewModel.availableSports.length,
-          itemBuilder: (context, index) {
+    return DefaultTabController(
+      length: viewModel.availableSports.length,
+      initialIndex: viewModel.availableSports.indexOf(currentSelectedSport),
+      child: Theme(
+        data: ThemeData(highlightColor: Colors.transparent, splashColor: Colors.transparent),
+        child: TabBar(
+          labelStyle: TextStyle(
+              fontWeight: FontWeight.w700, fontFamily: "GoogleSans", fontStyle: FontStyle.normal, fontSize: 20.5),
+          unselectedLabelStyle: TextStyle(
+              fontWeight: FontWeight.w700, fontFamily: "GoogleSans", fontStyle: FontStyle.normal, fontSize: 20.5),
+          isScrollable: true,
+          labelColor: Color(0xff000000),
+          unselectedLabelColor: Color(0xffdddddd),
+          indicatorColor: Colors.transparent,
+          indicatorSize: TabBarIndicatorSize.label,
+//          indicator: UnderlineTabIndicator(
+//            borderSide: BorderSide(color: Colors.green, width: 2.0),
+//            insets: EdgeInsets.only(bottom: 12.0),
+//          ),
+          tabs: sportsListTabs(viewModel),
+          onTap: (index) {
             var sport = viewModel.availableSports[index];
 
-            return Padding(
-              padding: const EdgeInsets.only(right: 10.0),
-              child: GestureDetector(
-                child: Row(
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(right: 5.0),
-                      child: Opacity(
-                        opacity: currentSelectedSport == sport ? 1.0 : 0.3,
-                        child: Sport.displayIcon(sport.name),
-                      ),
-                    ),
-                    Stack(
-                      children: <Widget>[
-                        Text(
-                          Sport.displayName(sport.name),
-                          style: TextStyle(
-                              color: currentSelectedSport == sport ? Colors.black : Color(0xffe8e8e8),
-                              fontWeight: FontWeight.w700,
-                              fontFamily: "GoogleSans",
-                              fontStyle: FontStyle.normal,
-                              fontSize: 20.5),
-                        ),
-                        Positioned(
-                          left: 2.0,
-                          bottom: 0.0,
-                          child: Container(
-                            height: 2.0,
-                            width: 30.0,
-                            color: currentSelectedSport == sport ? Colors.green : Colors.transparent,
-                          ),
-                        )
-                      ],
-                    ),
-                  ],
-                ),
-                onTap: () {
-                  viewModel.setSelectedSport(sport);
-                  viewModel.setSelectedGround(sport.groundNames.first);
-                },
-              ),
-            );
+            viewModel.setSelectedSport(sport);
+            viewModel.setSelectedGround(sport.groundNames.first);
           },
         ),
       ),
     );
+  }
+
+  List<Tab> sportsListTabs(_ViewModel viewModel) {
+    List<Tab> tabs = [];
+    viewModel.availableSports
+        .map((sport) => tabs.add(Tab(
+              child: Row(
+                children: <Widget>[
+                  Padding(
+                    padding: EdgeInsets.only(right: 3.0),
+                    child: Sport.displayIcon(sport.name),
+                  ),
+                  Text(Sport.displayName(sport.name))
+                ],
+              ),
+            )))
+        .toList();
+
+    return tabs;
   }
 
   Widget buildSubTitle2() {
@@ -176,55 +174,47 @@ class _VenueTimeAndPriceSceneState extends State<VenueTimeAndPriceScene> {
       currentSelectedGround = viewModel.currentSelectedGround;
     }
 
-    return Padding(
-      padding: const EdgeInsets.only(left: 20.0, right: 20.0),
-      child: Container(
-        height: 60.0,
-        child: ListView.builder(
-          scrollDirection: Axis.horizontal,
-          itemCount: viewModel.currentSelectedSport.groundNames.length,
-          itemBuilder: (context, index) {
-            var ground = viewModel.currentSelectedSport.groundNames[index];
+    groundListTabController = TabController(
+      length: viewModel.currentSelectedSport.groundNames.length,
+      vsync: this,
+      initialIndex: viewModel.currentSelectedSport.groundNames.indexOf(currentSelectedGround),
+    );
 
-            return Padding(
-              padding: const EdgeInsets.only(right: 10.0),
-              child: GestureDetector(
-                child: Row(
-                  children: <Widget>[
-                    Stack(
-                      children: <Widget>[
-                        Text(
-                          ground,
-                          style: TextStyle(
-                              color: currentSelectedGround == ground ? Colors.black : Color(0xffe8e8e8),
-                              fontWeight: FontWeight.w700,
-                              fontFamily: "GoogleSans",
-                              fontStyle: FontStyle.normal,
-                              fontSize: 20.5),
-                        ),
-                        Positioned(
-                          left: 2.0,
-                          bottom: 0.0,
-                          child: Container(
-                            height: 2.0,
-                            width: 30.0,
-                            color: currentSelectedGround == ground ? Colors.green : Colors.transparent,
-                          ),
-                        )
-                      ],
-                    ),
-                  ],
-                ),
-                onTap: () {
-                  viewModel.setSelectedGround(ground);
-                  viewModel.setSelectedDay(widget.weekDays.first);
-                },
-              ),
-            );
-          },
+    groundListTabController.index = viewModel.currentSelectedSport.groundNames.indexOf(currentSelectedGround);
+
+    return Theme(
+      data: ThemeData(highlightColor: Colors.transparent, splashColor: Colors.transparent),
+      child: TabBar(
+        controller: groundListTabController,
+        labelStyle: TextStyle(
+            fontWeight: FontWeight.w700, fontFamily: "GoogleSans", fontStyle: FontStyle.normal, fontSize: 20.5),
+        unselectedLabelStyle: TextStyle(
+            fontWeight: FontWeight.w700, fontFamily: "GoogleSans", fontStyle: FontStyle.normal, fontSize: 20.5),
+        isScrollable: true,
+        labelColor: Color(0xff000000),
+        unselectedLabelColor: Color(0xffdddddd),
+        indicatorColor: Colors.transparent,
+        indicatorSize: TabBarIndicatorSize.label,
+        indicator: UnderlineTabIndicator(
+          borderSide: BorderSide(color: Colors.green, width: 2.0),
+          insets: EdgeInsets.only(bottom: 12.0),
         ),
+        tabs: groundListTabs(viewModel),
+        onTap: (index) {
+          var ground = viewModel.currentSelectedSport.groundNames[index];
+
+          viewModel.setSelectedGround(ground);
+          viewModel.setSelectedDay(widget.weekDays.first);
+        },
       ),
     );
+  }
+
+  List<Tab> groundListTabs(_ViewModel viewModel) {
+    List<Tab> tabs = [];
+    viewModel.currentSelectedSport.groundNames.map((groundName) => tabs.add(Tab(text: groundName))).toList();
+
+    return tabs;
   }
 
   Widget buildSubTitle3() {
@@ -248,54 +238,39 @@ class _VenueTimeAndPriceSceneState extends State<VenueTimeAndPriceScene> {
       currentSelectedDay = viewModel.currentSelectedDay;
     }
 
-    return Padding(
-      padding: const EdgeInsets.only(left: 20.0, right: 20.0),
-      child: Container(
-        height: 60.0,
-        child: ListView.builder(
-          scrollDirection: Axis.horizontal,
-          itemCount: widget.weekDays.length,
-          itemBuilder: (context, index) {
-            var day = widget.weekDays[index];
-
-            return Padding(
-              padding: const EdgeInsets.only(right: 10.0),
-              child: GestureDetector(
-                child: Row(
-                  children: <Widget>[
-                    Stack(
-                      children: <Widget>[
-                        Text(
-                          day,
-                          style: TextStyle(
-                              color: currentSelectedDay == day ? Colors.black : Color(0xffe8e8e8),
-                              fontWeight: FontWeight.w700,
-                              fontFamily: "GoogleSans",
-                              fontStyle: FontStyle.normal,
-                              fontSize: 20.5),
-                        ),
-                        Positioned(
-                          left: 2.0,
-                          bottom: 0.0,
-                          child: Container(
-                            height: 2.0,
-                            width: 30.0,
-                            color: currentSelectedDay == day ? Colors.green : Colors.transparent,
-                          ),
-                        )
-                      ],
-                    ),
-                  ],
-                ),
-                onTap: () {
-                  viewModel.setSelectedDay(day);
-                },
-              ),
-            );
+    return DefaultTabController(
+      length: widget.weekDays.length,
+      initialIndex: widget.weekDays.indexOf(currentSelectedDay),
+      child: Theme(
+        data: ThemeData(highlightColor: Colors.transparent, splashColor: Colors.transparent),
+        child: TabBar(
+          labelStyle: TextStyle(
+              fontWeight: FontWeight.w700, fontFamily: "GoogleSans", fontStyle: FontStyle.normal, fontSize: 20.5),
+          unselectedLabelStyle: TextStyle(
+              fontWeight: FontWeight.w700, fontFamily: "GoogleSans", fontStyle: FontStyle.normal, fontSize: 20.5),
+          isScrollable: true,
+          labelColor: Color(0xff000000),
+          unselectedLabelColor: Color(0xffdddddd),
+          indicatorColor: Colors.transparent,
+          indicatorSize: TabBarIndicatorSize.label,
+          indicator: UnderlineTabIndicator(
+            borderSide: BorderSide(color: Colors.green, width: 2.0),
+            insets: EdgeInsets.only(bottom: 12.0),
+          ),
+          tabs: weekDayTabs(),
+          onTap: (index) {
+            viewModel.setSelectedDay(widget.weekDays[index]);
           },
         ),
       ),
     );
+  }
+
+  List<Tab> weekDayTabs() {
+    List<Tab> tabs = [];
+    widget.weekDays.map((weekDay) => tabs.add(Tab(text: weekDay))).toList();
+
+    return tabs;
   }
 
   Widget buildLetsGoButton(BuildContext context, _ViewModel viewModel) {
@@ -303,29 +278,37 @@ class _VenueTimeAndPriceSceneState extends State<VenueTimeAndPriceScene> {
       bottom: 0.0,
       right: 0.0,
       left: 0.0,
-      child: Container(
-        height: 60.0,
-        color: Colors.green,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              "LET’S GO",
-              style: const TextStyle(
-                  color: const Color(0xffffffff),
-                  fontWeight: FontWeight.w500,
-                  fontFamily: "GoogleSans",
-                  fontStyle: FontStyle.normal,
-                  fontSize: 23.3),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 10.0),
-              child: Icon(
-                Icons.arrow_forward,
-                color: Colors.white,
+      child: GestureDetector(
+        onTap: () => viewModel.proceedToNextScene(),
+        child: Container(
+          color: Colors.green,
+          child: SafeArea(
+            child: Container(
+              height: 60.0,
+              color: Colors.green,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Text(
+                    "LET’S GO",
+                    style: const TextStyle(
+                        color: const Color(0xffffffff),
+                        fontWeight: FontWeight.w500,
+                        fontFamily: "GoogleSans",
+                        fontStyle: FontStyle.normal,
+                        fontSize: 23.3),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
+                    child: Icon(
+                      Icons.arrow_forward,
+                      color: Colors.white,
+                    ),
+                  ),
+                ],
               ),
             ),
-          ],
+          ),
         ),
       ),
     );
@@ -394,7 +377,7 @@ class _ViewModel {
 
     _proceedToNextScene() {
       print("Proceed");
-//      store.dispatch(ProceedToVenueAmenitiesSceneAction());
+      store.dispatch(ProceedToOwnerOrPlayerSceneAction());
     }
 
     return _ViewModel(

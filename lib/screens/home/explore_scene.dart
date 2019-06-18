@@ -51,32 +51,34 @@ class _ExploreSceneState extends State<ExploreScene> {
   }
 
   buildAppBar(_ViewModel viewModel) {
-    return NestedScrollView(
-      headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
-        return <Widget>[
-          SliverAppBar(
-            elevation: 3.0,
-            backgroundColor: Colors.white,
-            expandedHeight: 120.0,
-            floating: true,
-            pinned: true,
-            snap: true,
-            flexibleSpace: CustomFlexibleSpaceBar(
-              scaleValue: 1.0,
-              collapseMode: CollapseMode.pin,
-              titlePadding: EdgeInsets.zero,
-              title: buildSportsListTabBar(viewModel),
-              background: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  buildLocationSettingsAndSearchBar(),
-                ],
+    return SafeArea(
+      child: NestedScrollView(
+        headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
+          return <Widget>[
+            SliverAppBar(
+              elevation: 3.0,
+              backgroundColor: Colors.white,
+              expandedHeight: 110.0,
+              floating: true,
+              pinned: true,
+              snap: true,
+              flexibleSpace: CustomFlexibleSpaceBar(
+                scaleValue: 1.0,
+                collapseMode: CollapseMode.pin,
+                titlePadding: EdgeInsets.zero,
+                title: buildSportsListTabBar(viewModel),
+                background: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    buildLocationSettingsAndSearchBar(),
+                  ],
+                ),
               ),
             ),
-          ),
-        ];
-      },
-      body: buildBookingsList(viewModel),
+          ];
+        },
+        body: buildBookingsList(viewModel),
+      ),
     );
   }
 
@@ -84,7 +86,7 @@ class _ExploreSceneState extends State<ExploreScene> {
     controller.text = "Carnival Infopark";
 
     return Padding(
-      padding: const EdgeInsets.only(top: 50.0, left: 15.0),
+      padding: const EdgeInsets.only(top: 15.0, left: 15.0),
       child: Column(
         children: <Widget>[
           Container(
@@ -111,8 +113,10 @@ class _ExploreSceneState extends State<ExploreScene> {
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: <Widget>[
                       IconButton(
-                        icon: Icon(Icons.assessment),
-                        onPressed: () {},
+                        icon: Icon(Icons.add),
+                        onPressed: () {
+                          widget.store.dispatch(ProceedToEventNameSceneAction());
+                        },
                       ),
                       IconButton(
                         icon: Icon(Icons.search),
@@ -137,7 +141,7 @@ class _ExploreSceneState extends State<ExploreScene> {
   Widget buildSportsListTabBar(_ViewModel viewModel) {
     return DefaultTabController(
       length: 7,
-      initialIndex: viewModel.selectedIndex,
+      initialIndex: viewModel.selectedSportIndex,
       child: Theme(
         data: ThemeData(highlightColor: Colors.transparent, splashColor: Colors.transparent),
         child: TabBar(
@@ -164,7 +168,7 @@ class _ExploreSceneState extends State<ExploreScene> {
             Tab(text: "Table Tennis"),
           ],
           onTap: (index) {
-            viewModel.setSelectedIndex(index);
+            viewModel.setSelectedSportIndex(index);
           },
         ),
       ),
@@ -181,6 +185,7 @@ class _ExploreSceneState extends State<ExploreScene> {
         });
       },
       child: ListView(
+        padding: EdgeInsets.only(top: 10.0),
         children: <Widget>[
           Padding(
             padding: const EdgeInsets.only(left: 10.0, right: 10.0, bottom: 10.0),
@@ -202,17 +207,20 @@ class _ExploreSceneState extends State<ExploreScene> {
               itemBuilder: (context, index) {
                 return Container(
                   width: 200,
-                  child: Card(
-                    margin: EdgeInsets.all(5.0),
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(12.0))),
-                    clipBehavior: Clip.antiAlias,
-                    elevation: 2.0,
-                    child: CachedNetworkImage(
-                      imageUrl:
-                          "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/soccer-game-flyer-template-design-9996ca0557581c2608b9bc550f798e23_screen.jpg",
-                      errorWidget: (context, url, error) => new Icon(Icons.error),
-                      placeholder: (context, url) => Opacity(opacity: 0.7, child: SpinKitCircle(color: Colors.green)),
-                      fit: BoxFit.fill,
+                  child: GestureDetector(
+                    onTap: () => viewModel.proceedToNextScene(),
+                    child: Card(
+                      margin: EdgeInsets.all(5.0),
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(12.0))),
+                      clipBehavior: Clip.antiAlias,
+                      elevation: 2.0,
+                      child: CachedNetworkImage(
+                        imageUrl:
+                            "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/soccer-game-flyer-template-design-9996ca0557581c2608b9bc550f798e23_screen.jpg",
+                        errorWidget: (context, url, error) => new Icon(Icons.error),
+                        placeholder: (context, url) => Opacity(opacity: 0.7, child: SpinKitCircle(color: Colors.green)),
+                        fit: BoxFit.fill,
+                      ),
                     ),
                   ),
                 );
@@ -240,17 +248,20 @@ class _ExploreSceneState extends State<ExploreScene> {
               itemBuilder: (context, index) {
                 return Container(
                   width: 200,
-                  child: Card(
-                    margin: EdgeInsets.all(5.0),
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(12.0))),
-                    clipBehavior: Clip.antiAlias,
-                    elevation: 2.0,
-                    child: CachedNetworkImage(
-                      imageUrl:
-                          "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/soccer-futsal-football-tournament-flyer-poster-template-design-cdfe1b825b823666d69791fe47a8e597_screen.jpg",
-                      errorWidget: (context, url, error) => new Icon(Icons.error),
-                      placeholder: (context, url) => Opacity(opacity: 0.7, child: SpinKitCircle(color: Colors.green)),
-                      fit: BoxFit.fill,
+                  child: GestureDetector(
+                    onTap: () => viewModel.proceedToNextScene(),
+                    child: Card(
+                      margin: EdgeInsets.all(5.0),
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(12.0))),
+                      clipBehavior: Clip.antiAlias,
+                      elevation: 2.0,
+                      child: CachedNetworkImage(
+                        imageUrl:
+                            "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/soccer-futsal-football-tournament-flyer-poster-template-design-cdfe1b825b823666d69791fe47a8e597_screen.jpg",
+                        errorWidget: (context, url, error) => new Icon(Icons.error),
+                        placeholder: (context, url) => Opacity(opacity: 0.7, child: SpinKitCircle(color: Colors.green)),
+                        fit: BoxFit.fill,
+                      ),
                     ),
                   ),
                 );
@@ -266,66 +277,35 @@ class _ExploreSceneState extends State<ExploreScene> {
 class _ViewModel {
   LoadingStatus loadingStatus;
   OwnerBookings ownerBookings;
-  int selectedIndex;
-  int selectedFilterIndex;
+  int selectedSportIndex;
 
-  Function(int) setSelectedIndex;
-  Function(int) setSelectedFilterIndex;
+  Function(int) setSelectedSportIndex;
   Function fetchOwnerBookingsList;
 
 //  EventFieldValidations fieldValidations;
 //  bool canProceedToNextScene;
-//  final Function proceedToNextScene;
+  final Function proceedToNextScene;
 
   _ViewModel({
     this.loadingStatus,
     this.ownerBookings,
-    this.selectedIndex,
-    this.selectedFilterIndex,
-    this.setSelectedIndex,
-    this.setSelectedFilterIndex,
+    this.selectedSportIndex,
+    this.setSelectedSportIndex,
     this.fetchOwnerBookingsList,
 
 //    this.setEventDescription,
 //    this.fieldValidations,
 //    this.canProceedToNextScene,
-//    this.proceedToNextScene,
+    this.proceedToNextScene,
   });
 
-  List<Booking> filteredBookings() {
-    List<Booking> bookings =
-        this.selectedIndex == 0 ? this.ownerBookings.matchBookings ?? [] : this.ownerBookings.eventBookings ?? [];
-
-    List<Booking> filteredBookings = bookings.where((booking) {
-      String status;
-      switch (this.selectedFilterIndex) {
-        case 0:
-          status = "waiting";
-          break;
-        case 1:
-          status = "accepted";
-          break;
-        case 2:
-          status = "rejected";
-          break;
-      }
-      return booking.status == status;
-    }).toList();
-
-    return filteredBookings;
-  }
-
   factory _ViewModel.create(Store<AppState> store) {
-//    _proceedToNextScene() {
-//      store.dispatch(ProceedToEventSportSceneAction());
-//    }
-
-    _setSelectedIndex(int index) {
-      store.dispatch(SetSelectedIndexForMatchesOrEvents(index));
+    _proceedToNextScene() {
+      store.dispatch(ProceedToEventBookingSceneAction());
     }
 
-    _setSelectedFilterIndex(int index) {
-      store.dispatch(SetSelectedFilterIndex(index));
+    _setSelectedSportIndex(int index) {
+      store.dispatch(SetSelectedSportIndex(index));
     }
 
     _fetchOwnerBookingsList() {
@@ -337,15 +317,13 @@ class _ViewModel {
     return _ViewModel(
       loadingStatus: store.state.ownerBookingsState.loadingStatus,
       ownerBookings: store.state.ownerBookingsState.bookings,
-      selectedIndex: store.state.ownerBookingsState.selectedIndex,
-      selectedFilterIndex: store.state.ownerBookingsState.selectedFilterIndex,
-      setSelectedIndex: _setSelectedIndex,
-      setSelectedFilterIndex: _setSelectedFilterIndex,
+      selectedSportIndex: store.state.ownerBookingsState.selectedSportIndex,
+      setSelectedSportIndex: _setSelectedSportIndex,
       fetchOwnerBookingsList: _fetchOwnerBookingsList,
 
 //      fieldValidations: store.state.eventRegistrationState.fieldValidations,
 //      canProceedToNextScene: store.state.eventRegistrationState.sceneValidations.isValidEventDescriptionScene,
-//      proceedToNextScene: _proceedToNextScene,
+      proceedToNextScene: _proceedToNextScene,
     );
   }
 }

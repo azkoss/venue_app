@@ -23,8 +23,17 @@ class SetSelectedIndexForMatchesOrEvents {
   SetSelectedIndexForMatchesOrEvents(this.index);
 }
 
+class SetSelectedSportIndex {
+  int index;
+  SetSelectedSportIndex(this.index);
+}
+
 class SetSelectedFilterIndex {
   int index;
   SetSelectedFilterIndex(this.index);
 }
+
+class ProceedToEventNameSceneAction {}
+
+class ProceedToEventBookingSceneAction {}
 //endregion

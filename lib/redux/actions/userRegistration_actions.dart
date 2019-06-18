@@ -67,6 +67,10 @@ class ProceedToLandingSceneAction {
 //</editor-fold>
 
 //<editor-fold desc="Landing Scene Actions">
+class ProceedToVenueLocationSceneAction {
+  ProceedToVenueLocationSceneAction();
+}
+
 class ProceedToTutorialSceneAction {
   ProceedToTutorialSceneAction();
 }

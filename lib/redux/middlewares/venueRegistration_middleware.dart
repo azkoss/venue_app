@@ -100,7 +100,7 @@ _proceedToVenueAddressScene(Store<AppState> store, ProceedToVenueAddressSceneAct
 _validateVenueName(Store<AppState> store, ValidateVenueNameAction action, NextDispatcher next) {
   Venue venue = store.state.venueRegistrationState.venue;
   VenueFieldValidations validation = store.state.venueRegistrationState.fieldValidations;
-  bool isValid = (venue.venueName.length > 4) ? true : false;
+  bool isValid = (venue.venueName.length >= 4) ? true : false;
   validation.updateWith(isValidName: isValid);
 
   store.dispatch(UpdateVenueFieldValidationAction(validation));
@@ -110,7 +110,7 @@ _validateVenueName(Store<AppState> store, ValidateVenueNameAction action, NextDi
 _validateVenueAddressLine1(Store<AppState> store, ValidateVenueAddressLine1Action action, NextDispatcher next) {
   Venue venue = store.state.venueRegistrationState.venue;
   VenueFieldValidations validation = store.state.venueRegistrationState.fieldValidations;
-  bool isValid = (venue.addressLine1.length > 4) ? true : false;
+  bool isValid = (venue.addressLine1.length >= 4) ? true : false;
   validation.updateWith(isValidAddressLine1: isValid);
 
   store.dispatch(UpdateVenueFieldValidationAction(validation));
@@ -121,7 +121,7 @@ _validateVenueAddressScene(Store<AppState> store) {
   Venue venue = store.state.venueRegistrationState.venue;
   VenueSceneValidations sceneValidation = store.state.venueRegistrationState.sceneValidations;
 
-  if (venue.venueName.length > 4 && venue.addressLine1.length > 4) {
+  if (venue.venueName.length >= 4 && venue.addressLine1.length >= 4) {
     sceneValidation.updateWith(isValidVenueAddressScene: true);
     store.dispatch(UpdateVenueSceneValidationAction(sceneValidation));
   }
@@ -137,7 +137,7 @@ _validateVenueDescription(Store<AppState> store, ValidateVenueDescriptionAction 
   Venue venue = store.state.venueRegistrationState.venue;
   VenueFieldValidations validation = store.state.venueRegistrationState.fieldValidations;
 
-  if (venue.description.length > 10) {
+  if (venue.description.length >= 10) {
     validation.updateWith(isValidDescription: true);
   }
 
@@ -149,7 +149,7 @@ _validateVenueDescriptionScene(Store<AppState> store) {
   Venue venue = store.state.venueRegistrationState.venue;
   VenueSceneValidations sceneValidation = store.state.venueRegistrationState.sceneValidations;
 
-  if (venue.description.length > 10) {
+  if (venue.description.length >= 10) {
     sceneValidation.updateWith(isValidVenueDetailsScene: true);
     store.dispatch(UpdateVenueSceneValidationAction(sceneValidation));
   }

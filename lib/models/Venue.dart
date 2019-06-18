@@ -11,6 +11,8 @@ class Sport {
   Sports name;
   List<String> groundNames;
 
+  Sport(this.name, this.groundNames);
+
   @override
   bool operator ==(other) {
     // TODO: implement ==

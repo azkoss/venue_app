@@ -6,6 +6,7 @@ import 'package:venue_app/redux/actions/helper_actions.dart';
 import 'package:venue_app/redux/middlewares/appState_middleware.dart';
 import 'package:venue_app/redux/reducers/appState_reducer.dart';
 import 'package:venue_app/redux/states/app_state.dart';
+import 'package:venue_app/screens/home/eventBooking_scene.dart';
 import 'package:venue_app/screens/home/home_scene.dart';
 import 'package:venue_app/screens/home/owner/eventRegistration/eventAgeGroup_scene.dart';
 import 'package:venue_app/screens/home/owner/eventRegistration/eventCost_scene.dart';
@@ -21,9 +22,13 @@ import 'package:venue_app/screens/home/owner/venueRegistration/venueDetails_scen
 import 'package:venue_app/screens/home/owner/venueRegistration/venueLocation_scene.dart';
 import 'package:venue_app/screens/home/owner/venueRegistration/venuePhotos_scene.dart';
 import 'package:venue_app/screens/home/owner/venueRegistration/venueTimeAndPrice_scene.dart';
+import 'package:venue_app/screens/home/player/venueBooking_scene.dart';
 import 'package:venue_app/screens/home/player/venueInfo_scene.dart';
+import 'package:venue_app/screens/home/player/venueListMap_scene.dart';
+import 'package:venue_app/screens/home/player/venueSummary_scene.dart';
 import 'package:venue_app/screens/userRegistration/Tutorial_scene.dart';
 import 'package:venue_app/screens/userRegistration/landing_scene.dart';
+import 'package:venue_app/screens/userRegistration/location_scene.dart';
 import 'package:venue_app/screens/userRegistration/mobile_number_scene.dart';
 import 'package:venue_app/screens/userRegistration/otp_scene.dart';
 
@@ -39,10 +44,17 @@ class VenueApp extends StatelessWidget {
     return StoreProvider<AppState>(
       store: store,
       child: MaterialApp(
+        builder: (context, child) {
+          return MediaQuery(
+            child: child,
+            data: MediaQuery.of(context).copyWith(textScaleFactor: 1.0),
+          );
+        },
         debugShowCheckedModeBanner: false,
         title: 'Venue App',
         theme: ThemeData(
           primarySwatch: Colors.green,
+          splashColor: Colors.green,
         ),
         home: StoreBuilder<AppState>(
             onInit: (store) => {},
@@ -51,7 +63,7 @@ class VenueApp extends StatelessWidget {
 //                showAlertDialogueForApp(context, store);
 //              }
 
-              return HomeScene(store);
+              return LocationScene(store);
             }),
         navigatorKey: Keys.navigationKey,
         onGenerateRoute: (routeSettings) => routes(routeSettings, store),
@@ -178,6 +190,36 @@ class VenueApp extends StatelessWidget {
       return MaterialPageRoute(
         builder: (context) {
           return VenueInfoScene(store);
+        },
+      );
+    } else if (settings.name == "eventBooking") {
+      return MaterialPageRoute(
+        builder: (context) {
+          return EventBookingScene(store);
+        },
+      );
+    } else if (settings.name == "venueListMap") {
+      return MaterialPageRoute(
+        builder: (context) {
+          return VenueBookingScene(store);
+        },
+      );
+    } else if (settings.name == "venueBooking") {
+      return MaterialPageRoute(
+        builder: (context) {
+          return VenueBookingScene(store);
+        },
+      );
+    } else if (settings.name == "venueSummary") {
+      return MaterialPageRoute(
+        builder: (context) {
+          return VenueSummaryScene(store);
+        },
+      );
+    } else if (settings.name == "venueMap") {
+      return MaterialPageRoute(
+        builder: (context) {
+          return VenueListMapScene(store);
         },
       );
     }

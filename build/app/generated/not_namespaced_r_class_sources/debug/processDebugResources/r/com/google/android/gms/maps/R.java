@@ -30,11 +30,12 @@ public final class R {
         public static final int uiMapToolbar = 0x7f020119;
         public static final int uiRotateGestures = 0x7f02011a;
         public static final int uiScrollGestures = 0x7f02011b;
-        public static final int uiTiltGestures = 0x7f02011c;
-        public static final int uiZoomControls = 0x7f02011d;
-        public static final int uiZoomGestures = 0x7f02011e;
-        public static final int useViewLifecycle = 0x7f02011f;
-        public static final int zOrderOnTop = 0x7f02012c;
+        public static final int uiScrollGesturesDuringRotateOrZoom = 0x7f02011c;
+        public static final int uiTiltGestures = 0x7f02011d;
+        public static final int uiZoomControls = 0x7f02011e;
+        public static final int uiZoomGestures = 0x7f02011f;
+        public static final int useViewLifecycle = 0x7f020120;
+        public static final int zOrderOnTop = 0x7f02012d;
     }
     public static final class id {
         private id() {}
@@ -48,7 +49,7 @@ public final class R {
     public static final class styleable {
         private styleable() {}
 
-        public static final int[] MapAttrs = { 0x7f020029, 0x7f020046, 0x7f020047, 0x7f020048, 0x7f020049, 0x7f02004a, 0x7f02004b, 0x7f02004c, 0x7f02009c, 0x7f02009d, 0x7f02009e, 0x7f02009f, 0x7f0200b3, 0x7f0200b6, 0x7f020118, 0x7f020119, 0x7f02011a, 0x7f02011b, 0x7f02011c, 0x7f02011d, 0x7f02011e, 0x7f02011f, 0x7f02012c };
+        public static final int[] MapAttrs = { 0x7f020029, 0x7f020046, 0x7f020047, 0x7f020048, 0x7f020049, 0x7f02004a, 0x7f02004b, 0x7f02004c, 0x7f02009c, 0x7f02009d, 0x7f02009e, 0x7f02009f, 0x7f0200b3, 0x7f0200b6, 0x7f020118, 0x7f020119, 0x7f02011a, 0x7f02011b, 0x7f02011c, 0x7f02011d, 0x7f02011e, 0x7f02011f, 0x7f020120, 0x7f02012d };
         public static final int MapAttrs_ambientEnabled = 0;
         public static final int MapAttrs_cameraBearing = 1;
         public static final int MapAttrs_cameraMaxZoomPreference = 2;
@@ -67,10 +68,11 @@ public final class R {
         public static final int MapAttrs_uiMapToolbar = 15;
         public static final int MapAttrs_uiRotateGestures = 16;
         public static final int MapAttrs_uiScrollGestures = 17;
-        public static final int MapAttrs_uiTiltGestures = 18;
-        public static final int MapAttrs_uiZoomControls = 19;
-        public static final int MapAttrs_uiZoomGestures = 20;
-        public static final int MapAttrs_useViewLifecycle = 21;
-        public static final int MapAttrs_zOrderOnTop = 22;
+        public static final int MapAttrs_uiScrollGesturesDuringRotateOrZoom = 18;
+        public static final int MapAttrs_uiTiltGestures = 19;
+        public static final int MapAttrs_uiZoomControls = 20;
+        public static final int MapAttrs_uiZoomGestures = 21;
+        public static final int MapAttrs_useViewLifecycle = 22;
+        public static final int MapAttrs_zOrderOnTop = 23;
     }
 }

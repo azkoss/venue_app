@@ -38,7 +38,7 @@ class _BookingListSceneState extends State<BookingListScene> {
         },
         builder: (BuildContext context, BookingListViewModel viewModel) {
           return ModalProgressHUD(
-            child: buildAppBar(viewModel),
+            child: SafeArea(child: buildAppBar(viewModel)),
             color: Colors.grey,
             inAsyncCall: viewModel.loadingStatus == LoadingStatus.loading,
             progressIndicator: SpinKitDoubleBounce(
@@ -57,7 +57,7 @@ class _BookingListSceneState extends State<BookingListScene> {
           SliverAppBar(
             elevation: 3.0,
             backgroundColor: Colors.white,
-            expandedHeight: 160.0,
+            expandedHeight: 150.0,
             floating: true,
             pinned: true,
             snap: true,
@@ -85,7 +85,7 @@ class _BookingListSceneState extends State<BookingListScene> {
     controller.text = "Carnival Infopark";
 
     return Padding(
-      padding: const EdgeInsets.only(top: 50.0, left: 15.0),
+      padding: const EdgeInsets.only(top: 15.0, left: 15.0),
       child: Column(
         children: <Widget>[
           Container(
@@ -138,7 +138,7 @@ class _BookingListSceneState extends State<BookingListScene> {
   Widget buildMatchesEventsButtons(BookingListViewModel viewModel) {
     return DefaultTabController(
       length: 2,
-      initialIndex: viewModel.selectedIndex,
+      initialIndex: viewModel.selectedMatchIndex,
       child: Theme(
         data: ThemeData(highlightColor: Colors.transparent, splashColor: Colors.transparent),
         child: TabBar(
@@ -206,7 +206,7 @@ class _BookingListSceneState extends State<BookingListScene> {
         });
       },
       child: ListView.builder(
-          padding: EdgeInsets.all(0),
+          padding: EdgeInsets.only(top: 10.0),
           itemCount: viewModel.filteredBookings().length,
           itemBuilder: (context, index) {
             return BookingListTile(widget.store, index);
@@ -218,7 +218,7 @@ class _BookingListSceneState extends State<BookingListScene> {
 class BookingListViewModel {
   LoadingStatus loadingStatus;
   OwnerBookings ownerBookings;
-  int selectedIndex;
+  int selectedMatchIndex;
   int selectedFilterIndex;
 
   Function(int) setSelectedIndex;
@@ -232,7 +232,7 @@ class BookingListViewModel {
   BookingListViewModel({
     this.loadingStatus,
     this.ownerBookings,
-    this.selectedIndex,
+    this.selectedMatchIndex,
     this.selectedFilterIndex,
     this.setSelectedIndex,
     this.setSelectedFilterIndex,
@@ -246,7 +246,7 @@ class BookingListViewModel {
 
   List<Booking> filteredBookings() {
     List<Booking> bookings =
-        this.selectedIndex == 0 ? this.ownerBookings.matchBookings ?? [] : this.ownerBookings.eventBookings ?? [];
+        this.selectedMatchIndex == 0 ? this.ownerBookings.matchBookings ?? [] : this.ownerBookings.eventBookings ?? [];
 
     List<Booking> filteredBookings = bookings.where((booking) {
       String status;
@@ -289,7 +289,7 @@ class BookingListViewModel {
     return BookingListViewModel(
       loadingStatus: store.state.ownerBookingsState.loadingStatus,
       ownerBookings: store.state.ownerBookingsState.bookings,
-      selectedIndex: store.state.ownerBookingsState.selectedIndex,
+      selectedMatchIndex: store.state.ownerBookingsState.selectedMatchIndex,
       selectedFilterIndex: store.state.ownerBookingsState.selectedFilterIndex,
       setSelectedIndex: _setSelectedIndex,
       setSelectedFilterIndex: _setSelectedFilterIndex,

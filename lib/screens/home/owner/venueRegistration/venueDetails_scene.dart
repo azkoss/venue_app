@@ -16,15 +16,18 @@ class VenueDetailsScene extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: StoreConnector<AppState, _ViewModel>(
-          converter: (store) => _ViewModel.create(store),
-          builder: (BuildContext context, _ViewModel viewModel) => ListView(
+        converter: (store) => _ViewModel.create(store),
+        builder: (BuildContext context, _ViewModel viewModel) => SafeArea(
+              child: ListView(
                 children: <Widget>[
                   buildTitle(),
                   buildDescription(),
                   buildVenueDetailsField(context, viewModel),
                   buildNextButton(context, viewModel),
                 ],
-              )),
+              ),
+            ),
+      ),
     );
   }
 

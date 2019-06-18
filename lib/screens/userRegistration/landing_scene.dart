@@ -14,8 +14,9 @@ class LandingScene extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: StoreConnector<AppState, _ViewModel>(
-          converter: (store) => _ViewModel.create(store),
-          builder: (BuildContext context, _ViewModel viewModel) => ListView(
+        converter: (store) => _ViewModel.create(store),
+        builder: (BuildContext context, _ViewModel viewModel) => SafeArea(
+              child: ListView(
                 children: <Widget>[
                   buildTitle(),
                   buildDescription(),
@@ -25,7 +26,9 @@ class LandingScene extends StatelessWidget {
                   buildSubDescription2(),
                   buildNextButton(context, viewModel),
                 ],
-              )),
+              ),
+            ),
+      ),
     );
   }
 
@@ -49,7 +52,7 @@ class LandingScene extends StatelessWidget {
       padding: EdgeInsets.only(top: 20.0, left: 20.0, right: 20.0),
       child: new Text(
         "You can register your venue with us or you can choose a venue to play. There are two types of "
-            "login available, ie. as a host or a player.",
+        "login available, ie. as a host or a player.",
         style: const TextStyle(
             color: const Color(0xffc7c7c7),
             fontWeight: FontWeight.w400,
@@ -155,7 +158,7 @@ class LandingScene extends StatelessWidget {
         alignment: Alignment.topRight,
         child: FloatingActionButton(
           onPressed: () {
-            viewModel.proceedToNextScene();
+            viewModel.proceedToNextScene(viewModel.userType);
           },
           backgroundColor: Colors.green,
           child: Icon(Icons.arrow_forward),
@@ -171,7 +174,7 @@ class _ViewModel {
 
   UserFieldValidations fieldValidations;
   bool canProceedToNextScene;
-  final Function proceedToNextScene;
+  final Function(UserType) proceedToNextScene;
 
   _ViewModel({
     this.userType,
@@ -188,8 +191,12 @@ class _ViewModel {
       store.dispatch(UpdateUserAction(user));
     }
 
-    _proceedToNextScene() {
-      store.dispatch(ProceedToTutorialSceneAction());
+    _proceedToNextScene(UserType userType) {
+      if (userType == UserType.owner) {
+        store.dispatch(ProceedToVenueLocationSceneAction());
+      } else {
+        store.dispatch(ProceedToTutorialSceneAction());
+      }
     }
 
     return _ViewModel(

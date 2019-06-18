@@ -25,13 +25,15 @@ class _TutorialSceneState extends State<TutorialScene> {
       converter: (store) => _ViewModel.create(store),
       builder: (BuildContext context, viewModel) {
         return Scaffold(
-          body: Stack(
-            children: <Widget>[
-              buildPageView(context, viewModel),
-              buildPageControl(context, viewModel),
-              buildBottomText(context, viewModel),
-              buildNextButton(context, viewModel),
-            ],
+          body: SafeArea(
+            child: Stack(
+              children: <Widget>[
+                buildPageView(context, viewModel),
+                buildPageControl(context, viewModel),
+                buildBottomText(context, viewModel),
+                buildNextButton(context, viewModel),
+              ],
+            ),
           ),
         );
       },
@@ -105,7 +107,7 @@ class _TutorialSceneState extends State<TutorialScene> {
         right: 0.0,
         child: Container(
           height: 60.0,
-          width: 110.0,
+          width: 120.0,
           decoration: BoxDecoration(
             color: Colors.green,
             borderRadius: BorderRadius.only(topLeft: Radius.circular(20.0)),
@@ -135,7 +137,7 @@ class _TutorialSceneState extends State<TutorialScene> {
           icon: Icon(Icons.arrow_forward),
           onPressed: () {
             pageController.nextPage(duration: Duration(milliseconds: 400), curve: Curves.easeIn);
-            viewModel.proceedToNextScene();
+//            viewModel.proceedToNextScene();
           },
           color: Colors.green,
         ),

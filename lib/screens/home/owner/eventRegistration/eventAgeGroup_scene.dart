@@ -3,6 +3,7 @@ import 'package:flutter_redux/flutter_redux.dart';
 import 'package:redux/redux.dart';
 import 'package:venue_app/models/Event.dart';
 import 'package:venue_app/redux/actions/eventRegistration_actions.dart';
+import 'package:venue_app/redux/actions/userRegistration_actions.dart';
 import 'package:venue_app/redux/states/app_state.dart';
 
 class EventAgeGroupScene extends StatefulWidget {
@@ -20,17 +21,20 @@ class _EventAgeGroupSceneState extends State<EventAgeGroupScene> {
     return Scaffold(
       body: StoreConnector<AppState, _ViewModel>(
         converter: (store) => _ViewModel.create(store),
-        builder: (BuildContext context, _ViewModel viewModel) => Stack(
-              children: <Widget>[
-                ListView(
-                  children: <Widget>[
-                    buildTitle(),
-                    buildDescription(),
-                    buildAgeGroupList(context, viewModel),
-                  ],
-                ),
-                buildLetsGoButton(context, viewModel),
-              ],
+        builder: (BuildContext context, _ViewModel viewModel) => SafeArea(
+              bottom: false,
+              child: Stack(
+                children: <Widget>[
+                  ListView(
+                    children: <Widget>[
+                      buildTitle(),
+                      buildDescription(),
+                      buildAgeGroupList(context, viewModel),
+                    ],
+                  ),
+                  buildLetsGoButton(context, viewModel),
+                ],
+              ),
             ),
       ),
     );
@@ -123,28 +127,33 @@ class _EventAgeGroupSceneState extends State<EventAgeGroupScene> {
       child: GestureDetector(
         onTap: () => viewModel.proceedToNextScene(),
         child: Container(
-          height: 60.0,
           color: Colors.green,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Text(
-                "LET’S GO",
-                style: const TextStyle(
-                    color: const Color(0xffffffff),
-                    fontWeight: FontWeight.w500,
-                    fontFamily: "GoogleSans",
-                    fontStyle: FontStyle.normal,
-                    fontSize: 23.3),
+          child: SafeArea(
+            child: Container(
+              height: 60.0,
+              color: Colors.green,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Text(
+                    "LET’S GO",
+                    style: const TextStyle(
+                        color: const Color(0xffffffff),
+                        fontWeight: FontWeight.w500,
+                        fontFamily: "GoogleSans",
+                        fontStyle: FontStyle.normal,
+                        fontSize: 23.3),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
+                    child: Icon(
+                      Icons.arrow_forward,
+                      color: Colors.white,
+                    ),
+                  ),
+                ],
               ),
-              Padding(
-                padding: const EdgeInsets.only(left: 10.0),
-                child: Icon(
-                  Icons.arrow_forward,
-                  color: Colors.white,
-                ),
-              ),
-            ],
+            ),
           ),
         ),
       ),
@@ -177,7 +186,7 @@ class _ViewModel {
     }
 
     _proceedToNextScene() {
-      store.dispatch(ProceedToEventPhotosSceneAction());
+      store.dispatch(ProceedToOwnerOrPlayerSceneAction());
     }
 
     return _ViewModel(

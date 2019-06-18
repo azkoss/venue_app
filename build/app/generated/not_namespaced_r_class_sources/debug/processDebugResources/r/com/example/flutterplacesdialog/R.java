@@ -312,23 +312,23 @@ public final class R {
         public static final int uiMapToolbar = 0x7f020119;
         public static final int uiRotateGestures = 0x7f02011a;
         public static final int uiScrollGestures = 0x7f02011b;
-        public static final int uiTiltGestures = 0x7f02011c;
-        public static final int uiZoomControls = 0x7f02011d;
-        public static final int uiZoomGestures = 0x7f02011e;
-        public static final int useViewLifecycle = 0x7f02011f;
-        public static final int viewInflaterClass = 0x7f020120;
-        public static final int voiceIcon = 0x7f020121;
-        public static final int windowActionBar = 0x7f020122;
-        public static final int windowActionBarOverlay = 0x7f020123;
-        public static final int windowActionModeOverlay = 0x7f020124;
-        public static final int windowFixedHeightMajor = 0x7f020125;
-        public static final int windowFixedHeightMinor = 0x7f020126;
-        public static final int windowFixedWidthMajor = 0x7f020127;
-        public static final int windowFixedWidthMinor = 0x7f020128;
-        public static final int windowMinWidthMajor = 0x7f020129;
-        public static final int windowMinWidthMinor = 0x7f02012a;
-        public static final int windowNoTitle = 0x7f02012b;
-        public static final int zOrderOnTop = 0x7f02012c;
+        public static final int uiTiltGestures = 0x7f02011d;
+        public static final int uiZoomControls = 0x7f02011e;
+        public static final int uiZoomGestures = 0x7f02011f;
+        public static final int useViewLifecycle = 0x7f020120;
+        public static final int viewInflaterClass = 0x7f020121;
+        public static final int voiceIcon = 0x7f020122;
+        public static final int windowActionBar = 0x7f020123;
+        public static final int windowActionBarOverlay = 0x7f020124;
+        public static final int windowActionModeOverlay = 0x7f020125;
+        public static final int windowFixedHeightMajor = 0x7f020126;
+        public static final int windowFixedHeightMinor = 0x7f020127;
+        public static final int windowFixedWidthMajor = 0x7f020128;
+        public static final int windowFixedWidthMinor = 0x7f020129;
+        public static final int windowMinWidthMajor = 0x7f02012a;
+        public static final int windowMinWidthMinor = 0x7f02012b;
+        public static final int windowNoTitle = 0x7f02012c;
+        public static final int zOrderOnTop = 0x7f02012d;
     }
     public static final class bool {
         private bool() {}
@@ -1422,7 +1422,7 @@ public final class R {
         public static final int AppCompatTextView_lastBaselineToBottomHeight = 8;
         public static final int AppCompatTextView_lineHeight = 9;
         public static final int AppCompatTextView_textAllCaps = 10;
-        public static final int[] AppCompatTheme = { 0x1010057, 0x10100ae, 0x7f020000, 0x7f020001, 0x7f020002, 0x7f020003, 0x7f020004, 0x7f020005, 0x7f020006, 0x7f020007, 0x7f020008, 0x7f020009, 0x7f02000a, 0x7f02000b, 0x7f02000c, 0x7f02000e, 0x7f02000f, 0x7f020010, 0x7f020011, 0x7f020012, 0x7f020013, 0x7f020014, 0x7f020015, 0x7f020016, 0x7f020017, 0x7f020018, 0x7f020019, 0x7f02001a, 0x7f02001b, 0x7f02001c, 0x7f02001d, 0x7f02001e, 0x7f020021, 0x7f020022, 0x7f020023, 0x7f020024, 0x7f020025, 0x7f02002c, 0x7f020038, 0x7f020039, 0x7f02003a, 0x7f02003b, 0x7f02003c, 0x7f02003d, 0x7f020042, 0x7f020043, 0x7f02004d, 0x7f02004e, 0x7f020055, 0x7f020056, 0x7f020057, 0x7f020058, 0x7f020059, 0x7f02005a, 0x7f02005b, 0x7f02005c, 0x7f02005d, 0x7f02005f, 0x7f020068, 0x7f02006c, 0x7f02006d, 0x7f02006e, 0x7f020071, 0x7f020073, 0x7f020076, 0x7f020077, 0x7f020078, 0x7f020079, 0x7f02007a, 0x7f02008d, 0x7f020095, 0x7f0200a8, 0x7f0200a9, 0x7f0200ac, 0x7f0200ad, 0x7f0200ae, 0x7f0200af, 0x7f0200b0, 0x7f0200b1, 0x7f0200b2, 0x7f0200c3, 0x7f0200c4, 0x7f0200c5, 0x7f0200c6, 0x7f0200c8, 0x7f0200ce, 0x7f0200cf, 0x7f0200d0, 0x7f0200d1, 0x7f0200d5, 0x7f0200d6, 0x7f0200d7, 0x7f0200d8, 0x7f0200df, 0x7f0200e0, 0x7f0200ee, 0x7f0200f1, 0x7f0200f2, 0x7f0200f3, 0x7f0200f4, 0x7f0200f5, 0x7f0200f6, 0x7f0200f7, 0x7f0200f8, 0x7f0200f9, 0x7f0200fa, 0x7f02010f, 0x7f020110, 0x7f020111, 0x7f020112, 0x7f020120, 0x7f020122, 0x7f020123, 0x7f020124, 0x7f020125, 0x7f020126, 0x7f020127, 0x7f020128, 0x7f020129, 0x7f02012a, 0x7f02012b };
+        public static final int[] AppCompatTheme = { 0x1010057, 0x10100ae, 0x7f020000, 0x7f020001, 0x7f020002, 0x7f020003, 0x7f020004, 0x7f020005, 0x7f020006, 0x7f020007, 0x7f020008, 0x7f020009, 0x7f02000a, 0x7f02000b, 0x7f02000c, 0x7f02000e, 0x7f02000f, 0x7f020010, 0x7f020011, 0x7f020012, 0x7f020013, 0x7f020014, 0x7f020015, 0x7f020016, 0x7f020017, 0x7f020018, 0x7f020019, 0x7f02001a, 0x7f02001b, 0x7f02001c, 0x7f02001d, 0x7f02001e, 0x7f020021, 0x7f020022, 0x7f020023, 0x7f020024, 0x7f020025, 0x7f02002c, 0x7f020038, 0x7f020039, 0x7f02003a, 0x7f02003b, 0x7f02003c, 0x7f02003d, 0x7f020042, 0x7f020043, 0x7f02004d, 0x7f02004e, 0x7f020055, 0x7f020056, 0x7f020057, 0x7f020058, 0x7f020059, 0x7f02005a, 0x7f02005b, 0x7f02005c, 0x7f02005d, 0x7f02005f, 0x7f020068, 0x7f02006c, 0x7f02006d, 0x7f02006e, 0x7f020071, 0x7f020073, 0x7f020076, 0x7f020077, 0x7f020078, 0x7f020079, 0x7f02007a, 0x7f02008d, 0x7f020095, 0x7f0200a8, 0x7f0200a9, 0x7f0200ac, 0x7f0200ad, 0x7f0200ae, 0x7f0200af, 0x7f0200b0, 0x7f0200b1, 0x7f0200b2, 0x7f0200c3, 0x7f0200c4, 0x7f0200c5, 0x7f0200c6, 0x7f0200c8, 0x7f0200ce, 0x7f0200cf, 0x7f0200d0, 0x7f0200d1, 0x7f0200d5, 0x7f0200d6, 0x7f0200d7, 0x7f0200d8, 0x7f0200df, 0x7f0200e0, 0x7f0200ee, 0x7f0200f1, 0x7f0200f2, 0x7f0200f3, 0x7f0200f4, 0x7f0200f5, 0x7f0200f6, 0x7f0200f7, 0x7f0200f8, 0x7f0200f9, 0x7f0200fa, 0x7f02010f, 0x7f020110, 0x7f020111, 0x7f020112, 0x7f020121, 0x7f020123, 0x7f020124, 0x7f020125, 0x7f020126, 0x7f020127, 0x7f020128, 0x7f020129, 0x7f02012a, 0x7f02012b, 0x7f02012c };
         public static final int AppCompatTheme_android_windowIsFloating = 0;
         public static final int AppCompatTheme_android_windowAnimationStyle = 1;
         public static final int AppCompatTheme_actionBarDivider = 2;
@@ -1630,7 +1630,7 @@ public final class R {
         public static final int LoadingImageView_circleCrop = 0;
         public static final int LoadingImageView_imageAspectRatio = 1;
         public static final int LoadingImageView_imageAspectRatioAdjust = 2;
-        public static final int[] MapAttrs = { 0x7f020029, 0x7f020046, 0x7f020047, 0x7f020048, 0x7f020049, 0x7f02004a, 0x7f02004b, 0x7f02004c, 0x7f02009c, 0x7f02009d, 0x7f02009e, 0x7f02009f, 0x7f0200b3, 0x7f0200b6, 0x7f020118, 0x7f020119, 0x7f02011a, 0x7f02011b, 0x7f02011c, 0x7f02011d, 0x7f02011e, 0x7f02011f, 0x7f02012c };
+        public static final int[] MapAttrs = { 0x7f020029, 0x7f020046, 0x7f020047, 0x7f020048, 0x7f020049, 0x7f02004a, 0x7f02004b, 0x7f02004c, 0x7f02009c, 0x7f02009d, 0x7f02009e, 0x7f02009f, 0x7f0200b3, 0x7f0200b6, 0x7f020118, 0x7f020119, 0x7f02011a, 0x7f02011b, 0x7f02011c, 0x7f02011d, 0x7f02011e, 0x7f02011f, 0x7f020120, 0x7f02012d };
         public static final int MapAttrs_ambientEnabled = 0;
         public static final int MapAttrs_cameraBearing = 1;
         public static final int MapAttrs_cameraMaxZoomPreference = 2;
@@ -1649,11 +1649,12 @@ public final class R {
         public static final int MapAttrs_uiMapToolbar = 15;
         public static final int MapAttrs_uiRotateGestures = 16;
         public static final int MapAttrs_uiScrollGestures = 17;
-        public static final int MapAttrs_uiTiltGestures = 18;
-        public static final int MapAttrs_uiZoomControls = 19;
-        public static final int MapAttrs_uiZoomGestures = 20;
-        public static final int MapAttrs_useViewLifecycle = 21;
-        public static final int MapAttrs_zOrderOnTop = 22;
+        public static final int MapAttrs_uiScrollGesturesDuringRotateOrZoom = 18;
+        public static final int MapAttrs_uiTiltGestures = 19;
+        public static final int MapAttrs_uiZoomControls = 20;
+        public static final int MapAttrs_uiZoomGestures = 21;
+        public static final int MapAttrs_useViewLifecycle = 22;
+        public static final int MapAttrs_zOrderOnTop = 23;
         public static final int[] MenuGroup = { 0x101000e, 0x10100d0, 0x1010194, 0x10101de, 0x10101df, 0x10101e0 };
         public static final int MenuGroup_android_enabled = 0;
         public static final int MenuGroup_android_id = 1;
@@ -1704,7 +1705,7 @@ public final class R {
         public static final int[] RecycleListView = { 0x7f0200bf, 0x7f0200c2 };
         public static final int RecycleListView_paddingBottomNoButtons = 0;
         public static final int RecycleListView_paddingTopNoTitle = 1;
-        public static final int[] SearchView = { 0x10100da, 0x101011f, 0x1010220, 0x1010264, 0x7f020050, 0x7f020060, 0x7f02006b, 0x7f02008a, 0x7f020092, 0x7f0200a0, 0x7f0200cc, 0x7f0200cd, 0x7f0200d3, 0x7f0200d4, 0x7f0200e6, 0x7f0200eb, 0x7f020121 };
+        public static final int[] SearchView = { 0x10100da, 0x101011f, 0x1010220, 0x1010264, 0x7f020050, 0x7f020060, 0x7f02006b, 0x7f02008a, 0x7f020092, 0x7f0200a0, 0x7f0200cc, 0x7f0200cd, 0x7f0200d3, 0x7f0200d4, 0x7f0200e6, 0x7f0200eb, 0x7f020122 };
         public static final int SearchView_android_focusable = 0;
         public static final int SearchView_android_maxWidth = 1;
         public static final int SearchView_android_inputType = 2;
