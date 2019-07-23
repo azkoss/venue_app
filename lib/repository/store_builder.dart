@@ -1,12 +1,12 @@
 import 'dart:convert';
 
-import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_redux/flutter_redux.dart';
+import 'package:redux/redux.dart';
 import 'package:venue_app/redux/actions/helper_actions.dart';
 import 'package:venue_app/redux/selector/selectors.dart';
 import 'package:venue_app/redux/states/app_state.dart';
-
-import 'app_enum_manager.dart';
+import 'package:venue_app/repository/app_enum_manager.dart';
 
 class AppStoreBuilder extends StatelessWidget {
   final Function(BuildContext context, PersistenceModel) builder;
@@ -19,7 +19,7 @@ class AppStoreBuilder extends StatelessWidget {
       onInit: (store) {
         store.dispatch(AppAuthStateCheckAction());
       },
-      converter: (Store<AppState> store) => appAuthorizationValue(store),
+      converter: (Store<AppState> store) => appAuthorizationValue(store.state),
       builder: builder,
     );
   }
@@ -28,6 +28,7 @@ class AppStoreBuilder extends StatelessWidget {
 class PersistenceModel {
   final LoginStatus status;
   final UserType type;
+
   PersistenceModel({this.status, this.type});
 
   factory PersistenceModel.fromRawJson(String str) =>

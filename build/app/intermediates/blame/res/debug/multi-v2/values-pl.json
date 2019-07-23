@@ -4,20 +4,20 @@
             "outputFile": "/Users/aneesh/Documents/AneeshiLeafGit/Venue-App/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-pl/values-pl.xml",
             "map": [
                 {
-                    "source": "/Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/d7c657a4ed19f4cc7ac233c21230c72c/res/values-pl/values.xml",
+                    "source": "/Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-15.0.1.aar/aa49f12899ab26df2c9f84224d38271d/res/values-pl/values.xml",
                     "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "198",
-                        "endOffsets": "445"
+                        "startLines": "4,5",
+                        "startColumns": "0,0",
+                        "startOffsets": "193,300",
+                        "endColumns": "106,91",
+                        "endOffsets": "299,391"
                     },
                     "to": {
-                        "startLines": "37",
-                        "startColumns": "4",
-                        "startOffsets": "3975",
-                        "endColumns": "198",
-                        "endOffsets": "4169"
+                        "startLines": "47,48",
+                        "startColumns": "4,4",
+                        "startOffsets": "5568,5679",
+                        "endColumns": "110,95",
+                        "endOffsets": "5674,5770"
                     }
                 },
                 {
@@ -38,24 +38,24 @@
                     }
                 },
                 {
-                    "source": "/Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-15.0.1.aar/d5e5355597404c1bb08be1f810940a53/res/values-pl/values.xml",
+                    "source": "/Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/9f5453aa26ebc609fbfae0723b4f1897/res/values-pl/values.xml",
                     "from": {
-                        "startLines": "4,5",
-                        "startColumns": "0,0",
-                        "startOffsets": "193,300",
-                        "endColumns": "106,91",
-                        "endOffsets": "299,391"
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "198",
+                        "endOffsets": "445"
                     },
                     "to": {
-                        "startLines": "47,48",
-                        "startColumns": "4,4",
-                        "startOffsets": "5568,5679",
-                        "endColumns": "110,95",
-                        "endOffsets": "5674,5770"
+                        "startLines": "37",
+                        "startColumns": "4",
+                        "startOffsets": "3975",
+                        "endColumns": "198",
+                        "endOffsets": "4169"
                     }
                 },
                 {
-                    "source": "/Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/0ed41fef728dfa63945716b4792c4640/res/values-pl/values.xml",
+                    "source": "/Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/96ba005ae210b66e0c132fd3b52a1bae/res/values-pl/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",

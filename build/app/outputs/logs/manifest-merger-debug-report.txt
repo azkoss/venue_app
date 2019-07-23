@@ -9,13 +9,13 @@ MERGED from [:shared_preferences] /Users/aneesh/Documents/AneeshiLeafGit/Venue-A
 MERGED from [:flutter_places_dialog] /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/build/flutter_places_dialog/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:image_picker] /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-22:12
 MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/a14617d17e757a012977abd68f93dd8b/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.gms:play-services-places:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-15.0.1.aar/d5e5355597404c1bb08be1f810940a53/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/fb9c6199f25c37782ee82df69592c421/AndroidManifest.xml:17:1-32:12
-MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-15.0.1.aar/5bd0a67355d8107f46bcdf26ce5ab0f5/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/0ed41fef728dfa63945716b4792c4640/AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-15.0.1.aar/b02f24fe7da75f992c9d227a135692af/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-places:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-15.0.1.aar/aa49f12899ab26df2c9f84224d38271d/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/778a22f47785e1e8c13d110456be47f6/AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-15.0.1.aar/a43a25cd7c4c34f1dcf84977cfedc4c7/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/96ba005ae210b66e0c132fd3b52a1bae/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-15.0.1.aar/72b316198381276677c42d947c896d3b/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/1dd6272ceab83e75b0c10e95ddbc596e/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/d7c657a4ed19f4cc7ac233c21230c72c/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/9f5453aa26ebc609fbfae0723b4f1897/AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0.aar/c9e24d5e3713b988475bfcedbb058465/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/4b4e24c840b577ef18163877c7afd941/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/2d47c56c831f7fbdb96de056656021e6/AndroidManifest.xml:17:1-22:12
@@ -72,20 +72,20 @@ application
 ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:11:5-37:19
 MERGED from [:image_picker] /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-20:19
 MERGED from [:image_picker] /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-20:19
-MERGED from [com.google.android.gms:play-services-places:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-15.0.1.aar/d5e5355597404c1bb08be1f810940a53/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-places:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-15.0.1.aar/d5e5355597404c1bb08be1f810940a53/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/fb9c6199f25c37782ee82df69592c421/AndroidManifest.xml:30:5-20
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/fb9c6199f25c37782ee82df69592c421/AndroidManifest.xml:30:5-20
-MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-15.0.1.aar/5bd0a67355d8107f46bcdf26ce5ab0f5/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-15.0.1.aar/5bd0a67355d8107f46bcdf26ce5ab0f5/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/0ed41fef728dfa63945716b4792c4640/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/0ed41fef728dfa63945716b4792c4640/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-15.0.1.aar/b02f24fe7da75f992c9d227a135692af/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-15.0.1.aar/b02f24fe7da75f992c9d227a135692af/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-places:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-15.0.1.aar/aa49f12899ab26df2c9f84224d38271d/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-15.0.1.aar/aa49f12899ab26df2c9f84224d38271d/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/778a22f47785e1e8c13d110456be47f6/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/778a22f47785e1e8c13d110456be47f6/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-15.0.1.aar/a43a25cd7c4c34f1dcf84977cfedc4c7/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-15.0.1.aar/a43a25cd7c4c34f1dcf84977cfedc4c7/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/96ba005ae210b66e0c132fd3b52a1bae/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/96ba005ae210b66e0c132fd3b52a1bae/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-15.0.1.aar/72b316198381276677c42d947c896d3b/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-15.0.1.aar/72b316198381276677c42d947c896d3b/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/1dd6272ceab83e75b0c10e95ddbc596e/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/1dd6272ceab83e75b0c10e95ddbc596e/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/d7c657a4ed19f4cc7ac233c21230c72c/AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/d7c657a4ed19f4cc7ac233c21230c72c/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/9f5453aa26ebc609fbfae0723b4f1897/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/9f5453aa26ebc609fbfae0723b4f1897/AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.core:core:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/aac31b02fdd1f977ca811cc064422e9a/AndroidManifest.xml:22:5-89
 MERGED from [androidx.core:core:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/aac31b02fdd1f977ca811cc064422e9a/AndroidManifest.xml:22:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/bc91b6b407a1eb740e262275b0428696/AndroidManifest.xml:22:5-23:19
@@ -146,20 +146,20 @@ MERGED from [:image_picker] /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/bui
 MERGED from [:image_picker] /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/a14617d17e757a012977abd68f93dd8b/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/a14617d17e757a012977abd68f93dd8b/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-places:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-15.0.1.aar/d5e5355597404c1bb08be1f810940a53/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-places:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-15.0.1.aar/d5e5355597404c1bb08be1f810940a53/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/fb9c6199f25c37782ee82df69592c421/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/fb9c6199f25c37782ee82df69592c421/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-15.0.1.aar/5bd0a67355d8107f46bcdf26ce5ab0f5/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-15.0.1.aar/5bd0a67355d8107f46bcdf26ce5ab0f5/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/0ed41fef728dfa63945716b4792c4640/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/0ed41fef728dfa63945716b4792c4640/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-15.0.1.aar/b02f24fe7da75f992c9d227a135692af/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-15.0.1.aar/b02f24fe7da75f992c9d227a135692af/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-places:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-15.0.1.aar/aa49f12899ab26df2c9f84224d38271d/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-15.0.1.aar/aa49f12899ab26df2c9f84224d38271d/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/778a22f47785e1e8c13d110456be47f6/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/778a22f47785e1e8c13d110456be47f6/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-15.0.1.aar/a43a25cd7c4c34f1dcf84977cfedc4c7/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-15.0.1.aar/a43a25cd7c4c34f1dcf84977cfedc4c7/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/96ba005ae210b66e0c132fd3b52a1bae/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/96ba005ae210b66e0c132fd3b52a1bae/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-15.0.1.aar/72b316198381276677c42d947c896d3b/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-15.0.1.aar/72b316198381276677c42d947c896d3b/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/1dd6272ceab83e75b0c10e95ddbc596e/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/1dd6272ceab83e75b0c10e95ddbc596e/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/d7c657a4ed19f4cc7ac233c21230c72c/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/d7c657a4ed19f4cc7ac233c21230c72c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/9f5453aa26ebc609fbfae0723b4f1897/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/9f5453aa26ebc609fbfae0723b4f1897/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0.aar/c9e24d5e3713b988475bfcedbb058465/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0.aar/c9e24d5e3713b988475bfcedbb058465/AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/4b4e24c840b577ef18163877c7afd941/AndroidManifest.xml:20:5-44
@@ -224,8 +224,8 @@ INJECTED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/d
 		INJECTED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/debug/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
 ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/debug/AndroidManifest.xml:6:5-66
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/fb9c6199f25c37782ee82df69592c421/AndroidManifest.xml:24:5-67
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/fb9c6199f25c37782ee82df69592c421/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/778a22f47785e1e8c13d110456be47f6/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/778a22f47785e1e8c13d110456be47f6/AndroidManifest.xml:24:5-67
 	android:name
 		ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/debug/AndroidManifest.xml:6:22-64
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
@@ -253,26 +253,26 @@ ADDED from [:image_picker] /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/buil
 	android:name
 		ADDED from [:image_picker] /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-67
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/fb9c6199f25c37782ee82df69592c421/AndroidManifest.xml:23:5-79
+ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/778a22f47785e1e8c13d110456be47f6/AndroidManifest.xml:23:5-79
 	android:name
-		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/fb9c6199f25c37782ee82df69592c421/AndroidManifest.xml:23:22-76
+		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/778a22f47785e1e8c13d110456be47f6/AndroidManifest.xml:23:22-76
 uses-feature#0x00020000
-ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/fb9c6199f25c37782ee82df69592c421/AndroidManifest.xml:26:5-28:35
+ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/778a22f47785e1e8c13d110456be47f6/AndroidManifest.xml:26:5-28:35
 	android:glEsVersion
-		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/fb9c6199f25c37782ee82df69592c421/AndroidManifest.xml:27:9-41
+		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/778a22f47785e1e8c13d110456be47f6/AndroidManifest.xml:27:9-41
 	android:required
-		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/fb9c6199f25c37782ee82df69592c421/AndroidManifest.xml:28:9-32
+		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/778a22f47785e1e8c13d110456be47f6/AndroidManifest.xml:28:9-32
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/0ed41fef728dfa63945716b4792c4640/AndroidManifest.xml:23:9-26:75
+ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/96ba005ae210b66e0c132fd3b52a1bae/AndroidManifest.xml:23:9-26:75
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/0ed41fef728dfa63945716b4792c4640/AndroidManifest.xml:25:13-37
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/96ba005ae210b66e0c132fd3b52a1bae/AndroidManifest.xml:25:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/0ed41fef728dfa63945716b4792c4640/AndroidManifest.xml:26:13-72
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/96ba005ae210b66e0c132fd3b52a1bae/AndroidManifest.xml:26:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/0ed41fef728dfa63945716b4792c4640/AndroidManifest.xml:24:13-79
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/96ba005ae210b66e0c132fd3b52a1bae/AndroidManifest.xml:24:13-79
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/d7c657a4ed19f4cc7ac233c21230c72c/AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/9f5453aa26ebc609fbfae0723b4f1897/AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/d7c657a4ed19f4cc7ac233c21230c72c/AndroidManifest.xml:25:13-66
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/9f5453aa26ebc609fbfae0723b4f1897/AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/d7c657a4ed19f4cc7ac233c21230c72c/AndroidManifest.xml:24:13-58
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/9f5453aa26ebc609fbfae0723b4f1897/AndroidManifest.xml:24:13-58
