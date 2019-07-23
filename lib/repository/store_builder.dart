@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:venue_app/redux/actions/helper_actions.dart';
+import 'package:venue_app/redux/selector/selectors.dart';
 import 'package:venue_app/redux/states/app_state.dart';
 
 import 'app_enum_manager.dart';
@@ -18,7 +19,7 @@ class AppStoreBuilder extends StatelessWidget {
       onInit: (store) {
         store.dispatch(AppAuthStateCheckAction());
       },
-      //converter:(Store<AppState> store) => ,
+      converter: (Store<AppState> store) => appAuthorizationValue(store),
       builder: builder,
     );
   }

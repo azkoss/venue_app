@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:venue_app/redux/states/app_authorization_state.dart';
 import 'package:venue_app/redux/states/eventRegistration_state.dart';
 import 'package:venue_app/redux/states/ownerBookings_state.dart';
 
@@ -10,26 +11,33 @@ class AppState {
   final VenueRegistrationState venueRegistrationState;
   final EventRegistrationState eventRegistrationState;
   final OwnerBookingsState ownerBookingsState;
+  final AuthorizationState appAuthorizationState;
 
-  const AppState({
-    this.userRegistrationState,
-    this.venueRegistrationState,
-    this.eventRegistrationState,
-    this.ownerBookingsState,
-  });
+  const AppState(
+      {this.userRegistrationState,
+      this.venueRegistrationState,
+      this.eventRegistrationState,
+      this.ownerBookingsState,
+      this.appAuthorizationState});
 
   AppState.initialState()
       : userRegistrationState = UserRegistrationState.initial(),
         venueRegistrationState = VenueRegistrationState.initial(),
         eventRegistrationState = EventRegistrationState.initial(),
-        ownerBookingsState = OwnerBookingsState.initial();
+        ownerBookingsState = OwnerBookingsState.initial(),
+        appAuthorizationState = AuthorizationState.initial();
 
   AppState copyWith({UserRegistrationState userRegistrationState}) {
     return new AppState(
-      userRegistrationState: userRegistrationState ?? this.userRegistrationState,
-      venueRegistrationState: venueRegistrationState ?? this.venueRegistrationState,
-      eventRegistrationState: eventRegistrationState ?? this.eventRegistrationState,
+      userRegistrationState:
+          userRegistrationState ?? this.userRegistrationState,
+      venueRegistrationState:
+          venueRegistrationState ?? this.venueRegistrationState,
+      eventRegistrationState:
+          eventRegistrationState ?? this.eventRegistrationState,
       ownerBookingsState: ownerBookingsState ?? this.ownerBookingsState,
+      appAuthorizationState:
+          appAuthorizationState ?? this.appAuthorizationState,
     );
   }
 
