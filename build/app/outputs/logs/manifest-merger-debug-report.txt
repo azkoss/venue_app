@@ -1,278 +1,278 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:1:1-38:12
-INJECTED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:1:1-38:12
-INJECTED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:1:1-38:12
-INJECTED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:1:1-38:12
-MERGED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:1:1-38:12
-MERGED from [:shared_preferences] /Users/mLp11/Desktop/Venue App/Venue-App/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:flutter_places_dialog] /Users/mLp11/Desktop/Venue App/Venue-App/build/flutter_places_dialog/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:image_picker] /Users/mLp11/Desktop/Venue App/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-22:12
-MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/2a108bdddb8729b865f01e7da88df970/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.gms:play-services-places:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-15.0.1.aar/399c22ac247e155cb60574a9f1ab8844/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/5c3e68d674ad23abb943fc857877e464/AndroidManifest.xml:17:1-32:12
-MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-15.0.1.aar/89d7ed23811f80174099716c095a9692/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/c67c27b02e9716aa02a8491ac144364f/AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-15.0.1.aar/116decec3d19e1a83914f8d197d1824c/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/377961da3a0c86dae98b78e2da4f817d/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/5f2f1959f8bc5c644609b63a8b077a29/AndroidManifest.xml:17:1-28:12
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0.aar/679738b7cb2c884a1c591cd991e391d2/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.fragment:fragment:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/875fe3f73116f619b1f79eef4b17d0aa/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/b87d71a8621902e9c39557469f6b0840/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/8615fa454bdf91abcb11b359c3997d30/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/9c59659354ee13ee05f0b791522a8bb0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0.aar/039f0c2c3aa207f2ed91d68422556152/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.media:media:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/5600da1d0bcbc830417f43e6c6ab7158/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/d2c7103fc85578155a5ef89b2e107688/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/e73b3be46c031b109425d0f666ed3c8b/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/9a21dea9325c3a9ea319c592a18f9d74/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/ef1edd19c34e179edac66e15373b5fd6/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/ecf8f17f7e99de62c1c1060e40c990e8/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/8b2c97481308542acab41408c15c697b/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/84334bc4a5940e0a5ac4e3356739ffe5/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/f88264e708fa05707c9db0e226153441/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/13902864d0a8c132a5de854057b3fcc7/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/816c37817a329fec66ee658bbcc77b51/AndroidManifest.xml:17:1-25:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/e32707d50b4f8f98015b33311cc258de/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/95dc04635bd740352f879cf6100e6951/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/a41b84ac972dfa63c218e8e0a031336e/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/83db582d04c2a802674d84ca048daee6/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/b58d95cca458de279064eebbcac28e5c/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/e64b7231b2f05a52849b9299b5b249ee/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/d2785b3724bae2f455dc8a9bed4123dc/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/b48df870f0dff599ec4c72e63bdd6517/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/3d55efc3bd0621f0c2969cc72ddfb1bf/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/260245b5f80894f80ff2492eb94a7fed/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:1:1-38:12
+INJECTED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:1:1-38:12
+INJECTED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:1:1-38:12
+INJECTED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:1:1-38:12
+MERGED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:1:1-38:12
+MERGED from [:shared_preferences] /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:flutter_places_dialog] /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/build/flutter_places_dialog/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:image_picker] /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/a14617d17e757a012977abd68f93dd8b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-places:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-15.0.1.aar/d5e5355597404c1bb08be1f810940a53/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/fb9c6199f25c37782ee82df69592c421/AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-15.0.1.aar/5bd0a67355d8107f46bcdf26ce5ab0f5/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/0ed41fef728dfa63945716b4792c4640/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-15.0.1.aar/b02f24fe7da75f992c9d227a135692af/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/1dd6272ceab83e75b0c10e95ddbc596e/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/d7c657a4ed19f4cc7ac233c21230c72c/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0.aar/c9e24d5e3713b988475bfcedbb058465/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/4b4e24c840b577ef18163877c7afd941/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/2d47c56c831f7fbdb96de056656021e6/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/f2962684fb5ddc4ed96428b6b9c3f6db/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/ee2ca87a48aa2263cbbbac7319a19398/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0.aar/a1fc37a4352eca860e5f3d95909f09a2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/0781b77ad08a7c08d9758d3c07bb2c56/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/ee1f64c43ee867cec966d3f339ee3935/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/91df0fda781c4debd629a836c8174fc2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/7d026cb2a17b601b40fa2435a34bc538/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/5fb3ae88138b28ba2674a9504907d3a6/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/e61fd081baee5e5e36681961113e7451/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/9cd9a382c385cf057529298a89c7562a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/9ba4f60ae3aaff5c62b4e24d573a4d34/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/c4599de636345ed57085293ea6cf569b/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/aac31b02fdd1f977ca811cc064422e9a/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/bc91b6b407a1eb740e262275b0428696/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/b8348ba4418011b9f35f547aa7142d0f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/0a9daf62c406c7291efa9f1aab7209a0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/99ad53242fa3156e7e7f3a49a4837ade/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/71a23875c51ac154e814a486f1762d4e/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/26ef5cdf7cd1e402575e1a711d54773d/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/5f5f6e8cbf952b8a056569d2d8e1dd68/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/08197260a10eed2e953637f1e4b8d5cd/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/a331a1bf0b0bd879ea34ad881205929c/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/6696e5f1477286a50152bfee2bd74bc3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/e141505e7690b40e7c16b33d5d97e858/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 	package
-		ADDED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:2:5-36
-		INJECTED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/debug/AndroidManifest.xml
+		ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:2:5-36
+		INJECTED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/debug/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:1:1-38:12
-		INJECTED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:1:1-38:12
+		INJECTED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/debug/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:1:1-38:12
-		INJECTED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:1:1-38:12
+		INJECTED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:9:5-78
+ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:9:5-78
 	android:name
-		ADDED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:9:22-76
+		ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:9:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:10:5-80
+ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:10:5-80
 	android:name
-		ADDED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:10:22-78
+		ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:10:22-78
 application
-ADDED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:11:5-37:19
-MERGED from [:image_picker] /Users/mLp11/Desktop/Venue App/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-20:19
-MERGED from [:image_picker] /Users/mLp11/Desktop/Venue App/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-20:19
-MERGED from [com.google.android.gms:play-services-places:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-15.0.1.aar/399c22ac247e155cb60574a9f1ab8844/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-places:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-15.0.1.aar/399c22ac247e155cb60574a9f1ab8844/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/5c3e68d674ad23abb943fc857877e464/AndroidManifest.xml:30:5-20
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/5c3e68d674ad23abb943fc857877e464/AndroidManifest.xml:30:5-20
-MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-15.0.1.aar/89d7ed23811f80174099716c095a9692/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-15.0.1.aar/89d7ed23811f80174099716c095a9692/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/c67c27b02e9716aa02a8491ac144364f/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/c67c27b02e9716aa02a8491ac144364f/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-15.0.1.aar/116decec3d19e1a83914f8d197d1824c/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-15.0.1.aar/116decec3d19e1a83914f8d197d1824c/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/377961da3a0c86dae98b78e2da4f817d/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/377961da3a0c86dae98b78e2da4f817d/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/5f2f1959f8bc5c644609b63a8b077a29/AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/5f2f1959f8bc5c644609b63a8b077a29/AndroidManifest.xml:22:5-26:19
-MERGED from [androidx.core:core:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/13902864d0a8c132a5de854057b3fcc7/AndroidManifest.xml:22:5-89
-MERGED from [androidx.core:core:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/13902864d0a8c132a5de854057b3fcc7/AndroidManifest.xml:22:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/816c37817a329fec66ee658bbcc77b51/AndroidManifest.xml:22:5-23:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/816c37817a329fec66ee658bbcc77b51/AndroidManifest.xml:22:5-23:19
+ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:11:5-37:19
+MERGED from [:image_picker] /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-20:19
+MERGED from [:image_picker] /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-20:19
+MERGED from [com.google.android.gms:play-services-places:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-15.0.1.aar/d5e5355597404c1bb08be1f810940a53/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-15.0.1.aar/d5e5355597404c1bb08be1f810940a53/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/fb9c6199f25c37782ee82df69592c421/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/fb9c6199f25c37782ee82df69592c421/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-15.0.1.aar/5bd0a67355d8107f46bcdf26ce5ab0f5/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-15.0.1.aar/5bd0a67355d8107f46bcdf26ce5ab0f5/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/0ed41fef728dfa63945716b4792c4640/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/0ed41fef728dfa63945716b4792c4640/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-15.0.1.aar/b02f24fe7da75f992c9d227a135692af/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-15.0.1.aar/b02f24fe7da75f992c9d227a135692af/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/1dd6272ceab83e75b0c10e95ddbc596e/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/1dd6272ceab83e75b0c10e95ddbc596e/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/d7c657a4ed19f4cc7ac233c21230c72c/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/d7c657a4ed19f4cc7ac233c21230c72c/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/aac31b02fdd1f977ca811cc064422e9a/AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/aac31b02fdd1f977ca811cc064422e9a/AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/bc91b6b407a1eb740e262275b0428696/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/bc91b6b407a1eb740e262275b0428696/AndroidManifest.xml:22:5-23:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/13902864d0a8c132a5de854057b3fcc7/AndroidManifest.xml:22:18-86
+		ADDED from [androidx.core:core:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/aac31b02fdd1f977ca811cc064422e9a/AndroidManifest.xml:22:18-86
 	android:label
-		ADDED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:13:9-34
+		ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:13:9-34
 	android:icon
-		ADDED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:14:9-43
+		ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:14:9-43
 	android:name
-		ADDED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:12:9-57
+		ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:12:9-57
 meta-data#com.google.android.geo.API_KEY
-ADDED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:15:9-17:70
+ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:15:9-17:70
 	android:value
-		ADDED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:17:13-68
+		ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:17:13-68
 	android:name
-		ADDED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:16:13-58
+		ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:16:13-58
 activity#com.example.venue_app.MainActivity
-ADDED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:18:9-36:20
+ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:18:9-36:20
 	android:launchMode
-		ADDED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:20:13-43
+		ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:20:13-43
 	android:hardwareAccelerated
-		ADDED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:23:13-47
+		ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:23:13-47
 	android:windowSoftInputMode
-		ADDED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:24:13-55
+		ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:24:13-55
 	android:configChanges
-		ADDED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:22:13-144
+		ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:22:13-144
 	android:theme
-		ADDED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:21:13-47
+		ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:21:13-47
 	android:name
-		ADDED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:19:13-41
+		ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:19:13-41
 meta-data#io.flutter.app.android.SplashScreenUntilFirstFrame
-ADDED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:29:13-31:40
+ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:29:13-31:40
 	android:value
-		ADDED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:31:17-37
+		ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:31:17-37
 	android:name
-		ADDED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:30:17-82
+		ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:30:17-82
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:32:13-35:29
+ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:32:13-35:29
 action#android.intent.action.MAIN
-ADDED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:33:17-68
+ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:33:17-68
 	android:name
-		ADDED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:33:25-66
+		ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:33:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:34:17-76
+ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:34:17-76
 	android:name
-		ADDED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml:34:27-74
+		ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml:34:27-74
 uses-sdk
-INJECTED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml
-MERGED from [:shared_preferences] /Users/mLp11/Desktop/Venue App/Venue-App/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:shared_preferences] /Users/mLp11/Desktop/Venue App/Venue-App/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:flutter_places_dialog] /Users/mLp11/Desktop/Venue App/Venue-App/build/flutter_places_dialog/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:flutter_places_dialog] /Users/mLp11/Desktop/Venue App/Venue-App/build/flutter_places_dialog/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:image_picker] /Users/mLp11/Desktop/Venue App/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:image_picker] /Users/mLp11/Desktop/Venue App/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/2a108bdddb8729b865f01e7da88df970/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/2a108bdddb8729b865f01e7da88df970/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-places:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-15.0.1.aar/399c22ac247e155cb60574a9f1ab8844/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-places:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-15.0.1.aar/399c22ac247e155cb60574a9f1ab8844/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/5c3e68d674ad23abb943fc857877e464/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/5c3e68d674ad23abb943fc857877e464/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-15.0.1.aar/89d7ed23811f80174099716c095a9692/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-15.0.1.aar/89d7ed23811f80174099716c095a9692/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/c67c27b02e9716aa02a8491ac144364f/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/c67c27b02e9716aa02a8491ac144364f/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-15.0.1.aar/116decec3d19e1a83914f8d197d1824c/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-15.0.1.aar/116decec3d19e1a83914f8d197d1824c/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/377961da3a0c86dae98b78e2da4f817d/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/377961da3a0c86dae98b78e2da4f817d/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/5f2f1959f8bc5c644609b63a8b077a29/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/5f2f1959f8bc5c644609b63a8b077a29/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0.aar/679738b7cb2c884a1c591cd991e391d2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0.aar/679738b7cb2c884a1c591cd991e391d2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/875fe3f73116f619b1f79eef4b17d0aa/AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/875fe3f73116f619b1f79eef4b17d0aa/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/b87d71a8621902e9c39557469f6b0840/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/b87d71a8621902e9c39557469f6b0840/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/8615fa454bdf91abcb11b359c3997d30/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/8615fa454bdf91abcb11b359c3997d30/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/9c59659354ee13ee05f0b791522a8bb0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/9c59659354ee13ee05f0b791522a8bb0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0.aar/039f0c2c3aa207f2ed91d68422556152/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0.aar/039f0c2c3aa207f2ed91d68422556152/AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/5600da1d0bcbc830417f43e6c6ab7158/AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/5600da1d0bcbc830417f43e6c6ab7158/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/d2c7103fc85578155a5ef89b2e107688/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/d2c7103fc85578155a5ef89b2e107688/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/e73b3be46c031b109425d0f666ed3c8b/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/e73b3be46c031b109425d0f666ed3c8b/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/9a21dea9325c3a9ea319c592a18f9d74/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/9a21dea9325c3a9ea319c592a18f9d74/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/ef1edd19c34e179edac66e15373b5fd6/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/ef1edd19c34e179edac66e15373b5fd6/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/ecf8f17f7e99de62c1c1060e40c990e8/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/ecf8f17f7e99de62c1c1060e40c990e8/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/8b2c97481308542acab41408c15c697b/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/8b2c97481308542acab41408c15c697b/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/84334bc4a5940e0a5ac4e3356739ffe5/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/84334bc4a5940e0a5ac4e3356739ffe5/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/f88264e708fa05707c9db0e226153441/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/f88264e708fa05707c9db0e226153441/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/13902864d0a8c132a5de854057b3fcc7/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/13902864d0a8c132a5de854057b3fcc7/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/816c37817a329fec66ee658bbcc77b51/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/816c37817a329fec66ee658bbcc77b51/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/e32707d50b4f8f98015b33311cc258de/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/e32707d50b4f8f98015b33311cc258de/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/95dc04635bd740352f879cf6100e6951/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/95dc04635bd740352f879cf6100e6951/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/a41b84ac972dfa63c218e8e0a031336e/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/a41b84ac972dfa63c218e8e0a031336e/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/83db582d04c2a802674d84ca048daee6/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/83db582d04c2a802674d84ca048daee6/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/b58d95cca458de279064eebbcac28e5c/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/b58d95cca458de279064eebbcac28e5c/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/e64b7231b2f05a52849b9299b5b249ee/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/e64b7231b2f05a52849b9299b5b249ee/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/d2785b3724bae2f455dc8a9bed4123dc/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/d2785b3724bae2f455dc8a9bed4123dc/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/b48df870f0dff599ec4c72e63bdd6517/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/b48df870f0dff599ec4c72e63bdd6517/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/3d55efc3bd0621f0c2969cc72ddfb1bf/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/3d55efc3bd0621f0c2969cc72ddfb1bf/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/260245b5f80894f80ff2492eb94a7fed/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/260245b5f80894f80ff2492eb94a7fed/AndroidManifest.xml:20:5-44
-INJECTED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/debug/AndroidManifest.xml
-INJECTED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml
+MERGED from [:shared_preferences] /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences] /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_places_dialog] /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/build/flutter_places_dialog/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_places_dialog] /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/build/flutter_places_dialog/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:image_picker] /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:image_picker] /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/a14617d17e757a012977abd68f93dd8b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/a14617d17e757a012977abd68f93dd8b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-15.0.1.aar/d5e5355597404c1bb08be1f810940a53/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-15.0.1.aar/d5e5355597404c1bb08be1f810940a53/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/fb9c6199f25c37782ee82df69592c421/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/fb9c6199f25c37782ee82df69592c421/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-15.0.1.aar/5bd0a67355d8107f46bcdf26ce5ab0f5/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-15.0.1.aar/5bd0a67355d8107f46bcdf26ce5ab0f5/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/0ed41fef728dfa63945716b4792c4640/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/0ed41fef728dfa63945716b4792c4640/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-15.0.1.aar/b02f24fe7da75f992c9d227a135692af/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-15.0.1.aar/b02f24fe7da75f992c9d227a135692af/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/1dd6272ceab83e75b0c10e95ddbc596e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/1dd6272ceab83e75b0c10e95ddbc596e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/d7c657a4ed19f4cc7ac233c21230c72c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/d7c657a4ed19f4cc7ac233c21230c72c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0.aar/c9e24d5e3713b988475bfcedbb058465/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0.aar/c9e24d5e3713b988475bfcedbb058465/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/4b4e24c840b577ef18163877c7afd941/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/4b4e24c840b577ef18163877c7afd941/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/2d47c56c831f7fbdb96de056656021e6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/2d47c56c831f7fbdb96de056656021e6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/f2962684fb5ddc4ed96428b6b9c3f6db/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/f2962684fb5ddc4ed96428b6b9c3f6db/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/ee2ca87a48aa2263cbbbac7319a19398/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/ee2ca87a48aa2263cbbbac7319a19398/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0.aar/a1fc37a4352eca860e5f3d95909f09a2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0.aar/a1fc37a4352eca860e5f3d95909f09a2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/0781b77ad08a7c08d9758d3c07bb2c56/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/0781b77ad08a7c08d9758d3c07bb2c56/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/ee1f64c43ee867cec966d3f339ee3935/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/ee1f64c43ee867cec966d3f339ee3935/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/91df0fda781c4debd629a836c8174fc2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/91df0fda781c4debd629a836c8174fc2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/7d026cb2a17b601b40fa2435a34bc538/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/7d026cb2a17b601b40fa2435a34bc538/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/5fb3ae88138b28ba2674a9504907d3a6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/5fb3ae88138b28ba2674a9504907d3a6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/e61fd081baee5e5e36681961113e7451/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/e61fd081baee5e5e36681961113e7451/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/9cd9a382c385cf057529298a89c7562a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/9cd9a382c385cf057529298a89c7562a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/9ba4f60ae3aaff5c62b4e24d573a4d34/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/9ba4f60ae3aaff5c62b4e24d573a4d34/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/c4599de636345ed57085293ea6cf569b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/c4599de636345ed57085293ea6cf569b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/aac31b02fdd1f977ca811cc064422e9a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/aac31b02fdd1f977ca811cc064422e9a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/bc91b6b407a1eb740e262275b0428696/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/bc91b6b407a1eb740e262275b0428696/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/b8348ba4418011b9f35f547aa7142d0f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/b8348ba4418011b9f35f547aa7142d0f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/0a9daf62c406c7291efa9f1aab7209a0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/0a9daf62c406c7291efa9f1aab7209a0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/99ad53242fa3156e7e7f3a49a4837ade/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/99ad53242fa3156e7e7f3a49a4837ade/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/71a23875c51ac154e814a486f1762d4e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/71a23875c51ac154e814a486f1762d4e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/26ef5cdf7cd1e402575e1a711d54773d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/26ef5cdf7cd1e402575e1a711d54773d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/5f5f6e8cbf952b8a056569d2d8e1dd68/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/5f5f6e8cbf952b8a056569d2d8e1dd68/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/08197260a10eed2e953637f1e4b8d5cd/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/08197260a10eed2e953637f1e4b8d5cd/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/a331a1bf0b0bd879ea34ad881205929c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/a331a1bf0b0bd879ea34ad881205929c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/6696e5f1477286a50152bfee2bd74bc3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/6696e5f1477286a50152bfee2bd74bc3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/e141505e7690b40e7c16b33d5d97e858/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/e141505e7690b40e7c16b33d5d97e858/AndroidManifest.xml:20:5-44
+INJECTED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/debug/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/debug/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/debug/AndroidManifest.xml:6:5-66
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/5c3e68d674ad23abb943fc857877e464/AndroidManifest.xml:24:5-67
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/5c3e68d674ad23abb943fc857877e464/AndroidManifest.xml:24:5-67
+ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/debug/AndroidManifest.xml:6:5-66
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/fb9c6199f25c37782ee82df69592c421/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/fb9c6199f25c37782ee82df69592c421/AndroidManifest.xml:24:5-67
 	android:name
-		ADDED from /Users/mLp11/Desktop/Venue App/Venue-App/android/app/src/debug/AndroidManifest.xml:6:22-64
+		ADDED from /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/android/app/src/debug/AndroidManifest.xml:6:22-64
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-80
+ADDED from [:image_picker] /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-80
 	android:name
-		ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-77
+		ADDED from [:image_picker] /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-81
+ADDED from [:image_picker] /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-81
 	android:name
-		ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-78
+		ADDED from [:image_picker] /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-78
 provider#io.flutter.plugins.imagepicker.ImagePickerFileProvider
-ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-19:20
+ADDED from [:image_picker] /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-19:20
 	android:grantUriPermissions
-		ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-47
+		ADDED from [:image_picker] /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-47
 	android:authorities
-		ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-74
+		ADDED from [:image_picker] /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-74
 	android:exported
-		ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
+		ADDED from [:image_picker] /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
 	android:name
-		ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-82
+		ADDED from [:image_picker] /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-82
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-18:75
+ADDED from [:image_picker] /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-18:75
 	android:resource
-		ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-72
+		ADDED from [:image_picker] /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-72
 	android:name
-		ADDED from [:image_picker] /Users/mLp11/Desktop/Venue App/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-67
+		ADDED from [:image_picker] /Users/aneesh/Documents/AneeshiLeafGit/Venue-App/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-67
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/5c3e68d674ad23abb943fc857877e464/AndroidManifest.xml:23:5-79
+ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/fb9c6199f25c37782ee82df69592c421/AndroidManifest.xml:23:5-79
 	android:name
-		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/5c3e68d674ad23abb943fc857877e464/AndroidManifest.xml:23:22-76
+		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/fb9c6199f25c37782ee82df69592c421/AndroidManifest.xml:23:22-76
 uses-feature#0x00020000
-ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/5c3e68d674ad23abb943fc857877e464/AndroidManifest.xml:26:5-28:35
+ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/fb9c6199f25c37782ee82df69592c421/AndroidManifest.xml:26:5-28:35
 	android:glEsVersion
-		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/5c3e68d674ad23abb943fc857877e464/AndroidManifest.xml:27:9-41
+		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/fb9c6199f25c37782ee82df69592c421/AndroidManifest.xml:27:9-41
 	android:required
-		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/5c3e68d674ad23abb943fc857877e464/AndroidManifest.xml:28:9-32
+		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-15.0.1.aar/fb9c6199f25c37782ee82df69592c421/AndroidManifest.xml:28:9-32
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/c67c27b02e9716aa02a8491ac144364f/AndroidManifest.xml:23:9-26:75
+ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/0ed41fef728dfa63945716b4792c4640/AndroidManifest.xml:23:9-26:75
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/c67c27b02e9716aa02a8491ac144364f/AndroidManifest.xml:25:13-37
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/0ed41fef728dfa63945716b4792c4640/AndroidManifest.xml:25:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/c67c27b02e9716aa02a8491ac144364f/AndroidManifest.xml:26:13-72
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/0ed41fef728dfa63945716b4792c4640/AndroidManifest.xml:26:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/c67c27b02e9716aa02a8491ac144364f/AndroidManifest.xml:24:13-79
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-15.0.1.aar/0ed41fef728dfa63945716b4792c4640/AndroidManifest.xml:24:13-79
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/5f2f1959f8bc5c644609b63a8b077a29/AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/d7c657a4ed19f4cc7ac233c21230c72c/AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/5f2f1959f8bc5c644609b63a8b077a29/AndroidManifest.xml:25:13-66
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/d7c657a4ed19f4cc7ac233c21230c72c/AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/mLp11/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/5f2f1959f8bc5c644609b63a8b077a29/AndroidManifest.xml:24:13-58
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/aneesh/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-15.0.1.aar/d7c657a4ed19f4cc7ac233c21230c72c/AndroidManifest.xml:24:13-58

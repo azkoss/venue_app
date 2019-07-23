@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:redux/redux.dart';
+import 'package:venue_app/redux/actions/helper_actions.dart';
 import 'package:venue_app/redux/middlewares/appState_middleware.dart';
 import 'package:venue_app/redux/reducers/appState_reducer.dart';
 import 'package:venue_app/redux/states/app_state.dart';
+import 'package:venue_app/repository/app_enum_manager.dart';
+import 'package:venue_app/repository/store_builder.dart';
 import 'package:venue_app/screens/eventRegistration/eventAgeGroup_scene.dart';
 import 'package:venue_app/screens/eventRegistration/eventCost_scene.dart';
 import 'package:venue_app/screens/eventRegistration/eventDate_scene.dart';
@@ -43,8 +46,20 @@ class VenueApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.green,
         ),
-        home: StoreBuilder<AppState>(
-            onInit: (store) => {}, builder: (BuildContext context, Store<AppState> store) => LocationScene(store)),
+        home: Scaffold(body: AppStoreBuilder(builder: (context, stateModel){
+          switch(stateModel.status){
+            case LoginStatus.loggedIn:
+              if (stateModel.type == UserType.owner) LandingScene(store);
+              else LandingScene(store);
+              break;
+            case LoginStatus.loggedOut:
+              LandingScene(store);
+              break;
+            case LoginStatus.none:
+              LandingScene(store);
+              break;
+          }},),
+        ),
         navigatorKey: Keys.navigationKey,
         onGenerateRoute: (routeSettings) => routes(routeSettings, store),
       ),

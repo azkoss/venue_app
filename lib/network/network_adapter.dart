@@ -57,6 +57,7 @@ class APIManager {
 
       case RequestType.post:
         return await dio.post(url, data: params, options: new Options(contentType: ContentType.json)).then((res) {
+          print('response' + res.data);
           if (res.statusCode == 400) {
             return ResponseModel(null, ResponseStatus.error_400);
           } else if (res.statusCode >= 500) {

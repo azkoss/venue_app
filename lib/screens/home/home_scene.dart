@@ -4,6 +4,7 @@ import 'package:redux/redux.dart';
 import 'package:venue_app/models/User.dart';
 import 'package:venue_app/redux/actions/userRegistration_actions.dart';
 import 'package:venue_app/redux/states/app_state.dart';
+import 'package:venue_app/repository/app_enum_manager.dart';
 import 'package:venue_app/screens/home/bookingList_scene.dart';
 import 'package:venue_app/screens/home/venueProfile_scene.dart';
 

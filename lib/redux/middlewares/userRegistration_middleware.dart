@@ -1,6 +1,7 @@
 import 'package:redux/redux.dart';
 import 'package:venue_app/models/User.dart';
 import 'package:venue_app/redux/actions/userRegistration_actions.dart';
+import 'package:venue_app/repository/app_enum_manager.dart';
 
 import '../states/app_state.dart';
 
@@ -157,6 +158,9 @@ _proceedToOwnerOrPlayerScene(Store<AppState> store, ProceedToOwnerOrPlayerSceneA
       break;
     case UserType.player:
       Keys.navigationKey.currentState.pushNamed("home");
+      break;
+    case UserType.none:
+      // TODO: Handle this case.
       break;
   }
 }

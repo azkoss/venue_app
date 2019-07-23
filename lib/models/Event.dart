@@ -2,8 +2,9 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:venue_app/models/Venue.dart';
+import 'package:venue_app/repository/app_enum_manager.dart';
 
-enum AgeGroup { none, below8, between8and18, above18 }
+
 
 class Event {
   String name;

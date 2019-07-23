@@ -21,7 +21,7 @@ Stream<dynamic> performNetworkCall(Stream<dynamic> actions, EpicStore<AppState> 
   return Observable(actions).ofType(TypeToken<FetchOwnerBookingsEpicAction>()).asyncMap(
         (action) => APIManager.request(
                     url: baseURL + "hello1",
-//              params: action.request.toJson(),
+         //    params: action.request.toJson(),
                     requestType: RequestType.get)
                 .then((response) {
               switch (response.status) {

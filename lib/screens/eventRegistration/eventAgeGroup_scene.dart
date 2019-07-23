@@ -4,6 +4,7 @@ import 'package:redux/redux.dart';
 import 'package:venue_app/models/Event.dart';
 import 'package:venue_app/redux/actions/eventRegistration_actions.dart';
 import 'package:venue_app/redux/states/app_state.dart';
+import 'package:venue_app/repository/app_enum_manager.dart';
 
 import '../../redux/actions/eventRegistration_actions.dart';
 
