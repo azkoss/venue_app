@@ -1,5 +1,6 @@
 import 'package:redux/redux.dart';
 import 'package:venue_app/models/User.dart';
+import 'package:venue_app/models/registration/SignUpRequestParams.dart';
 import 'package:venue_app/redux/actions/userRegistration_actions.dart';
 import 'package:venue_app/repository/app_enum_manager.dart';
 
@@ -45,6 +46,11 @@ Middleware<AppState> userRegistrationMiddleware(AppState state) {
     else if (action is ProceedToLandingSceneAction) {
       _proceedToLandingScene(store, action, next);
     }
+
+    else if (action is CompleteUserRegistrations){
+      _completeUserRegistration(store, action, next);
+    }
+
     //</editor-fold>
 
     //<editor-fold desc="Landing Scene Actions">
@@ -71,6 +77,22 @@ _validateUserLocation(Store<AppState> store, ValidateUserLocationAction action, 
 
   store.dispatch(UpdateUserFieldValidationAction(validation));
   _validateUserLocationScene(store);
+}
+
+_completeUserRegistration(Store<AppState> store, CompleteUserRegistrations action, NextDispatcher next){
+  User user = store.state.userRegistrationState.user;
+  SignUpRequestParams params = SignUpRequestParams(
+    firstName: "",
+    lastName: "",
+    description: "",
+    email: "",
+    latitude: 0.0,
+    location: user.place.placeid,
+    phone: user.mobileNo,
+    role: user.userType == UserType.owner ? 1:0 ,
+    longitude: 0.0
+  );
+  store.dispatch(CompleteUserRegistrations(params));
 }
 
 _validateUserLocationScene(Store<AppState> store) {

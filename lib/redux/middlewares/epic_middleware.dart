@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:redux_epics/redux_epics.dart';
 import 'package:rxdart/rxdart.dart';
 import 'package:venue_app/models/Bookings.dart';
+import 'package:venue_app/models/registration/SignUpResponse.dart';
 import 'package:venue_app/network/endpoints.dart';
 import 'package:venue_app/network/network_adapter.dart';
 import 'package:venue_app/redux/actions/helper_actions.dart';
@@ -10,11 +11,12 @@ import 'package:venue_app/redux/actions/ownerBookings_actions.dart';
 import 'package:venue_app/redux/actions/userRegistration_actions.dart';
 import 'package:venue_app/redux/states/app_state.dart';
 
-final epics = combineEpics<AppState>([sampleEpic, requestOTPEpic, verifyOTPEpic]);
+final epics = combineEpics<AppState>([sampleEpic, requestOTPEpic, verifyOTPEpic, signUpUserEpic]);
 
 final sampleEpic = new TypedEpic<AppState, FetchOwnerBookingsEpicAction>(performNetworkCall);
 final requestOTPEpic = new TypedEpic<AppState, RequestOTPEpicAction>(requestOTPAPI);
 final verifyOTPEpic = new TypedEpic<AppState, VerifyOTPEpicAction>(verifyOTPAPI);
+final signUpUserEpic = new TypedEpic<AppState, CompleteUserRegistrations>(signUpUserAPI);
 
 // Network call
 Stream<dynamic> performNetworkCall(Stream<dynamic> actions, EpicStore<AppState> store) {
@@ -96,4 +98,27 @@ Stream<dynamic> verifyOTPAPI(Stream<dynamic> actions, EpicStore<AppState> store)
               }
             }).catchError((error) => print("Catch error")),
       );
+}
+
+Stream<dynamic> signUpUserAPI(Stream<dynamic> actions, EpicStore<AppState> store) {
+  return Observable(actions).ofType(TypeToken<CompleteUserRegistrations>()).asyncMap(
+        (action) => APIManager.request(
+        url: developmentURL + signUp,
+        params: action.requestParams.toJson(),
+        requestType: RequestType.post)
+        .then((response) {
+      switch (response.status) {
+        case ResponseStatus.error_404:
+          break;
+        case ResponseStatus.error_400:
+          break;
+        case ResponseStatus.success_200:
+          SignUpResponse signUpResponse = SignUpResponse.fromJson(response.data);
+          break;
+        default:
+          print("Exited with default case");
+          break;
+      }
+    }).catchError((error) => print("Catch error")),
+  );
 }

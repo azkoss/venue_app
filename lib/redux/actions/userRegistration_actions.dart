@@ -1,4 +1,5 @@
 import 'package:venue_app/models/User.dart';
+import 'package:venue_app/models/registration/SignUpRequestParams.dart';
 
 //<editor-fold desc="Common User Details Updation Actions">
 class UpdateUserAction {
@@ -59,6 +60,12 @@ class OTPVerificationSuccessAction {
   final String accessToken;
 
   OTPVerificationSuccessAction(this.accessToken);
+}
+
+class CompleteUserRegistrations {
+  final SignUpRequestParams requestParams;
+
+  CompleteUserRegistrations(this.requestParams);
 }
 
 class ProceedToLandingSceneAction {
