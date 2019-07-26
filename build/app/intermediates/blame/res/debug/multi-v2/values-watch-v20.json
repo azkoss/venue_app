@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/aneesh/Documents/AneeshiLeafGit/Venue-App/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "/Users/aneesh/Documents/Aneesh Workspace/AneeshiLeafGit/Venue-App/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "/Users/aneesh/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/a14617d17e757a012977abd68f93dd8b/res/values-watch-v20/values-watch-v20.xml",
+                    "source": "/Users/aneesh/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/f97e86b89d16909c4e5cf1199a83eb3e/res/values-watch-v20/values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",

@@ -7,9 +7,12 @@ import '../states/app_state.dart';
 
 AppState appStateReducer(AppState state, action) {
   return AppState(
-    userRegistrationState: userRegistrationReducer(state.userRegistrationState, action),
-    venueRegistrationState: venueRegistrationReducer(state.venueRegistrationState, action),
-    eventRegistrationState: eventRegistrationReducer(state.eventRegistrationState, action),
+    userRegistrationState:
+        userRegistrationReducer(state.userRegistrationState, action),
+    venueRegistrationState:
+        venueRegistrationReducer(state.venueRegistrationState, action),
+    eventRegistrationState:
+        eventRegistrationReducer(state.eventRegistrationState, action),
     ownerBookingsState: ownerBookingsReducer(state.ownerBookingsState, action),
   );
 }

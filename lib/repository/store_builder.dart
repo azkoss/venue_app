@@ -17,7 +17,7 @@ class AppStoreBuilder extends StatelessWidget {
     return StoreConnector<AppState, PersistenceModel>(
       distinct: true,
       onInit: (store) {
-        store.dispatch(AppAuthStateCheckAction());
+//        store.dispatch(AppAuthStateCheckAction());
       },
       converter: (Store<AppState> store) => appAuthorizationValue(store.state),
       builder: builder,

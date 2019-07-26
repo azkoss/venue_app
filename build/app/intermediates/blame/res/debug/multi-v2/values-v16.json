@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/aneesh/Documents/AneeshiLeafGit/Venue-App/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
+            "outputFile": "/Users/aneesh/Documents/Aneesh Workspace/AneeshiLeafGit/Venue-App/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/aneesh/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/a14617d17e757a012977abd68f93dd8b/res/values-v16/values-v16.xml",
+                    "source": "/Users/aneesh/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/f97e86b89d16909c4e5cf1199a83eb3e/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/aneesh/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/aac31b02fdd1f977ca811cc064422e9a/res/values-v16/values-v16.xml",
+                    "source": "/Users/aneesh/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/3d8ca333a9358785477b033ed8f88ada/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -7,27 +7,28 @@ import 'package:venue_app/redux/reducers/appState_reducer.dart';
 import 'package:venue_app/redux/states/app_state.dart';
 import 'package:venue_app/repository/app_enum_manager.dart';
 import 'package:venue_app/repository/store_builder.dart';
-import 'package:venue_app/screens/eventRegistration/eventAgeGroup_scene.dart';
-import 'package:venue_app/screens/eventRegistration/eventCost_scene.dart';
-import 'package:venue_app/screens/eventRegistration/eventDate_scene.dart';
-import 'package:venue_app/screens/eventRegistration/eventDescription_scene.dart';
-import 'package:venue_app/screens/eventRegistration/eventName_scene.dart';
-import 'package:venue_app/screens/eventRegistration/eventPhotos_scene.dart';
-import 'package:venue_app/screens/eventRegistration/eventSport_scene.dart';
+
 import 'package:venue_app/screens/home/home_scene.dart';
+import 'package:venue_app/screens/home/owner/eventRegistration/eventAgeGroup_scene.dart';
+import 'package:venue_app/screens/home/owner/eventRegistration/eventCost_scene.dart';
+import 'package:venue_app/screens/home/owner/eventRegistration/eventDate_scene.dart';
+import 'package:venue_app/screens/home/owner/eventRegistration/eventDescription_scene.dart';
+import 'package:venue_app/screens/home/owner/eventRegistration/eventName_scene.dart';
+import 'package:venue_app/screens/home/owner/eventRegistration/eventPhotos_scene.dart';
+import 'package:venue_app/screens/home/owner/eventRegistration/eventSport_scene.dart';
+import 'package:venue_app/screens/home/owner/venueRegistration/venueAddress_scene.dart';
+import 'package:venue_app/screens/home/owner/venueRegistration/venueAmenities_scene.dart';
+import 'package:venue_app/screens/home/owner/venueRegistration/venueAvailableSports_scene.dart';
+import 'package:venue_app/screens/home/owner/venueRegistration/venueDetails_scene.dart';
+import 'package:venue_app/screens/home/owner/venueRegistration/venueLocation_scene.dart';
+import 'package:venue_app/screens/home/owner/venueRegistration/venuePhotos_scene.dart';
+import 'package:venue_app/screens/home/owner/venueRegistration/venueTimeAndPrice_scene.dart';
 import 'package:venue_app/screens/userRegistration/Tutorial_scene.dart';
 import 'package:venue_app/screens/userRegistration/landing_scene.dart';
-import 'package:venue_app/screens/userRegistration/location_scene.dart';
+
 import 'package:venue_app/screens/userRegistration/mobile_number_scene.dart';
 import 'package:venue_app/screens/userRegistration/otp_scene.dart';
-import 'package:venue_app/screens/venueRegistration/venueTimeAndPrice_scene.dart';
 
-import '../screens/venueRegistration/venueAddress_scene.dart';
-import '../screens/venueRegistration/venueAmenities_scene.dart';
-import '../screens/venueRegistration/venueAvailableSports_scene.dart';
-import '../screens/venueRegistration/venueDetails_scene.dart';
-import '../screens/venueRegistration/venueLocation_scene.dart';
-import '../screens/venueRegistration/venuePhotos_scene.dart';
 
 class VenueApp extends StatelessWidget {
   @override
@@ -46,19 +47,25 @@ class VenueApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.green,
         ),
-        home: Scaffold(body: AppStoreBuilder(builder: (context, stateModel){
-          switch(stateModel.status){
-            case LoginStatus.loggedIn:
-              if (stateModel.type == UserType.owner) LandingScene(store);
-              else LandingScene(store);
-              break;
-            case LoginStatus.loggedOut:
-              LandingScene(store);
-              break;
-            case LoginStatus.none:
-              LandingScene(store);
-              break;
-          }},),
+        home:
+        Scaffold(body:LandingScene(store)
+
+
+//        AppStoreBuilder(builder: (context, stateModel){
+//          switch(stateModel.status){
+//            case LoginStatus.loggedIn:
+//              if (stateModel.type == UserType.owner) LandingScene(store);
+//              else LandingScene(store);
+//              break;
+//            case LoginStatus.loggedOut:
+//              LandingScene(store);
+//              break;
+//            case LoginStatus.none:
+//              LandingScene(store);
+//              break;
+//          }},
+//
+//        ),
         ),
         navigatorKey: Keys.navigationKey,
         onGenerateRoute: (routeSettings) => routes(routeSettings, store),

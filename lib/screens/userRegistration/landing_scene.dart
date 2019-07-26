@@ -13,20 +13,22 @@ class LandingScene extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: StoreConnector<AppState, _ViewModel>(
-          converter: (store) => _ViewModel.create(store),
-          builder: (BuildContext context, _ViewModel viewModel) => ListView(
-                children: <Widget>[
-                  buildTitle(),
-                  buildDescription(),
-                  buildRadioButton1(context, viewModel),
-                  buildSubDescription1(),
-                  buildRadioButton2(context, viewModel),
-                  buildSubDescription2(),
-                  buildNextButton(context, viewModel),
-                ],
-              )),
+    return SafeArea(
+      child: Scaffold(
+        body: StoreConnector<AppState, _ViewModel>(
+            converter: (store) => _ViewModel.create(store),
+            builder: (BuildContext context, _ViewModel viewModel) => ListView(
+                  children: <Widget>[
+                    buildTitle(),
+                    buildDescription(),
+                    buildRadioButton1(context, viewModel),
+                    buildSubDescription1(),
+                    buildRadioButton2(context, viewModel),
+                    buildSubDescription2(),
+                    buildNextButton(context, viewModel),
+                  ],
+                )),
+      ),
     );
   }
 

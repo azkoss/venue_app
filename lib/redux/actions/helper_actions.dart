@@ -1,21 +1,13 @@
-import 'package:flutter/material.dart';
-import 'package:venue_app/repository/store_builder.dart';
-
 class TriggerMultipleActionsAction {
   final List actions;
-
   TriggerMultipleActionsAction(this.actions);
 }
 
-class AppAuthStateCheckAction {
-  final VoidCallback callback;
+class ShowDialogueMessageAction {
+  final String title;
+  final String message;
 
-  AppAuthStateCheckAction({this.callback});
+  ShowDialogueMessageAction(this.title, this.message);
 }
 
-class ChangeAuthStatusAction {
-  final PersistenceModel statusModel;
-
-  ChangeAuthStatusAction({this.statusModel});
-
-}
+class ClearDialogueMessageAction{}

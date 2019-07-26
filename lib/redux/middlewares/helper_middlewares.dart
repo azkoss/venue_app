@@ -21,8 +21,8 @@ Middleware<AppState> combineMultipleActionsMiddleWare(AppState state) {
 Middleware<AppState> _appAuthStateCheck(AppState state) {
   return (Store store, action, NextDispatcher next) async {
     next(action);
-    if (action is AppAuthStateCheckAction) {
-
-    }
+//    if (action is AppAuthStateCheckAction) {
+//
+//    }
   };
 }
