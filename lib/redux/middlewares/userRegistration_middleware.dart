@@ -1,7 +1,7 @@
+import 'package:flutter/material.dart';
 import 'package:redux/redux.dart';
 import 'package:venue_app/models/User.dart';
 import 'package:venue_app/redux/actions/userRegistration_actions.dart';
-import 'package:venue_app/repository/app_enum_manager.dart';
 
 import '../states/app_state.dart';
 
@@ -45,11 +45,18 @@ Middleware<AppState> userRegistrationMiddleware(AppState state) {
     else if (action is ProceedToLandingSceneAction) {
       _proceedToLandingScene(store, action, next);
     }
+
+    //</editor-fold>
+
+
+
     //</editor-fold>
 
     //<editor-fold desc="Landing Scene Actions">
     else if (action is ProceedToTutorialSceneAction) {
       _proceedToTutorialScene(store, action, next);
+    } else if (action is ProceedToVenueLocationSceneAction) {
+      _proceedToVenueLocationScene(store, action, next);
     }
     //</editor-fold>
 
@@ -73,6 +80,23 @@ _validateUserLocation(Store<AppState> store, ValidateUserLocationAction action, 
   _validateUserLocationScene(store);
 }
 
+/*_completeUserRegistration(Store<AppState> store, CompleteUserRegistrations action, NextDispatcher next){
+  User user = store.state.userRegistrationState.user;
+  print("complete user registrations");
+  SignUpRequestParams params = SignUpRequestParams(
+      firstName: "",
+      lastName: "",
+      description: "",
+      email: "",
+      latitude: 0.0,
+      location: user.place.placeid,
+      phone: user.mobileNo,
+      role: user.userType == UserType.owner ? 1:0 ,
+      longitude: 0.0
+  );
+  //store.dispatch(CompleteUserRegistrations(params));
+}*/
+
 _validateUserLocationScene(Store<AppState> store) {
   User user = store.state.userRegistrationState.user;
   UserSceneValidations sceneValidation = store.state.userRegistrationState.sceneValidations;
@@ -94,7 +118,7 @@ _validateMobileNo(Store<AppState> store, ValidateMobileNoAction action, NextDisp
   User user = store.state.userRegistrationState.user;
   UserFieldValidations validation = store.state.userRegistrationState.fieldValidations;
 
-  bool isValid = (user.mobileNo.length == 10) ? true : false;
+  bool isValid = (user.mobileNo.length == 10 && !user.mobileNo.contains('.')) ? true : false;
   validation.updateWith(isValidMobileNo: isValid);
 
   store.dispatch(UpdateUserFieldValidationAction(validation));
@@ -105,7 +129,7 @@ _validateUserMobileNoScene(Store<AppState> store) {
   User user = store.state.userRegistrationState.user;
   UserSceneValidations sceneValidation = store.state.userRegistrationState.sceneValidations;
 
-  bool isValid = (user.mobileNo.length == 10) ? true : false;
+  bool isValid = (user.mobileNo.length == 10 && !user.mobileNo.contains('.')) ? true : false;
   sceneValidation.updateWith(isValidUserMobileNoScene: isValid);
   store.dispatch(UpdateUserSceneValidationAction(sceneValidation));
 }
@@ -119,13 +143,19 @@ _proceedToOTPScene(Store<AppState> store, ProceedToOTPSceneAction action, NextDi
 _validateOTP(Store<AppState> store, ValidateOTPAction action, NextDispatcher next) {
   User user = store.state.userRegistrationState.user;
   UserFieldValidations validation = store.state.userRegistrationState.fieldValidations;
+  UserSceneValidations sceneValidation = store.state.userRegistrationState.sceneValidations;
 
   bool isValid = (user.otp.length >= 5) ? true : false;
   validation.updateWith(isValidOTP: isValid);
   store.dispatch(UpdateUserFieldValidationAction(validation));
 
   if (isValid == true) {
-    store.dispatch(VerifyOTPEpicAction(user.mobileNo, user.otp));
+//    store.dispatch(VerifyOTPEpicAction(user.mobileNo, user.otp));
+    sceneValidation.updateWith(isValidUserOTPScene: isValid);
+    store.dispatch(UpdateUserSceneValidationAction(sceneValidation));
+  } else {
+    sceneValidation.updateWith(isValidUserOTPScene: isValid);
+    store.dispatch(UpdateUserSceneValidationAction(sceneValidation));
   }
 }
 
@@ -144,6 +174,10 @@ _proceedToLandingScene(Store<AppState> store, ProceedToLandingSceneAction action
 //</editor-fold>
 
 //<editor-fold desc="Landing Scene Helper Methods">
+_proceedToVenueLocationScene(Store<AppState> store, ProceedToVenueLocationSceneAction action, NextDispatcher next) {
+  Keys.navigationKey.currentState.pushNamed("venueLocation");
+}
+
 _proceedToTutorialScene(Store<AppState> store, ProceedToTutorialSceneAction action, NextDispatcher next) {
   Keys.navigationKey.currentState.pushNamed("tutorial");
 }
@@ -151,16 +185,14 @@ _proceedToTutorialScene(Store<AppState> store, ProceedToTutorialSceneAction acti
 
 //<editor-fold desc="Tutorial Scene Helper Methods">
 _proceedToOwnerOrPlayerScene(Store<AppState> store, ProceedToOwnerOrPlayerSceneAction action, NextDispatcher next) {
-  UserType userType = store.state.userRegistrationState.user.userType;
+  UserType1 userType = store.state.userRegistrationState.user.userType;
   switch (userType) {
-    case UserType.owner:
-      Keys.navigationKey.currentState.pushNamed("home");
+    case UserType1.owner:
+      Keys.navigationKey.currentState.pushNamedAndRemoveUntil("home", (Route<dynamic> route) => false);
+
       break;
-    case UserType.player:
-      Keys.navigationKey.currentState.pushNamed("home");
-      break;
-    case UserType.none:
-      // TODO: Handle this case.
+    case UserType1.player:
+      Keys.navigationKey.currentState.pushNamedAndRemoveUntil("home", (Route<dynamic> route) => false);
       break;
   }
 }

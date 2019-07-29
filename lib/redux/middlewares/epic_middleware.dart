@@ -4,27 +4,23 @@ import 'dart:io';
 import 'package:dio/dio.dart';
 import 'package:redux_epics/redux_epics.dart';
 import 'package:rxdart/rxdart.dart';
-import 'package:venue_app/models/Bookings.dart';
 import 'package:venue_app/models/VenueList.dart';
 import 'package:venue_app/models/registration/SignUpResponse.dart';
 import 'package:venue_app/network/endpoints.dart';
 import 'package:venue_app/network/network_adapter.dart';
-import 'package:venue_app/redux/actions/eventRegistration_actions.dart';
 import 'package:venue_app/redux/actions/helper_actions.dart';
-import 'package:venue_app/redux/actions/ownerBooking_actions.dart';
 import 'package:venue_app/redux/actions/playerBooking_actions.dart';
 import 'package:venue_app/redux/actions/userRegistration_actions.dart';
 import 'package:venue_app/redux/states/app_state.dart';
 
 // Combined Epics
 final epics = combineEpics<AppState>(
-    [requestOTP, verifyOTP, ownerBookings, venueList, signUpUserEpic]);
+    [requestOTP, verifyOTP, venueList, signUpUserEpic]);
 
 // Individual Epics
 final requestOTP = new TypedEpic<AppState, RequestOTPEpicAction>(requestOTPAPI);
 final verifyOTP = new TypedEpic<AppState, VerifyOTPEpicAction>(verifyOTPAPI);
-final ownerBookings = new TypedEpic<AppState, FetchOwnerBookingsEpicAction>(
-    requestOwnerBookingList);
+
 final venueList =
     new TypedEpic<AppState, FetchVenueListEpicAction>(requestVenueList);
 final signUpUserEpic =
@@ -102,46 +98,6 @@ Stream<dynamic> verifyOTPAPI(
       );
 }
 
-Stream<dynamic> requestOwnerBookingList(
-    Stream<dynamic> actions, EpicStore<AppState> store) {
-  return Observable(actions)
-      .ofType(TypeToken<FetchOwnerBookingsEpicAction>())
-      .asyncMap((action) {
-    return APIManager.request(
-      url: liveURL + ownerBookingsURL,
-      requestType: RequestType.get,
-      contentType: ContentType.json,
-      params: null,
-    ).then((response) {
-      switch (response.status) {
-        case ResponseStatus.error_404:
-          break;
-        case ResponseStatus.error_400:
-          break;
-        case ResponseStatus.success_200:
-          print(response.data);
-          OwnerBookings ownerBookings = OwnerBookings.fromJson(response.data);
-          return TriggerMultipleActionsAction(
-            [
-              ListOwnerBookingsAction(ownerBookings),
-              UpdateOwnerBookingLoadingStatusAction(LoadingStatus.success),
-            ],
-          );
-          break;
-        default:
-          print("Exited with default case");
-          break;
-      }
-    }).catchError((error) {
-      print("Error found");
-      var actionList = makeActionsListByConsideringAnyNetworkError(error);
-      actionList
-          .add(UpdateOwnerBookingLoadingStatusAction(LoadingStatus.success));
-
-      return TriggerMultipleActionsAction(actionList);
-    });
-  });
-}
 
 Stream<dynamic> requestVenueList(
     Stream<dynamic> actions, EpicStore<AppState> store) {
@@ -296,7 +252,7 @@ Stream<dynamic> getUserImageListsAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   //TODO Need to change Action Generic Type
   return Observable(actions)
-      .ofType(TypeToken<GetEventsImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: getUserImageListURL,
@@ -318,7 +274,7 @@ Stream<dynamic> getUserImageDetailsAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   //TODO Need to change Action Generic Type
   return Observable(actions)
-      .ofType(TypeToken<GetEventsImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: userImageDetailsURL,
@@ -343,7 +299,7 @@ Stream<dynamic> createUserImageAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   //TODO Need to change Action Generic Type
   return Observable(actions)
-      .ofType(TypeToken<GetEventsImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: createUserImageURL,
@@ -368,7 +324,7 @@ Stream<dynamic> deleteUserImageAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   //TODO Need to change Action Generic Type
   return Observable(actions)
-      .ofType(TypeToken<GetEventsImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: deleteUserImageURL,
@@ -394,7 +350,7 @@ Stream<dynamic> deleteUserImageAPI(
 Stream<dynamic> getEventsListAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   return Observable(actions)
-      .ofType(TypeToken<GetEventsEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
                 url: getEventsURL,
@@ -417,7 +373,7 @@ Stream<dynamic> getEventsListAPI(
 Stream<dynamic> getEventDetailsAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   return Observable(actions)
-      .ofType(TypeToken<GetEventDetailsEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
                 url: eventDetailsURL,
@@ -441,7 +397,7 @@ Stream<dynamic> getEventDetailsAPI(
 Stream<dynamic> createEventAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   return Observable(actions)
-      .ofType(TypeToken<CreateEventEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: createNewEventURL,
@@ -472,7 +428,7 @@ Stream<dynamic> createEventAPI(
 Stream<dynamic> deleteAnEventAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   return Observable(actions)
-      .ofType(TypeToken<DeleteEventEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: deleteEventURL,
@@ -498,7 +454,7 @@ Stream<dynamic> deleteAnEventAPI(
 Stream<dynamic> getEventImagesAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   return Observable(actions)
-      .ofType(TypeToken<GetEventsImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: getEventImageListURL,
@@ -522,7 +478,7 @@ Stream<dynamic> getEventImagesAPI(
 Stream<dynamic> createEventImageAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   return Observable(actions)
-      .ofType(TypeToken<CreateEventImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: createEventImageURL,
@@ -547,7 +503,7 @@ Stream<dynamic> createEventImageAPI(
 Stream<dynamic> getImageDetailsAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   return Observable(actions)
-      .ofType(TypeToken<DetailsEventImageEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: userImageDetailsURL,
@@ -572,7 +528,7 @@ Stream<dynamic> deleteEventsImageAPI(
     //TODO Need to change Action Generic Type
     Stream<dynamic> actions, EpicStore<AppState> store) {
   return Observable(actions)
-      .ofType(TypeToken<DeleteEventImageEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: deleteEventImageURL,
@@ -599,7 +555,7 @@ Stream<dynamic> deleteEventsImageAPI(
 Stream<dynamic> getVenueListAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   return Observable(actions)
-      .ofType(TypeToken<GetEventsImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: getVenueListURL,
@@ -620,7 +576,7 @@ Stream<dynamic> getVenueListAPI(
 Stream<dynamic> createVenueAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   return Observable(actions)
-      .ofType(TypeToken<CreateEventImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: createVenueURL,
@@ -650,7 +606,7 @@ Stream<dynamic> createVenueAPI(
 Stream<dynamic> updateVenueAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   return Observable(actions)
-      .ofType(TypeToken<DetailsEventImageEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: updateVenueURL,
@@ -682,7 +638,7 @@ Stream<dynamic> deleteVenueAPI(
     //TODO Need to change Action Generic Type
     Stream<dynamic> actions, EpicStore<AppState> store) {
   return Observable(actions)
-      .ofType(TypeToken<DeleteEventImageEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: deleteVenueURL,
@@ -708,7 +664,7 @@ Stream<dynamic> deleteVenueAPI(
 Stream<dynamic> getVenueSportsListAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   return Observable(actions)
-      .ofType(TypeToken<GetEventsImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: getVenueSportListURL,
@@ -732,7 +688,7 @@ Stream<dynamic> getVenueSportsListAPI(
 Stream<dynamic> createVenueSportAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   return Observable(actions)
-      .ofType(TypeToken<CreateEventImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: createVenueSportURL,
@@ -758,7 +714,7 @@ Stream<dynamic> createVenueSportAPI(
 Stream<dynamic> venueSportDetailAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   return Observable(actions)
-      .ofType(TypeToken<DetailsEventImageEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: venueSportDetailURL,
@@ -783,7 +739,7 @@ Stream<dynamic> updateVenueSportAPI(
     //TODO Need to change Action Generic Type
     Stream<dynamic> actions, EpicStore<AppState> store) {
   return Observable(actions)
-      .ofType(TypeToken<DeleteEventImageEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: updateVenueSportURL,
@@ -811,7 +767,7 @@ Stream<dynamic> deleteVenueSportAPI(
     //TODO Need to change Action Generic Type
     Stream<dynamic> actions, EpicStore<AppState> store) {
   return Observable(actions)
-      .ofType(TypeToken<DeleteEventImageEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: deleteVenueSportURL,
@@ -837,7 +793,7 @@ Stream<dynamic> deleteVenueSportAPI(
 Stream<dynamic> getVenueRatingAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   return Observable(actions)
-      .ofType(TypeToken<GetEventsImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: getVenueRatingURL,
@@ -861,7 +817,7 @@ Stream<dynamic> getVenueRatingAPI(
 Stream<dynamic> createVenueRatingAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   return Observable(actions)
-      .ofType(TypeToken<CreateEventImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: createVenueRatingURL,
@@ -887,7 +843,7 @@ Stream<dynamic> createVenueRatingAPI(
 Stream<dynamic> venueRatingDetailAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   return Observable(actions)
-      .ofType(TypeToken<DetailsEventImageEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: venueRatingDetailURL,
@@ -912,7 +868,7 @@ Stream<dynamic> deleteVenueRatingAPI(
     //TODO Need to change Action Generic Type
     Stream<dynamic> actions, EpicStore<AppState> store) {
   return Observable(actions)
-      .ofType(TypeToken<DeleteEventImageEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: deleteVenueRatingURL,
@@ -943,7 +899,7 @@ Stream<dynamic> getBookingsAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   //TODO Need to change Action Generic Type
   return Observable(actions)
-      .ofType(TypeToken<GetEventsImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: bookingsURL,
@@ -965,7 +921,7 @@ Stream<dynamic> getBookingDetailsAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   //TODO Need to change Action Generic Type
   return Observable(actions)
-      .ofType(TypeToken<GetEventsImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: bookingDetailsURL,
@@ -990,7 +946,7 @@ Stream<dynamic> createBookingAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   //TODO Need to change Action Generic Type
   return Observable(actions)
-      .ofType(TypeToken<GetEventsImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: createBookingURL,
@@ -1022,7 +978,7 @@ Stream<dynamic> deleteBookingAPI(
     //TODO Need to change Action Generic Type
     Stream<dynamic> actions, EpicStore<AppState> store) {
   return Observable(actions)
-      .ofType(TypeToken<GetEventsImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: deleteBookingURL,
@@ -1050,7 +1006,7 @@ Stream<dynamic> getAmenitiesAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   //TODO Need to change Action Generic Type
   return Observable(actions)
-      .ofType(TypeToken<GetEventsImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: amenitiesListURL,
@@ -1072,7 +1028,7 @@ Stream<dynamic> getAmenityDetailsAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   //TODO Need to change Action Generic Type
   return Observable(actions)
-      .ofType(TypeToken<GetEventsImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: amenityDetailsURL,
@@ -1097,7 +1053,7 @@ Stream<dynamic> createAmenityAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   //TODO Need to change Action Generic Type
   return Observable(actions)
-      .ofType(TypeToken<GetEventsImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: createAmenityURL,
@@ -1123,7 +1079,7 @@ Stream<dynamic> updateAmenityAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   //TODO Need to change Action Generic Type
   return Observable(actions)
-      .ofType(TypeToken<GetEventsImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: updateAmenityURL,
@@ -1150,7 +1106,7 @@ Stream<dynamic> deleteAmenityAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   //TODO Need to change Action Generic Type
   return Observable(actions)
-      .ofType(TypeToken<GetEventsImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: deleteAmenityURL,
@@ -1178,7 +1134,7 @@ Stream<dynamic> getGroundsAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   //TODO Need to change Action Generic Type
   return Observable(actions)
-      .ofType(TypeToken<GetEventsImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: groundListURL,
@@ -1200,7 +1156,7 @@ Stream<dynamic> getGroundDetailsAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   //TODO Need to change Action Generic Type
   return Observable(actions)
-      .ofType(TypeToken<GetEventsImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: groundDetailsURL,
@@ -1225,7 +1181,7 @@ Stream<dynamic> createGroundAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   //TODO Need to change Action Generic Type
   return Observable(actions)
-      .ofType(TypeToken<GetEventsImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: createGroundURL,
@@ -1251,7 +1207,7 @@ Stream<dynamic> updateGroundAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   //TODO Need to change Action Generic Type
   return Observable(actions)
-      .ofType(TypeToken<GetEventsImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: updateGroundURL,
@@ -1278,7 +1234,7 @@ Stream<dynamic> deleteGroundAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   //TODO Need to change Action Generic Type
   return Observable(actions)
-      .ofType(TypeToken<GetEventsImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: deleteGroundURL,
@@ -1305,7 +1261,7 @@ Stream<dynamic> getGroundImagesAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   //TODO Need to change Action Generic Type
   return Observable(actions)
-      .ofType(TypeToken<GetEventsImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: groundImageListURL,
@@ -1330,7 +1286,7 @@ Stream<dynamic> getGroundImageDetailsAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   //TODO Need to change Action Generic Type
   return Observable(actions)
-      .ofType(TypeToken<GetEventsImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: groundDetailsURL,
@@ -1355,7 +1311,7 @@ Stream<dynamic> createGroundImageAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   //TODO Need to change Action Generic Type
   return Observable(actions)
-      .ofType(TypeToken<GetEventsImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: createGroundURL,
@@ -1381,7 +1337,7 @@ Stream<dynamic> deleteGroundImageAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   //TODO Need to change Action Generic Type
   return Observable(actions)
-      .ofType(TypeToken<GetEventsImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: deleteGroundImageURL,
@@ -1408,7 +1364,7 @@ Stream<dynamic> getSportsAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   //TODO Need to change Action Generic Type
   return Observable(actions)
-      .ofType(TypeToken<GetEventsImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: sportsListURL,
@@ -1430,7 +1386,7 @@ Stream<dynamic> getSportDetailsAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   //TODO Need to change Action Generic Type
   return Observable(actions)
-      .ofType(TypeToken<GetEventsImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: sportDetailsURL,
@@ -1455,7 +1411,7 @@ Stream<dynamic> createSportAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   //TODO Need to change Action Generic Type
   return Observable(actions)
-      .ofType(TypeToken<GetEventsImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: createSportURL,
@@ -1482,7 +1438,7 @@ Stream<dynamic> updateSportAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   //TODO Need to change Action Generic Type
   return Observable(actions)
-      .ofType(TypeToken<GetEventsImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: updateSportURL,
@@ -1509,7 +1465,7 @@ Stream<dynamic> deleteSportAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   //TODO Need to change Action Generic Type
   return Observable(actions)
-      .ofType(TypeToken<GetEventsImageListEpicAction>())
+      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: deleteSportURL,

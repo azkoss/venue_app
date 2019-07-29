@@ -73,10 +73,10 @@ class LandingScene extends StatelessWidget {
         children: <Widget>[
           Radio(
             activeColor: Colors.green,
-            value: UserType.owner,
+            value: UserType1.owner,
             groupValue: viewModel.userType,
             onChanged: (value) {
-              viewModel.setUserType(UserType.owner);
+              viewModel.setUserType(UserType1.owner);
               print("player clicked");
             },
           ),
@@ -117,10 +117,10 @@ class LandingScene extends StatelessWidget {
         children: <Widget>[
           Radio(
             activeColor: Colors.green,
-            value: UserType.player,
+            value: UserType1.player,
             groupValue: viewModel.userType,
             onChanged: (value) {
-              viewModel.setUserType(UserType.player);
+              viewModel.setUserType(UserType1.player);
               print("player clicked");
             },
           ),
@@ -171,12 +171,12 @@ class LandingScene extends StatelessWidget {
 }
 
 class _ViewModel {
-  UserType userType;
-  final Function(UserType) setUserType;
+  UserType1 userType;
+  final Function(UserType1) setUserType;
 
   UserFieldValidations fieldValidations;
   bool canProceedToNextScene;
-  final Function(UserType) proceedToNextScene;
+  final Function(UserType1) proceedToNextScene;
 
   _ViewModel({
     this.userType,
@@ -187,7 +187,7 @@ class _ViewModel {
   });
 
   factory _ViewModel.create(Store<AppState> store) {
-    _setUserType(UserType userType) {
+    _setUserType(UserType1 userType) {
       User user = store.state.userRegistrationState.user;
       user.userType = userType;
       store.dispatch(UpdateUserAction(user));
@@ -197,8 +197,8 @@ class _ViewModel {
       store.dispatch(ProceedToTutorialSceneAction());
     }
 
-    _proceedToNextScene(UserType userType) {
-      if (userType == UserType.owner) {
+    _proceedToNextScene(UserType1 userType) {
+      if (userType == UserType1.owner) {
         store.dispatch(ProceedToVenueLocationSceneAction());
       } else {
         User user = store.state.userRegistrationState.user;
