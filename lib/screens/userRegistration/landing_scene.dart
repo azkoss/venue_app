@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:redux/redux.dart';
 import 'package:venue_app/models/User.dart';
+import 'package:venue_app/models/registration/SignUpRequestParams.dart';
+
 import 'package:venue_app/redux/actions/userRegistration_actions.dart';
 import 'package:venue_app/redux/states/app_state.dart';
-import 'package:venue_app/repository/app_enum_manager.dart';
 
 class LandingScene extends StatelessWidget {
   final Store<AppState> store;
@@ -13,21 +14,22 @@ class LandingScene extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        body: StoreConnector<AppState, _ViewModel>(
-            converter: (store) => _ViewModel.create(store),
-            builder: (BuildContext context, _ViewModel viewModel) => ListView(
-                  children: <Widget>[
-                    buildTitle(),
-                    buildDescription(),
-                    buildRadioButton1(context, viewModel),
-                    buildSubDescription1(),
-                    buildRadioButton2(context, viewModel),
-                    buildSubDescription2(),
-                    buildNextButton(context, viewModel),
-                  ],
-                )),
+    return Scaffold(
+      body: StoreConnector<AppState, _ViewModel>(
+        converter: (store) => _ViewModel.create(store),
+        builder: (BuildContext context, _ViewModel viewModel) => SafeArea(
+              child: ListView(
+                children: <Widget>[
+                  buildTitle(),
+                  buildDescription(),
+                  buildRadioButton1(context, viewModel),
+                  buildSubDescription1(),
+                  buildRadioButton2(context, viewModel),
+                  buildSubDescription2(),
+                  buildNextButton(context, viewModel),
+                ],
+              ),
+            ),
       ),
     );
   }
@@ -52,7 +54,7 @@ class LandingScene extends StatelessWidget {
       padding: EdgeInsets.only(top: 20.0, left: 20.0, right: 20.0),
       child: new Text(
         "You can register your venue with us or you can choose a venue to play. There are two types of "
-            "login available, ie. as a host or a player.",
+        "login available, ie. as a host or a player.",
         style: const TextStyle(
             color: const Color(0xffc7c7c7),
             fontWeight: FontWeight.w400,
@@ -158,7 +160,7 @@ class LandingScene extends StatelessWidget {
         alignment: Alignment.topRight,
         child: FloatingActionButton(
           onPressed: () {
-            viewModel.proceedToNextScene();
+            viewModel.proceedToNextScene(viewModel.userType);
           },
           backgroundColor: Colors.green,
           child: Icon(Icons.arrow_forward),
@@ -174,7 +176,7 @@ class _ViewModel {
 
   UserFieldValidations fieldValidations;
   bool canProceedToNextScene;
-  final Function proceedToNextScene;
+  final Function(UserType) proceedToNextScene;
 
   _ViewModel({
     this.userType,
@@ -191,8 +193,29 @@ class _ViewModel {
       store.dispatch(UpdateUserAction(user));
     }
 
-    _proceedToNextScene() {
+    void onSignUpSuccess(){
       store.dispatch(ProceedToTutorialSceneAction());
+    }
+
+    _proceedToNextScene(UserType userType) {
+      if (userType == UserType.owner) {
+        store.dispatch(ProceedToVenueLocationSceneAction());
+      } else {
+        User user = store.state.userRegistrationState.user;
+        SignUpRequestParams params = SignUpRequestParams(
+            firstName: "John",
+            lastName: "Doe",
+            description: "Nothing",
+            email: "john@gmail.com",
+            latitude: 0.0,
+            location: "yyhy",
+            phone: "+91" + user.mobileNo,
+            role: 1 ,
+            longitude: 0.0
+        );
+        store.dispatch(CompleteUserRegistrationsEpicAction(params, onSignUpSuccess));
+        //store.dispatch(ProceedToTutorialSceneAction());
+      }
     }
 
     return _ViewModel(

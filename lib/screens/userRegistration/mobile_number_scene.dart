@@ -16,15 +16,18 @@ class MobileNumberScene extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: StoreConnector<AppState, _ViewModel>(
-          converter: (store) => _ViewModel.create(store),
-          builder: (BuildContext context, _ViewModel viewModel) => ListView(
+        converter: (store) => _ViewModel.create(store),
+        builder: (BuildContext context, _ViewModel viewModel) => SafeArea(
+              child: ListView(
                 children: <Widget>[
                   buildTitle(),
                   buildDescription(),
                   buildTextField(context, viewModel),
                   buildNextButton(context, viewModel),
                 ],
-              )),
+              ),
+            ),
+      ),
     );
   }
 
@@ -76,8 +79,9 @@ class MobileNumberScene extends StatelessWidget {
           contentPadding: EdgeInsets.only(bottom: 5.0),
           icon: Image.asset("assets/phoneIcon.png"),
           hintText: "Enter your mobile number",
-          prefixText: "+91",
-          errorText: viewModel.fieldValidations.isValidMobileNo == false ? "Please enter a valid mobile no" : null,
+          prefixText: controller.text.length > 0 ? "+91" : null,
+          errorText:
+              viewModel.fieldValidations.isValidMobileNo == false ? "Please enter a valid 10 digit mobile no" : null,
           fillColor: Colors.green,
         ),
       ),
@@ -90,9 +94,7 @@ class MobileNumberScene extends StatelessWidget {
       child: Container(
         alignment: Alignment.topRight,
         child: FloatingActionButton(
-          onPressed: () {
-            viewModel.proceedToNextScene();
-          },
+          onPressed: () => viewModel.canProceedToNextScene ? viewModel.proceedToNextScene() : null,
           backgroundColor: viewModel.canProceedToNextScene ? Colors.green : Colors.grey,
           child: Icon(Icons.arrow_forward),
         ),

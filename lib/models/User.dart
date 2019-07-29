@@ -1,8 +1,11 @@
 import 'dart:convert';
 
 import 'package:flutter_places_dialog/flutter_places_dialog.dart';
-import 'package:venue_app/repository/app_enum_manager.dart';
 
+enum UserType {
+  owner,
+  player,
+}
 
 class User {
   String id;
