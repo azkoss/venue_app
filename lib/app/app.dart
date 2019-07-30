@@ -1,13 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:redux/redux.dart';
-import 'package:venue_app/redux/actions/helper_actions.dart';
 import 'package:venue_app/redux/middlewares/appState_middleware.dart';
 import 'package:venue_app/redux/reducers/appState_reducer.dart';
 import 'package:venue_app/redux/states/app_state.dart';
-import 'package:venue_app/repository/app_enum_manager.dart';
-import 'package:venue_app/repository/store_builder.dart';
-
 import 'package:venue_app/screens/home/home_scene.dart';
 import 'package:venue_app/screens/home/owner/eventRegistration/eventAgeGroup_scene.dart';
 import 'package:venue_app/screens/home/owner/eventRegistration/eventCost_scene.dart';
@@ -25,7 +21,6 @@ import 'package:venue_app/screens/home/owner/venueRegistration/venuePhotos_scene
 import 'package:venue_app/screens/home/owner/venueRegistration/venueTimeAndPrice_scene.dart';
 import 'package:venue_app/screens/userRegistration/Tutorial_scene.dart';
 import 'package:venue_app/screens/userRegistration/landing_scene.dart';
-
 import 'package:venue_app/screens/userRegistration/mobile_number_scene.dart';
 import 'package:venue_app/screens/userRegistration/otp_scene.dart';
 
