@@ -6,6 +6,9 @@ import 'package:venue_app/redux/actions/eventRegistration_actions.dart';
 import 'package:venue_app/redux/actions/userRegistration_actions.dart';
 import 'package:venue_app/redux/states/app_state.dart';
 
+import 'package:venue_app/repository/app_enum_manager.dart';
+
+
 class EventAgeGroupScene extends StatefulWidget {
   final Store<AppState> store;
 

@@ -11,10 +11,12 @@ class OwnerBookingsState {
 
   OwnerBookingsState(
       {@required this.bookings,
-      this.loadingStatus = LoadingStatus.success,
-      this.selectedSportIndex = 0,
-      this.selectedMatchIndex = 0,
-      this.selectedFilterIndex = 0});
+
+        this.loadingStatus = LoadingStatus.success,
+        this.selectedSportIndex = 0,
+        this.selectedMatchIndex = 0,
+        this.selectedFilterIndex = 0});
+
 
   factory OwnerBookingsState.initial() {
     return OwnerBookingsState(
@@ -24,10 +26,12 @@ class OwnerBookingsState {
 
   OwnerBookingsState copyWith(
       {OwnerBookings bookings,
-      LoadingStatus loadingStatus,
-      int selectedSportIndex,
-      int selectedMatchIndex,
-      int selectedFilterIndex}) {
+
+        LoadingStatus loadingStatus,
+        int selectedSportIndex,
+        int selectedMatchIndex,
+        int selectedFilterIndex}) {
+
     return OwnerBookingsState(
         loadingStatus: loadingStatus ?? this.loadingStatus,
         bookings: bookings ?? this.bookings,

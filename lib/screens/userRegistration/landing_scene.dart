@@ -2,8 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:redux/redux.dart';
 import 'package:venue_app/models/User.dart';
+import 'package:venue_app/models/registration/SignUpRequestParams.dart';
+
 import 'package:venue_app/redux/actions/userRegistration_actions.dart';
 import 'package:venue_app/redux/states/app_state.dart';
+
+import '../../repository/app_enum_manager.dart';
 
 class LandingScene extends StatelessWidget {
   final Store<AppState> store;
@@ -71,10 +75,10 @@ class LandingScene extends StatelessWidget {
         children: <Widget>[
           Radio(
             activeColor: Colors.green,
-            value: UserType.owner,
+            value: UserType1.owner,
             groupValue: viewModel.userType,
             onChanged: (value) {
-              viewModel.setUserType(UserType.owner);
+              viewModel.setUserType(UserType1.owner);
               print("player clicked");
             },
           ),
@@ -115,10 +119,10 @@ class LandingScene extends StatelessWidget {
         children: <Widget>[
           Radio(
             activeColor: Colors.green,
-            value: UserType.player,
+            value: UserType1.player,
             groupValue: viewModel.userType,
             onChanged: (value) {
-              viewModel.setUserType(UserType.player);
+              viewModel.setUserType(UserType1.player);
               print("player clicked");
             },
           ),
@@ -169,12 +173,13 @@ class LandingScene extends StatelessWidget {
 }
 
 class _ViewModel {
-  UserType userType;
-  final Function(UserType) setUserType;
+  UserType1 userType;
+  final Function(UserType1) setUserType;
 
   UserFieldValidations fieldValidations;
   bool canProceedToNextScene;
-  final Function(UserType) proceedToNextScene;
+  final Function(UserType1) proceedToNextScene;
+
 
   _ViewModel({
     this.userType,
@@ -185,11 +190,15 @@ class _ViewModel {
   });
 
   factory _ViewModel.create(Store<AppState> store) {
-    _setUserType(UserType userType) {
+
+
+    _setUserType(UserType1 userType) {
       User user = store.state.userRegistrationState.user;
       user.userType = userType;
       store.dispatch(UpdateUserAction(user));
     }
+
+
 
     _proceedToNextScene(UserType userType) {
       if (userType == UserType.owner) {
@@ -199,12 +208,38 @@ class _ViewModel {
       }
     }
 
+    void onSignUpSuccess(){
+      store.dispatch(ProceedToTutorialSceneAction());
+
+    }
+
+    proceedToNextScene(UserType1 userType) {
+      if (userType == UserType1.owner) {
+        store.dispatch(ProceedToVenueLocationSceneAction());
+      } else {
+        User user = store.state.userRegistrationState.user;
+        SignUpRequestParams params = SignUpRequestParams(
+            firstName: "John",
+            lastName: "Doe",
+            description: "Nothing",
+            email: "john@gmail.com",
+            latitude: 0.0,
+            location: "yyhy",
+            phone: "+91 9539394292",
+            role: 1 ,
+            longitude: 0.0
+        );
+        store.dispatch(CompleteUserRegistrationsEpicAction(params, onSignUpSuccess));
+        //store.dispatch(ProceedToTutorialSceneAction());
+      }
+    }
+
     return _ViewModel(
       userType: store.state.userRegistrationState.user.userType,
       setUserType: _setUserType,
       fieldValidations: store.state.userRegistrationState.fieldValidations,
       canProceedToNextScene: true,
-      proceedToNextScene: _proceedToNextScene,
+      proceedToNextScene: proceedToNextScene,
     );
   }
 }

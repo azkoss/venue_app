@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b62ff1a-a127-42cd-90fa-802dbe00797e" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/android/.idea/encodings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/android/.idea/libraries/Gradle____local_aars____Users_mLp11_Desktop_Venue_App_venue_app_build_app_intermediates_flutter_flutter_x86_jar_unspecified_jar.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/android/.idea/libraries/Gradle__com_google_android_gms_play_services_base_16_0_1_aar.xml" afterDir="false" />
@@ -24,6 +25,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/venue_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/venue_app.iml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+>>>>>>> origin/merged_branch
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/4.10.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/fileHashes/fileHashes.bin" afterDir="false" />
@@ -37,6 +42,7 @@
       <change beforePath="$PROJECT_DIR$/android/.gradle/4.10.2/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/android/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.idea/codeStyles/Project.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/gradle.xml" afterDir="false" />
@@ -1813,6 +1819,10 @@
       <change beforePath="$PROJECT_DIR$/lib/screens/userRegistration/otp_scene.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/userRegistration/otp_scene.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/lib/app/app.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app/app.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/userRegistration/landing_scene.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/userRegistration/landing_scene.dart" afterDir="false" />
+>>>>>>> origin/merged_branch
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -1826,6 +1836,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/lib/screens/home/player/venueListMap_scene.dart">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="117">
@@ -1875,6 +1886,12 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="337">
               <caret line="125" column="29" selection-start-line="125" selection-start-column="29" selection-end-line="125" selection-end-column="29" />
+=======
+        <entry file="file://$PROJECT_DIR$/lib/screens/userRegistration/landing_scene.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="213" column="26" selection-start-line="213" selection-start-column="26" selection-end-line="213" selection-end-column="26" />
+>>>>>>> origin/merged_branch
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -1882,6 +1899,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/redux/actions/ownerBooking_actions.dart">
           <provider selected="true" editor-type-id="text-editor">
@@ -1889,12 +1907,22 @@
               <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/redux/middlewares/epic_middleware.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="121">
+              <caret line="160" column="27" selection-start-line="160" selection-start-column="27" selection-end-line="160" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+>>>>>>> origin/merged_branch
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/lib/redux/actions/playerBooking_actions.dart">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
@@ -1902,22 +1930,36 @@
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
+=======
+        <entry file="file://$USER_HOME$/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/rxdart-0.22.0/lib/src/transformers/of_type.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+>>>>>>> origin/merged_branch
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/lib/redux/middlewares/userRegistration_middleware.dart">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+=======
+        <entry file="file://$USER_HOME$/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/redux_epics-0.10.6/lib/src/epic.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="123" column="9" selection-start-line="123" selection-start-column="9" selection-end-line="123" selection-end-column="9" />
+>>>>>>> origin/merged_branch
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/lib/screens/home/player/venueList_scene.dart">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
@@ -1937,6 +1979,12 @@
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/lib/models/registration/SignUpRequestParams.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+>>>>>>> origin/merged_branch
             </state>
           </provider>
         </entry>
@@ -1952,6 +2000,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+<<<<<<< HEAD
       <find>buildVenueBookingsList</find>
       <find>_proceedToVenueLoc</find>
       <find>icon</find>
@@ -1982,14 +2031,45 @@
       <find>sear</find>
       <find>edit</find>
       <find>textscalefactor</find>
+=======
+      <find>venue</find>
+      <find>buildEventEndDateField</find>
+      <find>events</find>
+      <find>10.0</find>
+      <find>text</find>
+      <find>amenity</find>
+      <find>ameni</find>
+      <find>bookings</find>
+      <find>beginCallback</find>
+      <find>fetchOwnerBookingsList</find>
+      <find>FetchOwnerBookingsEpicAction</find>
+      <find>RequestOTPEpicAction</find>
+      <find>/converter:</find>
+      <find>AppAuthStateCheckAction</find>
+      <find>converter:(Store&lt;AppState&gt; store)</find>
+      <find>converter:</find>
+      <find>CachedNetworkImage</find>
+      <find>Sport(</find>
+      <find>GetEventsImageListEpicAction</find>
+      <find>CreateEventEpicAction</find>
+>>>>>>> origin/merged_branch
     </findStrings>
+    <replaceStrings>
+      <replace>CompleteUserRegistrationsEpicAction</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="player_module" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/lib/redux/middlewares/epic_middleware.dart" />
         <option value="$PROJECT_DIR$/lib/redux/middlewares/venueBookings_middleware.dart" />
         <option value="$PROJECT_DIR$/lib/network/endpoints.dart" />
@@ -2041,13 +2121,73 @@
         <option value="$PROJECT_DIR$/lib/screens/home/owner/venueProfile_scene.dart" />
         <option value="$PROJECT_DIR$/lib/app/app.dart" />
         <option value="$PROJECT_DIR$/lib/screens/userRegistration/Tutorial_scene.dart" />
+=======
+        <option value="$PROJECT_DIR$/lib/redux/states/bookings_state.dart" />
+        <option value="$PROJECT_DIR$/lib/screens/home/bookingList_tile.dart" />
+        <option value="$PROJECT_DIR$/lib/redux/reducers/ownerBookings_reducer.dart" />
+        <option value="$PROJECT_DIR$/lib/redux/middlewares/multipleAction_middleware.dart" />
+        <option value="$PROJECT_DIR$/lib/redux/middlewares/ownerBookings_middleware.dart" />
+        <option value="$PROJECT_DIR$/lib/redux/actions/commonHelper_actions.dart" />
+        <option value="$PROJECT_DIR$/lib/screens/home/bookingList_scene.dart" />
+        <option value="$PROJECT_DIR$/lib/screens/userRegistration/otp_scene.dart" />
+        <option value="$PROJECT_DIR$/lib/redux/actions/userRegistration_actions.dart" />
+        <option value="$PROJECT_DIR$/lib/screens/userRegistration/mobile_number_scene.dart" />
+        <option value="$PROJECT_DIR$/lib/network/endpoints.dart" />
+        <option value="$PROJECT_DIR$/lib/redux/middlewares/appState_middleware.dart" />
+        <option value="$PROJECT_DIR$/lib/repository/strings.dart" />
+        <option value="$PROJECT_DIR$/lib/models/Event.dart" />
+        <option value="$PROJECT_DIR$/lib/redux/states/app_authorization_state.dart" />
+        <option value="$PROJECT_DIR$/lib/redux/middlewares/userRegistration_middleware.dart" />
+        <option value="$PROJECT_DIR$/lib/redux/actions/helper_actions.dart" />
+        <option value="$PROJECT_DIR$/lib/repository/app_enum_manager.dart" />
+        <option value="$PROJECT_DIR$/lib/screens/eventRegistration/eventAgeGroup_scene.dart" />
+        <option value="$PROJECT_DIR$/lib/redux/selector/selectors.dart" />
+        <option value="$PROJECT_DIR$/lib/redux/reducers/authorization_reducer.dart" />
+        <option value="$PROJECT_DIR$/lib/redux/reducers/appState_reducer.dart" />
+        <option value="$PROJECT_DIR$/lib/screens/home/owner/eventRegistration/eventAgeGroup_scene.dart" />
+        <option value="$PROJECT_DIR$/lib/models/Bookings.dart" />
+        <option value="$PROJECT_DIR$/lib/screens/home/owner/bookingList_tile.dart" />
+        <option value="$PROJECT_DIR$/pubspec.yaml" />
+        <option value="$PROJECT_DIR$/lib/screens/home/owner/bookingList_scene.dart" />
+        <option value="$PROJECT_DIR$/lib/redux/states/ownerBookings_state.dart" />
+        <option value="$PROJECT_DIR$/lib/redux/actions/ownerBookings_actions.dart" />
+        <option value="$PROJECT_DIR$/lib/models/Venue.dart" />
+        <option value="$PROJECT_DIR$/lib/screens/home/owner/venueRegistration/venueAvailableSports_scene.dart" />
+        <option value="$PROJECT_DIR$/lib/redux/states/app_state.dart" />
+        <option value="$PROJECT_DIR$/lib/screens/home/player/venueList_scene.dart" />
+        <option value="$PROJECT_DIR$/lib/screens/home/player/venueListMap_scene.dart" />
+        <option value="$PROJECT_DIR$/lib/screens/home/venueRegistration/venueAddress_scene.dart" />
+        <option value="$PROJECT_DIR$/lib/screens/home/venueRegistration/venueAmenities_scene.dart" />
+        <option value="$PROJECT_DIR$/lib/screens/home/venueRegistration/venueDetails_scene.dart" />
+        <option value="$PROJECT_DIR$/lib/screens/home/venueRegistration/venueLocation_scene.dart" />
+        <option value="$PROJECT_DIR$/lib/screens/home/venueRegistration/venuePhotos_scene.dart" />
+        <option value="$PROJECT_DIR$/lib/screens/home/venueRegistration/venueTimeAndPrice_scene.dart" />
+        <option value="$PROJECT_DIR$/lib/screens/home/venueRegistration/venueAvailableSports_scene.dart" />
+        <option value="$PROJECT_DIR$/lib/redux/middlewares/helper_middlewares.dart" />
+        <option value="$PROJECT_DIR$/lib/repository/store_builder.dart" />
+        <option value="$PROJECT_DIR$/lib/singleton/singleton.dart" />
+        <option value="$PROJECT_DIR$/lib/screens/home/explore_scene.dart" />
+        <option value="$PROJECT_DIR$/lib/models/User.dart" />
+        <option value="$PROJECT_DIR$/lib/screens/home/home_scene.dart" />
+        <option value="$PROJECT_DIR$/lib/network/network_adapter.dart" />
+        <option value="$PROJECT_DIR$/lib/redux/middlewares/epic_middleware.dart" />
+        <option value="$PROJECT_DIR$/lib/app/app.dart" />
+        <option value="$PROJECT_DIR$/lib/screens/userRegistration/landing_scene.dart" />
+>>>>>>> origin/merged_branch
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+<<<<<<< HEAD
     <option name="y" value="22" />
     <option name="width" value="1600" />
     <option name="height" value="814" />
+=======
+    <option name="x" value="-38" />
+    <option name="y" value="23" />
+    <option name="width" value="2048" />
+    <option name="height" value="1129" />
+>>>>>>> origin/merged_branch
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -2057,12 +2197,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
+<<<<<<< HEAD
               <item name="venue_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="venue_app" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -2104,11 +2243,62 @@
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="screens" type="462c0819:PsiDirectoryNode" />
               <item name="userRegistration" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="venue_merge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="venue_merge" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="venue_merge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="venue_merge" type="462c0819:PsiDirectoryNode" />
+              <item name="android" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="venue_merge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="venue_merge" type="462c0819:PsiDirectoryNode" />
+              <item name="android" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="venue_merge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="venue_merge" type="462c0819:PsiDirectoryNode" />
+              <item name="android" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="venue_merge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="venue_merge" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="venue_merge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="venue_merge" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="screens" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="venue_merge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="venue_merge" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="screens" type="462c0819:PsiDirectoryNode" />
+              <item name="userRegistration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="venue_merge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="venue_merge" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="venue_merge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+>>>>>>> origin/merged_branch
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2117,19 +2307,36 @@
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+<<<<<<< HEAD
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+=======
+    <property name="settings.editor.selected.configurable" value="flutter.settings" />
+>>>>>>> origin/merged_branch
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+<<<<<<< HEAD
       <recent name="$PROJECT_DIR$/assets/1.0x" />
       <recent name="$PROJECT_DIR$/lib/network" />
       <recent name="$PROJECT_DIR$/assets/2.0x" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+=======
+      <recent name="$PROJECT_DIR$/lib/screens/home" />
+      <recent name="$PROJECT_DIR$/lib/redux/states" />
+      <recent name="$PROJECT_DIR$/lib/redux/actions" />
+      <recent name="$PROJECT_DIR$/lib/models" />
+      <recent name="$PROJECT_DIR$/lib/extras" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/screens/home/owner" />
+      <recent name="$PROJECT_DIR$/lib/screens/home" />
+      <recent name="$PROJECT_DIR$/assets/3.0x" />
+>>>>>>> origin/merged_branch
       <recent name="$PROJECT_DIR$/assets/1.0x" />
       <recent name="$PROJECT_DIR$/lib/screens/home/owner" />
       <recent name="$PROJECT_DIR$/assets/3.0x" />
@@ -2180,6 +2387,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="-1" y="22" width="1600" height="814" extended-state="0" />
     <editor active="true" />
     <layout>
@@ -2201,6 +2409,30 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32963988" />
       <window_info active="true" anchor="bottom" id="Messages" order="8" sideWeight="0.49037227" visible="true" weight="0.5096953" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.08033241" />
+=======
+    <frame x="57" y="-4" width="1309" height="772" extended-state="6" />
+    <layout>
+      <window_info id="Captures" order="0" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4939759" visible="true" weight="0.2691397" />
+      <window_info id="Structure" order="2" sideWeight="0.5060241" side_tool="true" weight="0.28883183" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.50728863" side_tool="true" weight="0.27086008" />
+      <window_info id="Resources Explorer" order="7" />
+      <window_info anchor="bottom" id="Dart Analysis" order="0" sideWeight="0.49935815" weight="0.32132965" />
+      <window_info anchor="bottom" id="Run" order="1" sideWeight="0.58424723" weight="0.5103011" />
+      <window_info anchor="bottom" id="TODO" order="2" weight="0.32963988" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49229783" visible="true" weight="0.38510302" />
+      <window_info anchor="bottom" id="Terminal" order="4" weight="0.33269045" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.41575274" side_tool="true" weight="0.29160064" />
+      <window_info anchor="bottom" id="Flutter Performance" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32963988" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.4961489" weight="0.39144215" />
+      <window_info anchor="bottom" id="Find" order="9" weight="0.25484765" />
+      <window_info anchor="bottom" id="SonarLint" order="10" />
+      <window_info anchor="bottom" id="Gradle View" order="11" />
+>>>>>>> origin/merged_branch
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Flutter Inspector" order="2" />
@@ -2239,11 +2471,50 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="Dart">
+<<<<<<< HEAD
+=======
+          <url>file://$PROJECT_DIR$/lib/screens/home/venueRegistration/venueTimeAndPrice_scene.dart</url>
+          <line>246</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/screens/home/venueRegistration/venueTimeAndPrice_scene.dart</url>
+          <line>370</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/screens/home/venueRegistration/venueTimeAndPrice_scene.dart</url>
+          <line>377</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+>>>>>>> origin/merged_branch
           <url>file://$PROJECT_DIR$/lib/redux/actions/userRegistration_actions.dart</url>
           <line>68</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/redux/middlewares/epic_middleware.dart</url>
+          <line>153</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/redux/middlewares/epic_middleware.dart</url>
+          <line>150</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/models/registration/SignUpRequestParams.dart</url>
+          <line>36</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/redux/middlewares/epic_middleware.dart</url>
+          <line>160</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
       </breakpoints>
+<<<<<<< HEAD
       <default-breakpoints>
         <breakpoint enabled="true" type="java-exception">
           <properties />
@@ -2252,6 +2523,8 @@
           <properties />
         </breakpoint>
       </default-breakpoints>
+=======
+>>>>>>> origin/merged_branch
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -2316,6 +2589,7 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/lib/screens/home/owner/bookingList_tile.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -2370,10 +2644,47 @@
           <caret line="96" column="19" selection-start-line="96" selection-start-column="19" selection-end-line="96" selection-end-column="90" />
           <folding>
             <element signature="e#0#74#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/lib/redux/actions/eventRegistration_actions.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-988" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/screens/home/player/venueBooking_scene.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="61" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/redux/actions/playerBooking_actions.dart">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/redux/states/playerBooking_state.dart">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/redux/actions/helper_actions.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/redux/states/appHelper_state.dart">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/redux/states/app_state.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="55" column="74" selection-start-line="55" selection-start-column="74" selection-end-line="55" selection-end-column="74" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+>>>>>>> origin/merged_branch
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/../../FlutterSDK/flutter/packages/flutter/lib/src/material/tabs.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="14295">
@@ -2401,12 +2712,43 @@
     <entry file="file://$PROJECT_DIR$/lib/redux/middlewares/epic_middleware.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state>
+=======
+    <entry file="file://$PROJECT_DIR$/lib/screens/home/player/venueList_scene.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="66" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/screens/home/player/venueListMap_scene.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2125">
+          <caret line="13" column="66" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/screens/home/venueRegistration/venueAddress_scene.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-206">
+          <caret line="177" column="28" lean-forward="true" selection-start-line="177" selection-start-column="28" selection-end-line="177" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/screens/home/venueRegistration/venueAmenities_scene.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="72" lean-forward="true" selection-start-line="5" selection-end-line="6" selection-end-column="72" />
+>>>>>>> origin/merged_branch
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/../../FlutterSDK/flutter/packages/flutter/lib/src/services/asset_bundle.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -2441,21 +2783,80 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-848">
           <caret line="220" column="13" selection-start-line="220" selection-start-column="13" selection-end-line="220" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/redux/states/app_state.dart">
+=======
+    <entry file="file://$PROJECT_DIR$/lib/screens/home/venueRegistration/venueDetails_scene.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-342">
+        <state relative-caret-position="114">
+          <caret line="6" column="72" selection-start-line="6" selection-start-column="72" selection-end-line="6" selection-end-column="72" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/screens/home/venueRegistration/venueLocation_scene.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="7" column="72" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/screens/home/venueRegistration/venuePhotos_scene.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="72" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/screens/home/venueRegistration/venueTimeAndPrice_scene.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/models/Venue.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/screens/home/venueRegistration/venueAvailableSports_scene.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30">
+          <caret line="78" column="41" selection-start-line="78" selection-start-column="41" selection-end-line="78" selection-end-column="41" />
+>>>>>>> origin/merged_branch
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/redux/middlewares/appState_middleware.dart">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="-342">
+=======
+        <state relative-caret-position="323">
+          <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="31" />
+>>>>>>> origin/merged_branch
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/lib/redux/middlewares/ownerBookings_middleware.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -2469,20 +2870,47 @@
           <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/lib/redux/selector/selectors.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/redux/middlewares/ownerBookings_middleware.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+>>>>>>> origin/merged_branch
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/lib/screens/home/explore_scene.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-33">
           <caret line="143" column="30" selection-start-line="143" selection-start-column="30" selection-end-line="143" selection-end-column="30" />
           <folding>
             <element signature="e#0#64#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/lib/repository/store_builder.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+>>>>>>> origin/merged_branch
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/lib/main.dart">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -2491,30 +2919,55 @@
         <state>
           <folding>
             <element signature="e#0#34#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/lib/singleton/singleton.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#0#60#0" expanded="true" />
+>>>>>>> origin/merged_branch
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/lib/redux/reducers/ownerBookings_reducer.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
           <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
+=======
+    <entry file="file://$PROJECT_DIR$/lib/redux/middlewares/helper_middlewares.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="25" column="7" selection-start-line="23" selection-start-column="6" selection-end-line="25" selection-end-column="7" />
+>>>>>>> origin/merged_branch
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/lib/screens/userRegistration/location_scene.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
           <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/lib/main.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+>>>>>>> origin/merged_branch
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/../../FlutterSDK/flutter/bin/cache/pkg/sky_engine/lib/async/future_impl.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -2535,10 +2988,29 @@
           <caret line="468" column="21" selection-start-line="468" selection-start-column="21" selection-end-line="502" selection-end-column="16" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/lib/screens/home/eventBooking_scene.dart">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/redux/reducers/authorization_reducer.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/models/User.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+>>>>>>> origin/merged_branch
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/../../FlutterSDK/flutter/.pub-cache/hosted/pub.dartlang.org/google_maps_flutter-0.5.13/lib/src/marker.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -2550,12 +3022,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7">
           <caret line="363" column="9" selection-start-line="363" selection-start-column="9" selection-end-line="363" selection-end-column="9" />
+=======
+    <entry file="file://$PROJECT_DIR$/lib/redux/middlewares/eventRegistration_middleware.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2519">
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/screens/home/home_scene.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1613">
+          <caret line="133" column="64" selection-start-line="133" selection-start-column="64" selection-end-line="133" selection-end-column="64" />
+>>>>>>> origin/merged_branch
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/../../FlutterSDK/flutter/packages/flutter/lib/src/painting/image_provider.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -2712,10 +3200,142 @@
           <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/lib/screens/home/explore_scene.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-289">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/redux/actions/userRegistration_actions.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="93" column="22" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/network/network_adapter.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/network/endpoints.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Flutter/flutter/packages/flutter/lib/src/material/ink_well.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="565" column="29" selection-start-line="565" selection-start-column="29" selection-end-line="565" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Flutter/flutter/packages/flutter/lib/src/gestures/recognizer.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="179" column="4" selection-start-line="179" selection-start-column="4" selection-end-line="179" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-223" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="36" column="2" selection-start-line="36" selection-start-column="2" selection-end-line="36" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Flutter/flutter/packages/flutter/lib/src/foundation/diagnostics.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36550">
+          <caret line="2154" column="22" selection-start-line="2154" selection-start-column="22" selection-end-line="2154" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Flutter/flutter/packages/flutter/lib/src/services/platform_messages.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Flutter/flutter/packages/flutter/lib/src/services/platform_channel.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6987">
+          <caret line="420" column="3" selection-start-line="420" selection-start-column="3" selection-end-line="420" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Flutter/flutter/packages/flutter/lib/src/services/system_sound.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Flutter/flutter/packages/flutter/lib/src/gestures/binding.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="86" column="2" selection-start-line="86" selection-start-column="2" selection-end-line="86" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/app/app.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2199">
+          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_redux-0.5.3/lib/flutter_redux.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2672">
+          <caret line="467" column="5" selection-start-line="467" selection-start-column="5" selection-end-line="467" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Flutter/flutter/packages/flutter/lib/src/gestures/arena.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="230" column="24" selection-start-line="230" selection-start-column="24" selection-end-line="230" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Flutter/flutter/packages/flutter/lib/src/gestures/tap.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="212" column="2" selection-start-line="212" selection-start-column="2" selection-end-line="212" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/screens/userRegistration/landing_scene.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="213" column="26" selection-start-line="213" selection-start-column="26" selection-end-line="213" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+>>>>>>> origin/merged_branch
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/lib/screens/home/player/venueList_scene.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -2733,11 +3353,25 @@
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/lib/models/registration/SignUpRequestParams.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/app/app.dart">
+    <entry file="file://$USER_HOME$/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/rxdart-0.22.0/lib/src/transformers/of_type.dart">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+>>>>>>> origin/merged_branch
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/redux_epics-0.10.6/lib/src/epic.dart">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="150">
           <caret line="49" column="70" selection-start-line="49" selection-start-column="70" selection-end-line="49" selection-end-column="70" />
           <folding>
@@ -2752,6 +3386,19 @@
           <caret line="139" selection-start-line="139" selection-start-column="2" selection-end-line="139" selection-end-column="45" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+=======
+        <state relative-caret-position="159">
+          <caret line="123" column="9" selection-start-line="123" selection-start-column="9" selection-end-line="123" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/redux/middlewares/epic_middleware.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="160" column="27" selection-start-line="160" selection-start-column="27" selection-end-line="160" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+>>>>>>> origin/merged_branch
           </folding>
         </state>
       </provider>

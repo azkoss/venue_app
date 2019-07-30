@@ -143,6 +143,8 @@ class _ViewModel {
   });
 
   factory _ViewModel.create(Store<AppState> store) {
+
+
     _setUserLocation(PlaceDetails place) {
       User user = store.state.userRegistrationState.user;
       user.place = place;

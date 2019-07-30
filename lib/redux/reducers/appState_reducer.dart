@@ -9,10 +9,16 @@ import 'appHelper_reducer.dart';
 
 AppState appStateReducer(AppState state, action) {
   return AppState(
+
     helperState: appHelperReducer(state.helperState, action),
-    userRegistrationState: userRegistrationReducer(state.userRegistrationState, action),
-    venueRegistrationState: venueRegistrationReducer(state.venueRegistrationState, action),
-    eventRegistrationState: eventRegistrationReducer(state.eventRegistrationState, action),
+
+    userRegistrationState:
+        userRegistrationReducer(state.userRegistrationState, action),
+    venueRegistrationState:
+        venueRegistrationReducer(state.venueRegistrationState, action),
+    eventRegistrationState:
+        eventRegistrationReducer(state.eventRegistrationState, action),
+
     ownerBookingsState: ownerBookingsReducer(state.ownerBookingsState, action),
     playerBookingsState: playerBookingReducer(state.playerBookingsState, action),
   );

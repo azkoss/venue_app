@@ -4,6 +4,9 @@ import 'package:redux/redux.dart';
 import 'package:venue_app/models/User.dart';
 import 'package:venue_app/redux/actions/userRegistration_actions.dart';
 import 'package:venue_app/redux/states/app_state.dart';
+
+import 'package:venue_app/repository/app_enum_manager.dart';
+
 import 'package:venue_app/screens/home/owner/bookingList_scene.dart';
 import 'package:venue_app/screens/home/owner/venueProfile_scene.dart';
 import 'package:venue_app/screens/home/player/playerProfile_scene.dart';
@@ -103,7 +106,7 @@ class _HomeSceneState extends State<HomeScene> with SingleTickerProviderStateMix
 }
 
 class _ViewModel {
-  UserType userType;
+  UserType1 userType;
   final Function(UserType) setUserType;
 
   UserFieldValidations fieldValidations;
@@ -119,7 +122,7 @@ class _ViewModel {
   });
 
   factory _ViewModel.create(Store<AppState> store) {
-    _setUserType(UserType userType) {
+    _setUserType(UserType1 userType) {
       User user = store.state.userRegistrationState.user;
       user.userType = userType;
       store.dispatch(UpdateUserAction(user));
@@ -131,7 +134,6 @@ class _ViewModel {
 
     return _ViewModel(
       userType: store.state.userRegistrationState.user.userType,
-      setUserType: _setUserType,
       fieldValidations: store.state.userRegistrationState.fieldValidations,
       canProceedToNextScene: true,
       proceedToNextScene: _proceedToNextScene,

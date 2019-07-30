@@ -6,7 +6,9 @@ import 'package:venue_app/redux/actions/helper_actions.dart';
 import 'package:venue_app/redux/middlewares/appState_middleware.dart';
 import 'package:venue_app/redux/reducers/appState_reducer.dart';
 import 'package:venue_app/redux/states/app_state.dart';
+
 import 'package:venue_app/screens/home/eventBooking_scene.dart';
+
 import 'package:venue_app/screens/home/home_scene.dart';
 import 'package:venue_app/screens/home/owner/eventRegistration/eventAgeGroup_scene.dart';
 import 'package:venue_app/screens/home/owner/eventRegistration/eventCost_scene.dart';
@@ -15,22 +17,27 @@ import 'package:venue_app/screens/home/owner/eventRegistration/eventDescription_
 import 'package:venue_app/screens/home/owner/eventRegistration/eventName_scene.dart';
 import 'package:venue_app/screens/home/owner/eventRegistration/eventPhotos_scene.dart';
 import 'package:venue_app/screens/home/owner/eventRegistration/eventSport_scene.dart';
-import 'package:venue_app/screens/home/owner/venueRegistration/venueAddress_scene.dart';
-import 'package:venue_app/screens/home/owner/venueRegistration/venueAmenities_scene.dart';
-import 'package:venue_app/screens/home/owner/venueRegistration/venueAvailableSports_scene.dart';
-import 'package:venue_app/screens/home/owner/venueRegistration/venueDetails_scene.dart';
-import 'package:venue_app/screens/home/owner/venueRegistration/venueLocation_scene.dart';
-import 'package:venue_app/screens/home/owner/venueRegistration/venuePhotos_scene.dart';
-import 'package:venue_app/screens/home/owner/venueRegistration/venueTimeAndPrice_scene.dart';
+
+
 import 'package:venue_app/screens/home/player/venueBooking_scene.dart';
 import 'package:venue_app/screens/home/player/venueInfo_scene.dart';
 import 'package:venue_app/screens/home/player/venueListMap_scene.dart';
 import 'package:venue_app/screens/home/player/venueSummary_scene.dart';
+import 'package:venue_app/screens/home/venueRegistration/venueAddress_scene.dart';
+import 'package:venue_app/screens/home/venueRegistration/venueAmenities_scene.dart';
+import 'package:venue_app/screens/home/venueRegistration/venueAvailableSports_scene.dart';
+import 'package:venue_app/screens/home/venueRegistration/venueDetails_scene.dart';
+import 'package:venue_app/screens/home/venueRegistration/venueLocation_scene.dart';
+import 'package:venue_app/screens/home/venueRegistration/venuePhotos_scene.dart';
+import 'package:venue_app/screens/home/venueRegistration/venueTimeAndPrice_scene.dart';
+
 import 'package:venue_app/screens/userRegistration/Tutorial_scene.dart';
 import 'package:venue_app/screens/userRegistration/landing_scene.dart';
-import 'package:venue_app/screens/userRegistration/location_scene.dart';
 import 'package:venue_app/screens/userRegistration/mobile_number_scene.dart';
 import 'package:venue_app/screens/userRegistration/otp_scene.dart';
+
+
+
 
 class VenueApp extends StatelessWidget {
   @override
@@ -56,15 +63,28 @@ class VenueApp extends StatelessWidget {
           primarySwatch: Colors.green,
           splashColor: Colors.green,
         ),
-        home: StoreBuilder<AppState>(
-            onInit: (store) => {},
-            builder: (BuildContext context, Store<AppState> store) {
-//              if (store.state.helperState.shouldShowAlert) {
-//                showAlertDialogueForApp(context, store);
-//              }
 
-              return LocationScene(store);
-            }),
+        home:
+        Scaffold(body:LandingScene(store)
+
+
+//        AppStoreBuilder(builder: (context, stateModel){
+//          switch(stateModel.status){
+//            case LoginStatus.loggedIn:
+//              if (stateModel.type == UserType.owner) LandingScene(store);
+//              else LandingScene(store);
+//              break;
+//            case LoginStatus.loggedOut:
+//              LandingScene(store);
+//              break;
+//            case LoginStatus.none:
+//              LandingScene(store);
+//              break;
+//          }},
+//
+//        ),
+        ),
+
         navigatorKey: Keys.navigationKey,
         onGenerateRoute: (routeSettings) => routes(routeSettings, store),
       ),

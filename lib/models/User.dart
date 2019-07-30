@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter_places_dialog/flutter_places_dialog.dart';
 
-enum UserType {
+enum UserType1 {
   owner,
   player,
 }
@@ -13,7 +13,7 @@ class User {
   String mobileNo;
   String otp;
   int tutorialIndex;
-  UserType userType;
+  UserType1 userType;
 
   User({
     this.id,
@@ -21,7 +21,7 @@ class User {
     this.mobileNo = "",
     this.otp = "",
     this.tutorialIndex = 0,
-    this.userType = UserType.owner,
+    this.userType = UserType1.owner,
   });
 
   factory User.fromRawJson(String str) => User.fromJson(json.decode(str));
@@ -33,13 +33,13 @@ class User {
       place: json["id"],
       mobileNo: json["name"],
       otp: json["image"],
-      userType: json["userType"] == "owner" ? UserType.owner : UserType.player);
+      userType: json["userType"] == "owner" ? UserType1.owner : UserType1.player);
 
   Map<String, dynamic> toJson() => {
         "latitude": place.location.latitude.toString(),
         "longitude": place.location.longitude.toString(),
         "mobileNo": mobileNo,
-        "userType": userType == UserType.owner ? "owner" : "player",
+        "userType": userType == UserType1.owner ? "owner" : "player",
       };
 }
 

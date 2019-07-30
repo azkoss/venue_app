@@ -45,6 +45,11 @@ Middleware<AppState> userRegistrationMiddleware(AppState state) {
     else if (action is ProceedToLandingSceneAction) {
       _proceedToLandingScene(store, action, next);
     }
+
+    //</editor-fold>
+
+
+
     //</editor-fold>
 
     //<editor-fold desc="Landing Scene Actions">
@@ -74,6 +79,23 @@ _validateUserLocation(Store<AppState> store, ValidateUserLocationAction action, 
   store.dispatch(UpdateUserFieldValidationAction(validation));
   _validateUserLocationScene(store);
 }
+
+/*_completeUserRegistration(Store<AppState> store, CompleteUserRegistrations action, NextDispatcher next){
+  User user = store.state.userRegistrationState.user;
+  print("complete user registrations");
+  SignUpRequestParams params = SignUpRequestParams(
+      firstName: "",
+      lastName: "",
+      description: "",
+      email: "",
+      latitude: 0.0,
+      location: user.place.placeid,
+      phone: user.mobileNo,
+      role: user.userType == UserType.owner ? 1:0 ,
+      longitude: 0.0
+  );
+  //store.dispatch(CompleteUserRegistrations(params));
+}*/
 
 _validateUserLocationScene(Store<AppState> store) {
   User user = store.state.userRegistrationState.user;
@@ -163,13 +185,14 @@ _proceedToTutorialScene(Store<AppState> store, ProceedToTutorialSceneAction acti
 
 //<editor-fold desc="Tutorial Scene Helper Methods">
 _proceedToOwnerOrPlayerScene(Store<AppState> store, ProceedToOwnerOrPlayerSceneAction action, NextDispatcher next) {
-  UserType userType = store.state.userRegistrationState.user.userType;
+  UserType1 userType = store.state.userRegistrationState.user.userType;
   switch (userType) {
-    case UserType.owner:
+
+    case UserType1.owner:
       Keys.navigationKey.currentState.pushNamedAndRemoveUntil("home", (Route<dynamic> route) => false);
 
       break;
-    case UserType.player:
+    case UserType1.player:
       Keys.navigationKey.currentState.pushNamedAndRemoveUntil("home", (Route<dynamic> route) => false);
       break;
   }
