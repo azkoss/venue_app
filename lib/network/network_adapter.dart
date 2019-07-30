@@ -35,7 +35,7 @@ class APIManager {
         requestType: RequestType,
         beginCallback: Function,
         contentType: ContentType,
-        headers: dynamic}) async {
+        headers  : dynamic}) async {
     var dio = new Dio(
       new BaseOptions(
           baseUrl: BASE_URL,
@@ -45,7 +45,8 @@ class APIManager {
           validateStatus: (status) {
             return status < 503;
           },
-          headers: headers),
+          headers: headers ?? {"Content-Type": "application/json",},
+      ),
 
     );
     dio.interceptors.add(LogInterceptor(responseBody: true));

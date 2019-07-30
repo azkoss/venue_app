@@ -4,20 +4,13 @@ import 'dart:io';
 import 'package:dio/dio.dart';
 import 'package:redux_epics/redux_epics.dart';
 import 'package:rxdart/rxdart.dart';
-
 import 'package:venue_app/models/Bookings.dart';
-import 'package:venue_app/models/VenueList.dart';
-import 'package:venue_app/network/endpoints.dart';
-import 'package:venue_app/network/network_adapter.dart';
-import 'package:venue_app/redux/actions/helper_actions.dart';
-import 'package:venue_app/redux/actions/ownerBooking_actions.dart';
-
 import 'package:venue_app/models/VenueList.dart';
 import 'package:venue_app/models/registration/SignUpResponse.dart';
 import 'package:venue_app/network/endpoints.dart';
 import 'package:venue_app/network/network_adapter.dart';
 import 'package:venue_app/redux/actions/helper_actions.dart';
-
+import 'package:venue_app/redux/actions/ownerBooking_actions.dart';
 import 'package:venue_app/redux/actions/playerBooking_actions.dart';
 import 'package:venue_app/redux/actions/userRegistration_actions.dart';
 import 'package:venue_app/redux/states/app_state.dart';
@@ -152,12 +145,6 @@ Stream<dynamic> requestOwnerBookingList(Stream<dynamic> actions, EpicStore<AppSt
   });
 }
 
-
-
-
-
-
-
 Stream<dynamic> requestVenueList(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   return Observable(actions)
@@ -207,6 +194,7 @@ Stream<dynamic> signUpUserAPI(
         (action) => APIManager.request(
                     url: signUpURL,
                     contentType: ContentType.json,
+                    headers: {"Content-Type": "application/json",},
                     params: action.requestParams.toJson(),
                     requestType: RequestType.post)
                 .then((response) {
@@ -230,6 +218,9 @@ Stream<dynamic> signInAPI(Stream<dynamic> actions, EpicStore<AppState> store) {
                     url: signInURL,
                     contentType: ContentType.json,
                     params: action.requestParams.toJson(),
+                    headers: {
+              "Content-Type": "application/json",
+            },
                     requestType: RequestType.post)
                 .then((response) {
               //TODO Change Response Type
