@@ -1,4 +1,5 @@
 import 'package:venue_app/models/Event.dart';
+import 'package:venue_app/models/events/CreateEventRequestParams.dart';
 
 //<editor-fold desc="Common Event Details Updation Actions">
 class UpdateEventAction {
@@ -82,3 +83,16 @@ class ProceedToEventNextSceneAction {
   ProceedToEventNextSceneAction();
 }
 //</editor-fold>
+
+class EventsListEpicAction {
+  final String token;
+
+  EventsListEpicAction(this.token);
+}
+
+class CreateEventEpicAction {
+  final String token;
+  final CreateEventRequestParams requestParams;
+
+  CreateEventEpicAction(this.token, this.requestParams);
+}

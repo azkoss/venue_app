@@ -113,10 +113,3 @@ class ProceedToOwnerOrPlayerSceneAction {
 }
 //</editor-fold>
 
-//<editor-fold desc="Tutorial Scene Actions">
-class SignInEpicActions {
-  final SignUpRequestParams params;
-
-  SignInEpicActions(this.params);
-}
-//</editor-fold>
