@@ -44,8 +44,8 @@ Stream<dynamic> requestOTPAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   return Observable(actions).ofType(TypeToken<RequestOTPEpicAction>()).asyncMap(
         (action) => APIManager.request(
-                    url: developmentURL + getOTPURL,
-                    params: {"phone": "+91" + action.mobileNo},
+                    url: localHostUrl + getOTPURL,
+                    params: {"phone": "+91" + action.mobileNo}.toString(),
                     requestType: RequestType.get,
                     contentType: ContentType.html)
                 .then((response) {
@@ -64,11 +64,11 @@ Stream<dynamic> requestOTPAPI(
             }).catchError((error) {
               print("Error found");
 
-              var actionList =
-                  makeActionsListByConsideringAnyNetworkError(error);
+            //  var actionList =
+                 // makeActionsListByConsideringAnyNetworkError(error);
 
 
-              return TriggerMultipleActionsAction(actionList);
+              return TriggerMultipleActionsAction([]);
             }),
       );
 }

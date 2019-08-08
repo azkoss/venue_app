@@ -53,8 +53,8 @@ class _HomeSceneState extends State<HomeScene> with SingleTickerProviderStateMix
               physics: BouncingScrollPhysics(),
               children: [
                 ExploreScene(widget.store),
-                viewModel.userType == UserType.owner ? bookingListScene : venueListScene,
-                viewModel.userType == UserType.owner ? venueProfileScene : playerProfileScene,
+                viewModel.userType == UserType1.owner ? bookingListScene : venueListScene,
+                viewModel.userType == UserType1.owner ? venueProfileScene : playerProfileScene,
               ],
             ),
       ),

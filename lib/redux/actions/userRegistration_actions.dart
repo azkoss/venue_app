@@ -44,7 +44,7 @@ class ValidateMobileNoAction {
 class RequestOTPEpicAction {
   final String mobileNo;
 
-  RequestOTPEpicAction(this.mobileNo);
+    RequestOTPEpicAction(this.mobileNo);
 }
 //</editor-fold>
 

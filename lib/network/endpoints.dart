@@ -1,5 +1,5 @@
 //const developmentURL = "http://192.168.10.19:8000/api/v1/";
-const developmentURL = "http://13.233.42.202/api/v1";
+const developmentURL = "http://13.233.42.202/api/v1/";
 const liveURL = "http://demo6263162.mockable.io/";
 
 const localHostUrl = "http://13.235.120.230:1337/";
@@ -10,7 +10,7 @@ const BASE_URL = localHostUrl;
 const getOTPURL = "user/get_otp/";
 const verifyOTPURL = "user/verify_otp/";
 const ownerBookingsURL = "/ownerBookings";
-const venueListURL = "/venueList";
+const venueListURL = "venueList";
 
 
 const signInURL = "user/signin";

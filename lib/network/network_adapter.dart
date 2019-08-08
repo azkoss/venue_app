@@ -66,6 +66,8 @@ class APIManager {
                 response.statusCode >= 201) {
 
               return ResponseModel(response.data, ResponseStatus.success_200);
+            }else{
+              return ResponseModel(null,ResponseStatus.error_300);
             }
           },
         );
