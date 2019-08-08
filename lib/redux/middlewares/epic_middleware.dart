@@ -4,22 +4,21 @@ import 'dart:io';
 import 'package:dio/dio.dart';
 import 'package:redux_epics/redux_epics.dart';
 import 'package:rxdart/rxdart.dart';
-
 import 'package:venue_app/models/Bookings.dart';
 import 'package:venue_app/models/VenueList.dart';
+import 'package:venue_app/models/registration/SignUpResponse.dart';
+import 'package:venue_app/models/signin/SignInResponse.dart';
+import 'package:venue_app/models/users/UserListResponse.dart';
+import 'package:venue_app/models/users/UserProfileResponse.dart';
 import 'package:venue_app/network/endpoints.dart';
 import 'package:venue_app/network/network_adapter.dart';
+import 'package:venue_app/redux/actions/eventRegistration_actions.dart';
 import 'package:venue_app/redux/actions/helper_actions.dart';
 import 'package:venue_app/redux/actions/ownerBooking_actions.dart';
-
-import 'package:venue_app/models/VenueList.dart';
-import 'package:venue_app/models/registration/SignUpResponse.dart';
-import 'package:venue_app/network/endpoints.dart';
-import 'package:venue_app/network/network_adapter.dart';
-import 'package:venue_app/redux/actions/helper_actions.dart';
-
 import 'package:venue_app/redux/actions/playerBooking_actions.dart';
+import 'package:venue_app/redux/actions/signIn_actions.dart';
 import 'package:venue_app/redux/actions/userRegistration_actions.dart';
+import 'package:venue_app/redux/actions/user_actions.dart';
 import 'package:venue_app/redux/states/app_state.dart';
 
 // Combined Epics
@@ -152,12 +151,6 @@ Stream<dynamic> requestOwnerBookingList(Stream<dynamic> actions, EpicStore<AppSt
   });
 }
 
-
-
-
-
-
-
 Stream<dynamic> requestVenueList(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   return Observable(actions)
@@ -207,6 +200,7 @@ Stream<dynamic> signUpUserAPI(
         (action) => APIManager.request(
                     url: signUpURL,
                     contentType: ContentType.json,
+                    headers: {"Content-Type": "application/json",},
                     params: action.requestParams.toJson(),
                     requestType: RequestType.post)
                 .then((response) {
@@ -224,17 +218,22 @@ Stream<dynamic> signUpUserAPI(
 
 Stream<dynamic> signInAPI(Stream<dynamic> actions, EpicStore<AppState> store) {
   return Observable(actions)
-      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
+      .ofType(TypeToken<SignInEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
                     url: signInURL,
                     contentType: ContentType.json,
                     params: action.requestParams.toJson(),
+                    headers: {
+                      "Content-Type": "application/json",
+                    },
                     requestType: RequestType.post)
                 .then((response) {
-              //TODO Change Response Type
               dynamic value = checkStatus(response);
-              if (value != null) {}
+              if (value != null) {
+                SignInResponse signInResponse = SignInResponse.fromJson(value);
+                //TODO Handle Response
+              }
             }).catchError((error) =>
                     print("Catch error- in sign up" + error.toString())),
       );
@@ -243,17 +242,23 @@ Stream<dynamic> signInAPI(Stream<dynamic> actions, EpicStore<AppState> store) {
 Stream<dynamic> signOutAPI(Stream<dynamic> actions, EpicStore<AppState> store) {
   return Observable(actions)
   // TODO Change Action type
-      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
+      .ofType(TypeToken<SignOutEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: signOutURL,
         contentType: ContentType.json,
-        params: action.requestParams.toJson(),
+        headers: {
+          "Content-Type": "application/json",
+          "token": action.userToken
+        },
+        params:{"":""},
         requestType: RequestType.post)
         .then((response) {
-      //TODO Change Response Type and handle response
       dynamic value = checkStatus(response);
-      if (value != null) {}
+      if (value != null) {
+        SignInResponse signInResponse = SignInResponse.fromJson(value);
+        //TODO : Handle Sign-Out Response
+      }
     }).catchError((error) =>
         print("Catch error- in sign up" + error.toString())),
   );
@@ -264,18 +269,21 @@ Stream<dynamic> signOutAPI(Stream<dynamic> actions, EpicStore<AppState> store) {
 //<editor-fold desc="User list and profile Epic Actions (getUserList, getProfile)">
 Stream<dynamic> getUsersAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
-  //TODO Change Action class
   return Observable(actions)
-      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
+      .ofType(TypeToken<GetUsersEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: usersURL,
         contentType: ContentType.json,
+        headers: {
+          "Content-Type": "application/json",
+          "token" : action.token
+        },
         requestType: RequestType.get)
         .then((response) {
       dynamic value = checkStatus(response);
       if (value != null) {
-        //TODO implement Response handling here
+        UsersListResponse usersListResponse = UsersListResponse.fromJson(value);
       }
     }).catchError((error) =>
         print("Catch error- in sign up" + error.toString())),
@@ -286,19 +294,19 @@ Stream<dynamic> getUserProfileAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   //TODO Change Action class
   return Observable(actions)
-      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
+      .ofType(TypeToken<GetUserProfileEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: profileURL,
         contentType: ContentType.json,
         headers: {
-          "token": "jxehhw5j08caf6d3acedq5nb"
+          "token": action.token
         },
         requestType: RequestType.get)
         .then((response) {
       dynamic value = checkStatus(response);
       if (value != null) {
-        //TODO implement Response handling here
+        UserProfileResponse userProfileResponse = UserProfileResponse.fromJson(value);
       }
     }).catchError((error) =>
         print("Catch error- in sign up" + error.toString())),
@@ -311,7 +319,7 @@ Stream<dynamic> getUserImageListsAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   //TODO Need to change Action Generic Type
   return Observable(actions)
-      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
+      .ofType(TypeToken<UserImageListEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: getUserImageListURL,
@@ -319,11 +327,13 @@ Stream<dynamic> getUserImageListsAPI(
         requestType: RequestType.get,
         headers: {
           "Content-Type": "application/json",
-          "token": "Add user token"
+          "token": action.token
         }).then((response) {
-      //TODO Change Response Type
+      //TODO Not getting Response in postman
       dynamic value = checkStatus(response);
-      if (value != null) {}
+      if (value != null) {
+
+      }
     }).catchError(
             (error) => print("Catch error- in sign up" + error.toString())),
   );
@@ -333,7 +343,7 @@ Stream<dynamic> getUserImageDetailsAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   //TODO Need to change Action Generic Type
   return Observable(actions)
-      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
+      .ofType(TypeToken<UserImageDetailsEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: userImageDetailsURL,
@@ -344,7 +354,7 @@ Stream<dynamic> getUserImageDetailsAPI(
         },
         headers: {
           "Content-Type": "application/json",
-          "token": "Add user token"
+          "token": action.token
         }).then((response) {
       //TODO Change Response Type
       dynamic value = checkStatus(response);
@@ -358,18 +368,18 @@ Stream<dynamic> createUserImageAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   //TODO Need to change Action Generic Type
   return Observable(actions)
-      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
+      .ofType(TypeToken<CreateUserImageEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: createUserImageURL,
         contentType: ContentType.json,
         requestType: RequestType.post,
         params: {
-          "url": "https://miro.medium.com/max/700/1*gXSoA4l0UVufh0C6IG2aWA.jpeg"
+          "url": action.imageUrl
         },
         headers: {
           "Content-Type": "application/json",
-          "token": "Add user token"
+          "token": action.token
         }).then((response) {
       //TODO Change Response Type
       dynamic value = checkStatus(response);
@@ -383,18 +393,18 @@ Stream<dynamic> deleteUserImageAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   //TODO Need to change Action Generic Type
   return Observable(actions)
-      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
+      .ofType(TypeToken<DeleteUserImageEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: deleteUserImageURL,
         contentType: ContentType.json,
         requestType: RequestType.delete,
         params: {
-          "url": "https://miro.medium.com/max/700/1*gXSoA4l0UVufh0C6IG2aWA.jpeg"
+          "url": action.imageUrl
         },
         headers: {
           "Content-Type": "application/json",
-          "token": "Add user token"
+          "token": action.token
         }).then((response) {
       //TODO Change Response Type
       dynamic value = checkStatus(response);
@@ -409,7 +419,7 @@ Stream<dynamic> deleteUserImageAPI(
 Stream<dynamic> getEventsListAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   return Observable(actions)
-      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
+      .ofType(TypeToken<EventsListEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
                 url: getEventsURL,
@@ -417,11 +427,13 @@ Stream<dynamic> getEventsListAPI(
                 requestType: RequestType.get,
                 headers: {
                   "Content-Type": "application/json",
-                  "token": "Add user token"
+                  "token": action.token
                 }).then((response) {
-              //TODO Change Response Type
               dynamic value = checkStatus(response);
-              if (value != null) {}
+              if (value != null) {
+                //TODO Add model class in events package
+                //TODO Its left unfinished due to NUll fields in Response
+              }
             }).catchError(
                 (error) => print("Catch error- in sign up" + error.toString())),
       );
@@ -432,7 +444,7 @@ Stream<dynamic> getEventsListAPI(
 Stream<dynamic> getEventDetailsAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   return Observable(actions)
-      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
+      .ofType(TypeToken<EventsListEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
                 url: eventDetailsURL,
@@ -443,7 +455,7 @@ Stream<dynamic> getEventDetailsAPI(
                 },
                 headers: {
                   "Content-Type": "application/json",
-                  "token": "Add user token"
+                  "token": action.token
                 }).then((response) {
               //TODO Change Response Type
               dynamic value = checkStatus(response);
@@ -456,25 +468,16 @@ Stream<dynamic> getEventDetailsAPI(
 Stream<dynamic> createEventAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   return Observable(actions)
-      .ofType(TypeToken<CompleteUserRegistrationsEpicAction>())
+      .ofType(TypeToken<CreateEventEpicAction>())
       .asyncMap(
         (action) => APIManager.request(
         url: createNewEventURL,
         contentType: ContentType.json,
         requestType: RequestType.post,
-        params: {
-          "name": "Event 2",
-          "startAt": 2,
-          "endAt": 2,
-          "description": "Test event",
-          "pricePerHour": 100,
-          "ageGroup": 1,
-          "venue": 1,
-          "sport": 1
-        },
+        params:action.requestParams.toJson(),
         headers: {
           "Content-Type": "application/json",
-          "token": "Add user token"
+          "token":action.token
         }).then((response) {
       //TODO Change Response Type
       dynamic value = checkStatus(response);

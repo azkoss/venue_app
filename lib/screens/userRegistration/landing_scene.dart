@@ -217,6 +217,7 @@ class _ViewModel {
       if (userType == UserType1.owner) {
         store.dispatch(ProceedToVenueLocationSceneAction());
       } else {
+
 //        User user = store.state.userRegistrationState.user;
 //        SignUpRequestParams params = SignUpRequestParams(
 //            firstName: "John",
@@ -231,6 +232,7 @@ class _ViewModel {
 //        );
 //        store.dispatch(CompleteUserRegistrationsEpicAction(params, onSignUpSuccess));
         store.dispatch(ProceedToTutorialSceneAction());
+
       }
     }
 
