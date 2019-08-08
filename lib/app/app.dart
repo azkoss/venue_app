@@ -65,7 +65,7 @@ class VenueApp extends StatelessWidget {
         ),
 
         home:
-        Scaffold(body:LandingScene(store)
+        Scaffold(body:MobileNumberScene(store)
 
 
 //        AppStoreBuilder(builder: (context, stateModel){
@@ -119,7 +119,7 @@ class VenueApp extends StatelessWidget {
     } else if (settings.name == "tutorial") {
       return MaterialPageRoute(
         builder: (context) {
-          return TutorialScene(store);
+          return  TutorialScene(store);
         },
       );
     } else if (settings.name == "venueLocation") {

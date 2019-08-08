@@ -217,20 +217,22 @@ class _ViewModel {
       if (userType == UserType1.owner) {
         store.dispatch(ProceedToVenueLocationSceneAction());
       } else {
-        User user = store.state.userRegistrationState.user;
-        SignUpRequestParams params = SignUpRequestParams(
-            firstName: "John",
-            lastName: "Doe",
-            description: "Nothing",
-            email: "john@gmail.com",
-            latitude: 0.0,
-            location: "yyhy",
-            phone: "+91 ",
-            role: 1 ,
-            longitude: 0.0
-        );
-        store.dispatch(CompleteUserRegistrationsEpicAction(params, onSignUpSuccess));
-        //store.dispatch(ProceedToTutorialSceneAction());
+
+//        User user = store.state.userRegistrationState.user;
+//        SignUpRequestParams params = SignUpRequestParams(
+//            firstName: "John",
+//            lastName: "Doe",
+//            description: "Nothing",
+//            email: "john@gmail.com",
+//            latitude: 0.0,
+//            location: "yyhy",
+//            phone: "+91 9539394292",
+//            role: 1 ,
+//            longitude: 0.0
+//        );
+//        store.dispatch(CompleteUserRegistrationsEpicAction(params, onSignUpSuccess));
+        store.dispatch(ProceedToTutorialSceneAction());
+
       }
     }
 

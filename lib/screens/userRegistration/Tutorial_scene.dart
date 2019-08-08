@@ -45,17 +45,19 @@ class _TutorialSceneState extends State<TutorialScene> {
       itemCount: 3,
       controller: pageController,
       itemBuilder: (context, index) {
+        Widget returnWidget;
         switch (index) {
           case 0:
-            return buildDiscoverScreen();
+            returnWidget = buildDiscoverScreen();
             break;
           case 1:
-            return buildScheduleScreen();
+            returnWidget = buildScheduleScreen();
             break;
           case 2:
-            return buildPlayScreen();
+            returnWidget = buildPlayScreen();
             break;
         }
+        return returnWidget;
       },
       onPageChanged: (int index) {
         viewModel.setTutorialIndex(index);
@@ -115,7 +117,7 @@ class _TutorialSceneState extends State<TutorialScene> {
           child: FlatButton(
             onPressed: () {
               viewModel.proceedToNextScene();
-              print("Halla");
+
             },
             child: Text(
               "Lets go",

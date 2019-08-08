@@ -305,29 +305,34 @@ class _VenueTimeAndPriceSceneState extends State<VenueTimeAndPriceScene> {
       bottom: 0.0,
       right: 0.0,
       left: 0.0,
-      child: Container(
-        height: 60.0,
-        color: Colors.green,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              "LET’S GO",
-              style: const TextStyle(
-                  color: const Color(0xffffffff),
-                  fontWeight: FontWeight.w500,
-                  fontFamily: "GoogleSans",
-                  fontStyle: FontStyle.normal,
-                  fontSize: 23.3),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 10.0),
-              child: Icon(
-                Icons.arrow_forward,
-                color: Colors.white,
+      child: InkWell(
+        onTap: (){
+
+        },
+        child: Container(
+          height: 60.0,
+          color: Colors.green,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text(
+                "LET’S GO",
+                style: const TextStyle(
+                    color: const Color(0xffffffff),
+                    fontWeight: FontWeight.w500,
+                    fontFamily: "GoogleSans",
+                    fontStyle: FontStyle.normal,
+                    fontSize: 23.3),
               ),
-            ),
-          ],
+              Padding(
+                padding: const EdgeInsets.only(left: 10.0),
+                child: Icon(
+                  Icons.arrow_forward,
+                  color: Colors.white,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

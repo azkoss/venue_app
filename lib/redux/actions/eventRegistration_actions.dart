@@ -82,6 +82,7 @@ class ProceedToEventAgeGroupSceneAction {
 class ProceedToEventNextSceneAction {
   ProceedToEventNextSceneAction();
 }
+
 //</editor-fold>
 
 class EventsListEpicAction {
