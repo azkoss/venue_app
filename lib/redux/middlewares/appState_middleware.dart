@@ -17,7 +17,7 @@ import '../middlewares/venueRegistration_middleware.dart';
 import '../states/app_state.dart';
 
 List<Middleware<AppState>> appStateMiddleware([AppState state]) {
-  final epicMiddleware = epics;
+  final epicMiddleware = epicLoginRegister;
   final combineActionsMiddleWare = combineMultipleActionsMiddleWare(state);
   final appHelperStateMiddleWare = appHelperMiddleWare(state);
   final userRegistrationStateMiddleware = userRegistrationMiddleware(state);

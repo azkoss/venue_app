@@ -2,13 +2,15 @@
 const developmentURL = "http://13.233.42.202/api/v1/";
 const liveURL = "http://demo6263162.mockable.io/";
 
-const localHostUrl = "http://13.235.120.230:1337/";
+//const localHostUrl = "http://13.235.120.230:1337/";
+
+const localHostUrl = "http://192.168.10.83:1337/";
 
 const BASE_URL = localHostUrl;
 
 
-const getOTPURL = "user/get_otp/";
-const verifyOTPURL = "user/verify_otp/";
+const getOTPURL = "otp/getotp";
+const verifyOTPURL = "otp/verifyotp";
 const ownerBookingsURL = "/ownerBookings";
 const venueListURL = "venueList";
 

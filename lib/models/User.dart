@@ -11,7 +11,7 @@ class User {
   String id;
   PlaceDetails place;
   String mobileNo;
-  String otp;
+  int otp;
   int tutorialIndex;
   UserType1 userType;
 
@@ -19,7 +19,7 @@ class User {
     this.id,
     this.place,
     this.mobileNo = "",
-    this.otp = "",
+    this.otp = 0,
     this.tutorialIndex = 0,
     this.userType = UserType1.owner,
   });
