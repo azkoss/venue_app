@@ -17,3 +17,6 @@ class GetOtpRequest {
     return data;
   }
 }
+
+class SignInRequestParams {
+}

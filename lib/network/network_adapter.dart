@@ -33,25 +33,26 @@ class APIManager{
         params: dynamic,
         url: String,
         requestType: RequestType,
-        beginCallback: Function}) async {
-//    String token = await UserManager.getToken();
-    print(applicationUser);
-    print(url);
-    var dio = new Dio(new BaseOptions(
-      queryParameters: imageUpload ? {"application_user":applicationUser}:{},
-      baseUrl: BASE_URL,
-      connectTimeout: 50000,
-      receiveTimeout: 100000,
-      followRedirects: false,
-      validateStatus: (status) {
-        return status < 503;
-      },
-      headers: {
-        //   "Authorization": "Bearer $token",
-      },
-      contentType: ContentType.json,
-      responseType: ResponseType.json,
-    ));
+
+        beginCallback: Function,
+        contentType: ContentType,
+        headers  : dynamic}) async {
+    var dio = new Dio(
+      new BaseOptions(
+          baseUrl: BASE_URL,
+          connectTimeout: 50000,
+          receiveTimeout: 100000,
+          followRedirects: false,
+          validateStatus: (status) {
+            return status < 503;
+          },
+          headers: headers ?? {"Content-Type": "application/json",},
+      ),
+
+    );
+    dio.interceptors.add(LogInterceptor(responseBody: true));
+
+
     switch (requestType) {
       case RequestType.get:
         return await dio

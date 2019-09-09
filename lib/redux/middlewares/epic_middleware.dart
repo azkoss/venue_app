@@ -38,87 +38,87 @@ Stream<dynamic> requestOTPAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   return Observable(actions).ofType(TypeToken<RequestOTPEpicAction>()).asyncMap(
         (action) => APIManager.request(
-          requestType: RequestType.get,
-          url: localHostUrl + getOTPURL,
-          imageUpload: false,
-          params: action.request.toJson(),
-        ).then((response) {
+      requestType: RequestType.get,
+      url: localHostUrl + getOTPURL,
+      imageUpload: false,
+      params: action.request.toJson(),
+    ).then((response) {
 
-          var action = [];
-          switch (response.status) {
-            case ResponseStatus.error_404:
-              break;
-            case ResponseStatus.error_400:
-              break;
-            case ResponseStatus.success_200:
-              print(response.data);
+      var action = [];
+      switch (response.status) {
+        case ResponseStatus.error_404:
+          break;
+        case ResponseStatus.error_400:
+          break;
+        case ResponseStatus.success_200:
+          print(response.data);
 
-              action.add(GetOtpDataAction(GetOTPResponseModel.fromJson(response.data)));
-              action.add(ProceedToOTPSceneAction());
-              break;
-            default:
-              print("Exited with default case");
-              break;
+          action.add(GetOtpDataAction(GetOTPResponseModel.fromJson(response.data)));
+          action.add(ProceedToOTPSceneAction());
+          break;
+        default:
+          print("Exited with default case");
+          break;
 
-          }
-          return TriggerMultipleActionsAction(
-            action,
-          );
-        }).catchError((error) {
-          print("Error found Here");
-
-          print(error.toString());
-
-          //  var actionList =
-          // makeActionsListByConsideringAnyNetworkError(error);
-
-          // return TriggerMultipleActionsAction([]);
-        }),
+      }
+      return TriggerMultipleActionsAction(
+        action,
       );
+    }).catchError((error) {
+      print("Error found Here");
+
+      print(error.toString());
+
+      //  var actionList =
+      // makeActionsListByConsideringAnyNetworkError(error);
+
+      // return TriggerMultipleActionsAction([]);
+    }),
+  );
 }
 
 Stream<dynamic> verifyOTPAPI(
     Stream<dynamic> actions, EpicStore<AppState> store) {
   return Observable(actions).ofType(TypeToken<VerifyOTPEpicAction>()).asyncMap(
         (action) => APIManager.request(
-                url: localHostUrl + verifyOTPURL,
-                params: {
-                  "phone": "+91" + store.state.userRegistrationState.user.mobileNo,
-                  "otp": store.state.userRegistrationState.user.otp.toString(),
-                  "location":store.state.userRegistrationState.user.place.name,
-                  "latitude":store.state.userRegistrationState.user.place.location.latitude,
-                  "longitude":store.state.userRegistrationState.user.place.location.longitude,
-                  "deviceUID":"1234546789",
-                },
-                requestType: RequestType.post,
-                imageUpload: false)
-            .then((response) {
-          var action = [];
-          switch (response.status) {
-            case ResponseStatus.error_404:
-              break;
-            case ResponseStatus.error_400:
-              break;
-            case ResponseStatus.success_200:
-              String accessToken = response.data["access"];
-              action.add(OTPVerificationSuccessAction(accessToken));
-              break;
-            default:
-              print("Exited with default case");
-              break;
-          }
+        url: localHostUrl + verifyOTPURL,
+        params: {
+          "phone": "+91" + store.state.userRegistrationState.user.mobileNo,
+          "otp": store.state.userRegistrationState.user.otp.toString(),
+          "location":store.state.userRegistrationState.user.place.name,
+          "latitude":store.state.userRegistrationState.user.place.location.latitude,
+          "longitude":store.state.userRegistrationState.user.place.location.longitude,
+          "deviceUID":"1234546789",
+        },
+        requestType: RequestType.post,
+        imageUpload: false)
+        .then((response) {
+      var action = [];
+      switch (response.status) {
+        case ResponseStatus.error_404:
+          break;
+        case ResponseStatus.error_400:
+          break;
+        case ResponseStatus.success_200:
+          String accessToken = response.data["access"];
+          action.add(OTPVerificationSuccessAction(accessToken));
+          break;
+        default:
+          print("Exited with default case");
+          break;
+      }
 
-          return TriggerMultipleActionsAction(
-            action,
-          );
-        }).catchError((error) {
-          print("Error found");
-
-          var actionList = makeActionsListByConsideringAnyNetworkError(error);
-
-          return TriggerMultipleActionsAction(actionList);
-        }),
+      return TriggerMultipleActionsAction(
+        action,
       );
+    }).catchError((error) {
+      print("Error found");
+
+      var actionList = makeActionsListByConsideringAnyNetworkError(error);
+
+      return TriggerMultipleActionsAction(actionList);
+    }),
+  );
 }
 //
 //Stream<dynamic> requestOwnerBookingList(Stream<dynamic> actions, EpicStore<AppState> store) {
