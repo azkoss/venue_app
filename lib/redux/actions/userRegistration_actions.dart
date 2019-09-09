@@ -1,5 +1,7 @@
 import 'package:venue_app/models/User.dart';
+import 'package:venue_app/models/get%20otp/getOtpR.dart';
 import 'package:venue_app/models/registration/SignUpRequestParams.dart';
+import 'package:venue_app/models/signin/SignInRequestParams.dart';
 
 //<editor-fold desc="Update User Actions">
 class UpdateUserAction {
@@ -42,9 +44,8 @@ class ValidateMobileNoAction {
 
 //<editor-fold desc="Request OTP Epic Action">
 class RequestOTPEpicAction {
-  final String mobileNo;
-
-    RequestOTPEpicAction(this.mobileNo);
+  final GetOtpRequest request;
+  RequestOTPEpicAction(this.request);
 }
 //</editor-fold>
 
@@ -54,6 +55,13 @@ class ProceedToOTPSceneAction {
 }
 //</editor-fold>
 
+class GetOtpDataAction {
+
+ final GetOTPResponseModel model;
+  GetOtpDataAction(this.model);
+
+}
+
 //<editor-fold desc="OTP Scene Actions">
 class ValidateOTPAction {
   ValidateOTPAction();
@@ -62,10 +70,7 @@ class ValidateOTPAction {
 
 //<editor-fold desc="Verify OTP Action">
 class VerifyOTPEpicAction {
-  final String mobileNo;
-  final String otp;
-
-  VerifyOTPEpicAction(this.mobileNo, this.otp);
+  VerifyOTPEpicAction();
 }
 //</editor-fold>
 

@@ -33,6 +33,7 @@ import 'package:venue_app/screens/home/venueRegistration/venueTimeAndPrice_scene
 
 import 'package:venue_app/screens/userRegistration/Tutorial_scene.dart';
 import 'package:venue_app/screens/userRegistration/landing_scene.dart';
+import 'package:venue_app/screens/userRegistration/location_scene.dart';
 import 'package:venue_app/screens/userRegistration/mobile_number_scene.dart';
 import 'package:venue_app/screens/userRegistration/otp_scene.dart';
 
@@ -65,7 +66,7 @@ class VenueApp extends StatelessWidget {
         ),
 
         home:
-        Scaffold(body:MobileNumberScene(store)
+        Scaffold(body:LocationScene(store)
 
 
 //        AppStoreBuilder(builder: (context, stateModel){

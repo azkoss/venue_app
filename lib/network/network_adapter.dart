@@ -24,15 +24,16 @@ class ResponseModel {
   ResponseModel(this.data, this.status);
 }
 
-//APIManager
-class APIManager {
+class APIManager{
+
   static beginRequest() {}
-
-
   static Future<ResponseModel> request(
-      {params: dynamic,
+      {applicationUser:String,
+        imageUpload:bool,
+        params: dynamic,
         url: String,
         requestType: RequestType,
+
         beginCallback: Function,
         contentType: ContentType,
         headers  : dynamic}) async {
@@ -51,56 +52,72 @@ class APIManager {
     );
     dio.interceptors.add(LogInterceptor(responseBody: true));
 
+
     switch (requestType) {
       case RequestType.get:
-
-        return await dio.get(url, queryParameters: params).then(
-              (response) {
-            if (response.statusCode == 400) {
-              return ResponseModel(null, ResponseStatus.error_400);
-            } else if (response.statusCode >= 404) {
-              return ResponseModel(null, ResponseStatus.error_404);
-            } else if (response.statusCode >= 503) {
-              return ResponseModel(null, ResponseStatus.error_503);
-
-            } else if (response.statusCode >= 200 ||
-                response.statusCode >= 201) {
-
-              return ResponseModel(response.data, ResponseStatus.success_200);
-            }else{
-              return ResponseModel(null,ResponseStatus.error_300);
-            }
-          },
-        );
+        return await dio
+            .get(
+          url,queryParameters: params
+        )
+            .then((response) {
+          if (response.statusCode == 400) {
+            return ResponseModel(response.data, ResponseStatus.error_400);
+          }else if (response.statusCode >= 404) {
+            return ResponseModel(response.data, ResponseStatus.error_404);
+          } else if (response.statusCode >= 503) {
+            return ResponseModel(response.data, ResponseStatus.error_503);
+          }else if (response.statusCode >= 200 || response.statusCode >= 201) {
+            return ResponseModel(response.data, ResponseStatus.success_200);
+          }else{
+            return ResponseModel(response.data, ResponseStatus.success_200);
+          }
+        });
         break;
-
       case RequestType.post:
 
-        return await dio
-            .post(url,
-            data: json.encode(params),
+        if (imageUpload){
+          // print(params);
+          return await dio
+              .post(
+            url,
+            data: params,
             options: new Options(
-              contentType: ContentType.json,
-              responseType: ResponseType.json,
-            ))
-            .then(
-              (response) {
+                contentType:ContentType.parse('multipart/form-data')),
+          )
+              .then((response) {
+            print(response.toString());
             if (response.statusCode == 400) {
-              return ResponseModel(null, ResponseStatus.error_400);
-            } else if (response.statusCode == 404) {
-              return ResponseModel(null, ResponseStatus.error_404);
+              return ResponseModel(null, ResponseStatus.error_400 );
             } else if (response.statusCode >= 500) {
               return ResponseModel(null, ResponseStatus.error_503);
-            } else if (response.statusCode == 300) {
-              return ResponseModel(null, ResponseStatus.error_300);
-
             } else {
               return ResponseModel(response.data, ResponseStatus.success_200);
             }
-          },
-        );
-    }
+          });
 
+        }else{
+          return await dio
+              .post(
+            url,
+            data: params,
+            options: new Options(
+                contentType:ContentType.json),
+          )
+              .then((response) {
+            print(response.toString());
+            if (response.statusCode == 400) {
+              return ResponseModel(null, ResponseStatus.error_400 );
+            } else if (response.statusCode >= 500) {
+              return ResponseModel(null, ResponseStatus.error_503);
+            } else {
+              return ResponseModel(response.data, ResponseStatus.success_200);
+            }
+          });
+        }
+
+
+    }
     return null;
   }
 }
+

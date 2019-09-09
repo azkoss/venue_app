@@ -3,6 +3,7 @@ import 'package:flutter_redux/flutter_redux.dart';
 import 'package:redux/redux.dart';
 import 'package:venue_app/app/app.dart';
 import 'package:venue_app/models/User.dart';
+import 'package:venue_app/models/signin/SignInRequestParams.dart';
 import 'package:venue_app/redux/states/app_state.dart';
 
 import '../../redux/actions/userRegistration_actions.dart';
@@ -174,22 +175,25 @@ class _ViewModel {
   factory _ViewModel.create(Store<AppState> store) {
     _setOTP(String otp) {
       User user = store.state.userRegistrationState.user;
-      user.otp = otp;
+      user.otp = int.parse(otp);
       store.dispatch(UpdateUserAction(user));
       store.dispatch(ValidateOTPAction());
     }
 
     _resendOTP() {
-      store.dispatch(RequestOTPEpicAction(store.state.userRegistrationState.user.mobileNo));
+      store.dispatch(RequestOTPEpicAction(GetOtpRequest(
+        phone: "+91" + store.state.userRegistrationState.user.mobileNo,
+      )));
     }
 
     _proceedToNextScene() {
-      store.dispatch(ProceedToLandingSceneAction());
+      store.dispatch(VerifyOTPEpicAction());
+      //store.dispatch(ProceedToLandingSceneAction());
     }
 
     return _ViewModel(
       mobileNo: store.state.userRegistrationState.user.mobileNo,
-      otp: store.state.userRegistrationState.user.otp,
+      otp: store.state.userRegistrationState.user.otp.toString(),
       setOTP: _setOTP,
       resendOTP: _resendOTP,
       fieldValidations: store.state.userRegistrationState.fieldValidations,

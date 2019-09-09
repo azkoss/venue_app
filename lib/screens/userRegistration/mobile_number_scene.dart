@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:redux/redux.dart';
 import 'package:venue_app/models/User.dart';
+import 'package:venue_app/models/signin/SignInRequestParams.dart';
 import 'package:venue_app/redux/actions/userRegistration_actions.dart';
 import 'package:venue_app/redux/states/app_state.dart';
 
@@ -128,8 +129,10 @@ class _ViewModel {
     }
 
     _proceedToNextScene() {
-      store.dispatch(RequestOTPEpicAction(store.state.userRegistrationState.user.mobileNo));
-      store.dispatch(ProceedToOTPSceneAction());
+      store.dispatch(RequestOTPEpicAction(GetOtpRequest(
+        phone: "+91" + store.state.userRegistrationState.user.mobileNo,
+      )));
+     // store.dispatch(ProceedToOTPSceneAction());
     }
 
     return _ViewModel(
